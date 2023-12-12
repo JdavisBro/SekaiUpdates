@@ -1,4 +1,6 @@
 :root {
+  --header-color: #383838;
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -24,10 +26,6 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
@@ -56,6 +54,8 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
+    --header-color: rgb(202, 202, 202);
+
     color: #213547;
     background-color: #ffffff;
   }
