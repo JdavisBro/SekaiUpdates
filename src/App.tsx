@@ -17,7 +17,7 @@ function App() {
   const githubLogo = <img className={styles.headerLogo} src={lightMode ?  githubDark : githubLight} />
 
   const [server, setServer] = useLocalStorage("server", "en", {raw: true})
-  if (typeof server != "string" || !["jp", "en", "tw", "kr"].includes(server)) {setServer("en")}
+  if (typeof server != "string" || !servers.has(server)) {setServer("en")}
 
   const [showPastUpdates, setShowPastUpdates] = useLocalStorage("showPastUpdates", "false", {raw: true})
   console.log(showPastUpdates, typeof showPastUpdates)
