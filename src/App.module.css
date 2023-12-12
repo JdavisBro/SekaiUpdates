@@ -1,0 +1,27 @@
+.header {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+}
+
+.item {
+    margin: 0;
+    padding: 5%;
+    width: 200px;
+    height: 100%;
+    background-color: aqua;
+    line-height: 50px;
+    text-align: center
+}
+
+.item .left {
+    justify-content: flex-start;
+}
+
+.item .right {
+    justify-content: flex-end;
+}
