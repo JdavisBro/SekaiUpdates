@@ -8,7 +8,7 @@ import { Server } from "../types/ServerType";
 type Props = {
   server: Server;
   showPastUpdates: boolean;
-  setDisplayFeature: (newHash: string) => void,
+  setDisplayFeature: (newHash: string) => void;
 };
 
 export default function Content(props: Props): React.ReactElement {

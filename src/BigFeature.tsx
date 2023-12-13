@@ -16,10 +16,8 @@ export default function BigFeature(props: Props): React.ReactElement | null {
     return null;
   }
 
-  var [versionName, featureName] = props.displayFeature
-    .slice(1)
-    .split("/");
-  featureName = decodeURI(featureName)
+  var [versionName, featureName] = props.displayFeature.slice(1).split("/");
+  featureName = decodeURI(featureName);
   console.log(versionName, featureName);
   var update: UpdateType | null = null;
   for (const upd of updates) {
@@ -58,9 +56,9 @@ export default function BigFeature(props: Props): React.ReactElement | null {
   const closeButton = useRef<HTMLDivElement>(null);
   useEffect(() => {
     if (closeButton.current) {
-      closeButton.current.focus()
+      closeButton.current.focus();
     }
-  }, [])
+  }, []);
 
   return (
     <>
@@ -79,7 +77,9 @@ export default function BigFeature(props: Props): React.ReactElement | null {
           className={styles.box}
         >
           <div className={styles.header}>
-            <h1 className={styles.name}>Version {update.version} - {feature.name}</h1>
+            <h1 className={styles.name}>
+              Version {update.version} - {feature.name}
+            </h1>
             <div
               tabIndex={0}
               onClick={() => {
@@ -87,7 +87,7 @@ export default function BigFeature(props: Props): React.ReactElement | null {
               }}
               onKeyDown={(event) => {
                 if (event.key == "Enter") {
-                  props.setDisplayFeature("#")
+                  props.setDisplayFeature("#");
                 }
               }}
               className={styles.close}
@@ -98,7 +98,9 @@ export default function BigFeature(props: Props): React.ReactElement | null {
             </div>
           </div>
           <div className={styles.description}>
-            <Markdown>{feature.description.replace(/^ +(\^| )/gm, "")}</Markdown>
+            <Markdown>
+              {feature.description.replace(/^ +(\^| )/gm, "")}
+            </Markdown>
           </div>
         </div>
       </div>

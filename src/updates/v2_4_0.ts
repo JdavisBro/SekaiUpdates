@@ -68,7 +68,8 @@ const v2_4_0: UpdateType = {
     },
     {
       name: "Player Profile from Live Result Screen",
-      description: "Starting from the next update, you will be able to view other players' profiles from the Live Result screen.",
+      description:
+        "Starting from the next update, you will be able to view other players' profiles from the Live Result screen.",
       tags: ["show result"],
       date: null,
     },

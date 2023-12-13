@@ -15,6 +15,7 @@ const v2_5_0: UpdateType = {
         "vlive",
         "replay",
         "connect live",
+        "disc",
       ],
       date: {
         [Server.tw]: null,

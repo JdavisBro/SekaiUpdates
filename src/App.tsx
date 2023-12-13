@@ -37,9 +37,17 @@ function App() {
           setShowPastUpdates={setShowPastUpdates}
           showPastUpdates={showPastUpdates}
         />
-        <Content server={server} showPastUpdates={showPastUpdates} setDisplayFeature={setDisplayFeature} />
+        <Content
+          server={server}
+          showPastUpdates={showPastUpdates}
+          setDisplayFeature={setDisplayFeature}
+        />
       </div>
-      <BigFeature server={server} displayFeature={displayFeature} setDisplayFeature={setDisplayFeature} />
+      <BigFeature
+        server={server}
+        displayFeature={displayFeature}
+        setDisplayFeature={setDisplayFeature}
+      />
     </>
   );
 }

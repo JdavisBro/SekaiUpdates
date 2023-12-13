@@ -1,48 +1,48 @@
 .container {
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    background-color: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .box {
-    top: 5vh;
-    left: 10vw;
-    width: 80vw;
-    height: 90vh;
-    position: absolute;
-    background-color: var(--secondary-color);
-    border-radius: 16px;
-    display: flex;
-    flex-direction: column;
+  top: 5vh;
+  left: 10vw;
+  width: 80vw;
+  height: 90vh;
+  position: absolute;
+  background-color: var(--secondary-color);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
-    display: flex;
-    margin: 0 6px 0 8px;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  margin: 0 6px 0 8px;
+  flex-direction: row;
+  align-items: center;
 }
 
 .name {
-    margin: 0;
-    flex-grow: 1;
+  margin: 0;
+  flex-grow: 1;
 }
 
 .date {
-    margin: 0;
+  margin: 0;
 }
 
 .close {
-    font-size: 2em;
-    cursor: pointer;
+  font-size: 2em;
+  cursor: pointer;
 }
 
 .description {
-    width: 100%;
-    word-wrap: break-word;
-    overflow-y: scroll;
-    margin: 0 4px 8px 4px;
+  width: 100%;
+  word-wrap: break-word;
+  overflow-y: scroll;
+  margin: 0 4px 8px 4px;
 }
