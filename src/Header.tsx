@@ -3,18 +3,12 @@ import { useCallback } from 'react'
 import styles from './Header.module.css'
 import githubDark from "./assets/github-mark.svg"
 import githubLight from "./assets/github-mark-white.svg"
-
-const servers = new Map<string, string>([
-    ["jp", "Japanese"],
-    ["en", "English/Global"],
-    ["tw", "Taiwan"],
-    ["kr", "Korean"],
-])
+import { Server, servers } from './types/ServerType'
 
 type Props = {
     lightMode: boolean,
-    setServer: React.Dispatch<React.SetStateAction<string | undefined>>,
-    server: string,
+    setServer: React.Dispatch<React.SetStateAction<Server | undefined>>,
+    server: Server,
     setShowPastUpdates: React.Dispatch<React.SetStateAction<boolean | undefined>>,
     showPastUpdates: boolean,
 
@@ -33,7 +27,7 @@ export default function Header(props: Props): React.ReactElement {
             <div className={`${styles.item} ${styles.valign}`}>Project Sekai Updates</div>
             <div className={`${styles.item} ${styles.middle}`}></div>
             <div className={`${styles.item} ${styles.valign}`}>
-                <input onChange={useCallback(() => {props.setShowPastUpdates(props.showPastUpdates ? false : true)}, [props])} type="checkbox" id="showPastUpdatesBox" checked={props.showPastUpdates} />
+                <input onChange={useCallback(() => {props.setShowPastUpdates(props.showPastUpdates ? false : true)}, [props])} type="checkbox" id="showPastUpdatesBox" defaultChecked={props.showPastUpdates} />
                 <label className={ styles.noselect } htmlFor="showPastUpdatesBox">Show Past Updates</label>
             </div>
             <div className={ styles.item }>
