@@ -5,7 +5,7 @@
 
   --secondary-text: #d3d3d3;
 
-  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Calibri, "Trebuchet MS", sans-serif;
   line-height: 1.5;
   font-weight: 400;
   font-size: 1.05em;
@@ -39,7 +39,7 @@ body {
     --header-color: rgb(202, 202, 202);
     --secondary-color: #d6d6d6;
     --tertiary-color: #bbbbbb;
-    
+
     --secondary-text: #1e2c36;
 
     color: #213547;

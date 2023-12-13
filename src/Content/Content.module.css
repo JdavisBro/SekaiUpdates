@@ -1,100 +1,102 @@
 .content {
-    flex-grow: 1;
-    display: flex;
-    min-height: 0;
-    flex-direction: column;
+  flex-grow: 1;
+  display: flex;
+  min-height: 0;
+  flex-direction: column;
 }
 
 .searchcontainer {
-    padding: 10px;
-    box-sizing: border-box;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .updatecontainer {
-    overflow: scroll hidden;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: row;
+  overflow: scroll hidden;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
 }
 
 .update {
-    width: 30%;
-    height: 96%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 0.5%;
-    margin-left: 0.5%;
-    border-radius: 16px;
-    border-width: 6px;
-    border-style: solid;
-    border-color: transparent;
-    background-color: var(--secondary-color);
+  width: 30%;
+  height: 96%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5%;
+  margin-left: 0.5%;
+  border-radius: 16px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent;
+  background-color: var(--secondary-color);
 }
 
 .splitline {
-    width: 100%;
+  width: 100%;
 }
 
 .left {
-    float: left;
+  float: left;
 }
 
 .right {
-    float: right;
-    text-align: right;
+  float: right;
+  text-align: right;
 }
 
-.update h2, .update h4 {
-    margin: 0 3px 0 3px;
+.update h2,
+.update h4 {
+  margin: 0 3px 0 3px;
 }
 
 .update h4 {
-    color: var(--secondary-text)
+  color: var(--secondary-text);
 }
 
 .description {
-    margin: 5px 0 5px 0;
-    padding: 0 5px 0 5px;
-    box-sizing: border-box;
-    border-radius: 8px;
-    width: 100%;
-    flex-basis: 20%;
-    flex-shrink: 1;
-    background-color: var(--tertiary-color);
-    overflow-y: scroll;
+  margin: 5px 0 5px 0;
+  padding: 0 5px 0 5px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 100%;
+  flex-basis: 20%;
+  flex-shrink: 1;
+  background-color: var(--tertiary-color);
+  overflow-y: scroll;
 }
 
 .featurelist {
-    flex-grow: 1;
-    overflow-y: scroll;
+  flex-grow: 1;
+  overflow-y: scroll;
 }
 
 .feature {
-    width: 100%;
-    height: 6%;
-    border-radius: 8px;
-    background-color: var(--header-color);
-    margin-bottom: 3px;
+  width: 100%;
+  height: 6%;
+  border-radius: 8px;
+  background-color: var(--header-color);
+  margin-bottom: 3px;
+  cursor: pointer;
 }
 
 .featureheader {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
 .featureheader > .left {
-    flex-grow: 1;
-    align-self: center;
-    float: none;
+  flex-grow: 1;
+  align-self: center;
+  float: none;
 }
 
 .featureheader > .right {
-    align-self: center;
-    float: none;
+  align-self: center;
+  float: none;
 }
 
 .full {
-    height: fit-content;
+  height: fit-content;
 }

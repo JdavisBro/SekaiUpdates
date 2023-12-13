@@ -1,9 +1,9 @@
 :root {
-    --header-height: 55px;
+  --header-height: 55px;
 }
 
 .container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
