@@ -2,6 +2,8 @@
     --header-height: 55px;
 }
 
-.content {
-    margin-top: var(--header-height);
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
