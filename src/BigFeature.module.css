@@ -46,7 +46,6 @@
 
 .name {
   margin: 0 0 0 8px;
-  flex-grow: 1;
 }
 
 .description {
@@ -71,6 +70,6 @@
   }
 
   .description img {
-    max-width: calc(100% - 16px);
+    max-width: 100%;
   }
 }
