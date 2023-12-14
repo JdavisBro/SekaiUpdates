@@ -15,8 +15,6 @@
   flex-grow: 1;
   display: inline-flex;
   white-space: nowrap;
-  /* display: flex;
-  flex-direction: row; */
 }
 
 .update {
@@ -82,7 +80,6 @@
 .feature {
   overflow: hidden;
   white-space: normal;
-  /* width: 100%; */
   min-height: 6%;
   border-radius: 8px;
   background-color: var(--header-color);
@@ -95,11 +92,10 @@
 
 .feature > .left {
   flex-shrink: 0;
-  flex-grow: 0;
+  flex-grow: 1;
   word-wrap: break-word;
   overflow-wrap: break-word;
   min-width: 40%;
-  width: 100%;
   max-width: 75%;
 }
 
