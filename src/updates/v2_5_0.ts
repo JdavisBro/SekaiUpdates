@@ -173,7 +173,7 @@ const v2_5_0: UpdateType = {
     },
   ],
   date: {
-    [Server.jp]: new Date(2022, 1, 21),
+    [Server.jp]: new Date(2023, 1, 21),
     [Server.tw]: null,
     [Server.en]: null,
     [Server.kr]: null,
