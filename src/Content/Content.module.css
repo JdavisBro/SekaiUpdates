@@ -13,13 +13,17 @@
 .updatecontainer {
   overflow: scroll hidden;
   flex-grow: 1;
-  display: flex;
-  flex-direction: row;
+  display: inline-flex;
+  white-space: nowrap;
+  /* display: flex;
+  flex-direction: row; */
 }
 
 .update {
   width: 30%;
   height: 96%;
+  float: left;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   margin-top: 0.5%;
@@ -29,6 +33,10 @@
   border-style: solid;
   border-color: transparent;
   background-color: var(--secondary-color);
+}
+
+.update:last-child {
+  margin-right: 0.5%;
 }
 
 .splitline {

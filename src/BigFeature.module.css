@@ -32,7 +32,8 @@
 }
 
 .date {
-  margin: 0;
+  margin: 0 8px 0 0;
+  text-align: right;
 }
 
 .close {
@@ -44,5 +45,5 @@
   width: 100%;
   word-wrap: break-word;
   overflow-y: scroll;
-  margin: 0 4px 8px 4px;
+  margin: 0 8px 8px 8px;
 }

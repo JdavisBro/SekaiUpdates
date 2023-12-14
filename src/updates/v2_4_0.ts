@@ -26,10 +26,10 @@ const v2_4_0: UpdateType = {
       - Other violations of the game's terms of use and service
       ## Players who have received certain number of reports and are confirmed to be malicious will be subject to one of the following penalties:
       - Penalties
-      - 5-minute suspension (Warning)
-      - I-day suspension (24 hours)
-      - a-day suspension (72 hours)
-      - I-week suspension (168 hours)
+      - 5 minute suspension (Warning)
+      - 1 day suspension (24 hours)
+      - 3 day suspension (72 hours)
+      - 1 week suspension (168 hours)
       - Permanent suspension (BAN)
       A player's penalty will increase every time they receive one penalty, and the stage of penalty a player can receive will vary according on either the number of the penalties the player has received, or the player's case, which means, depending on how heavy the case is, a player can be banned immediately.
 
@@ -217,7 +217,7 @@ const v2_4_0: UpdateType = {
       - Improvements & adjustments to other detailed features/functions, direction, logic, etc.
       - Other minor bug fixes.
       `,
-      tags: [],
+      tags: ["waiting", "multi live", "multi show", "coop live", "coop show", "cheerful live", "cheerful show", "gacha rates", "decimal"],
       date: null,
     },
   ],

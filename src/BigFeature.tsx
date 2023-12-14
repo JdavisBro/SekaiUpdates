@@ -45,10 +45,17 @@ export default function BigFeature(props: Props): React.ReactElement | null {
     if (featureDates !== null) {
       var featureDate = featureDates[props.server];
       if (featureDate !== null) {
-        // only ran if this one is supposed to be visible
         dateText = `Early ${Server[
           props.server
         ].toUpperCase()}: ${featureDate.toLocaleDateString()}`;
+      }
+    }
+    if (dateText == "") {
+      var updateDate = update.date[props.server];
+      if (updateDate !== null) {
+        dateText = `${Server[
+          props.server
+        ].toUpperCase()}: ${updateDate.toLocaleDateString()}`;
       }
     }
   }
@@ -80,6 +87,11 @@ export default function BigFeature(props: Props): React.ReactElement | null {
             <h1 className={styles.name}>
               Version {update.version} - {feature.name}
             </h1>
+            <h3 className={styles.date}>
+              JP: {update.date[Server.jp].toLocaleDateString()}
+              <br />
+              {dateText}
+            </h3>
             <div
               tabIndex={0}
               onClick={() => {
