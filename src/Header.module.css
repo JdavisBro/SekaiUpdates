@@ -9,22 +9,23 @@
   width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   background-color: var(--header-color);
 }
 
 .item {
   margin: 0;
   padding: 0 8px 0 8px;
-  height: 100%;
   text-align: center;
-}
-
-.valign {
-  line-height: var(--header-height);
+  line-height: 1em;
 }
 
 .middle {
   flex-grow: 1;
+}
+
+.headerLogoContainer {
+  height: 100%;
 }
 
 .headerLogo {

@@ -84,9 +84,7 @@ export default function BigFeature(props: Props): React.ReactElement | null {
           className={styles.box}
         >
           <div className={styles.header}>
-            <h1 className={styles.name}>
-              Version {update.version} - {feature.name}
-            </h1>
+            <h2 className={styles.updateName}>Version {update.version}</h2>
             <h3 className={styles.date}>
               JP: {update.date[Server.jp].toLocaleDateString()}
               <br />
@@ -109,6 +107,7 @@ export default function BigFeature(props: Props): React.ReactElement | null {
               ✖
             </div>
           </div>
+          <h2 className={styles.name}>{feature.name}</h2>
           <div className={styles.description}>
             <Markdown>
               {feature.description.replace(/^ +(\^| )/gm, "")}

@@ -39,11 +39,9 @@ export default function Header(props: Props): React.ReactElement {
   return (
     <>
       <div className={styles.header}>
-        <div className={`${styles.item} ${styles.valign}`}>
-          Project Sekai Updates
-        </div>
+        <div className={styles.item}>Project Sekai Updates</div>
         <div className={`${styles.item} ${styles.middle}`}></div>
-        <div className={`${styles.item} ${styles.valign}`}>
+        <div className={styles.item}>
           <input
             onChange={useCallback(() => {
               props.setShowPastUpdates(props.showPastUpdates ? false : true);
@@ -66,7 +64,7 @@ export default function Header(props: Props): React.ReactElement {
           </select>
         </div>
         <a
-          className={styles.item}
+          className={`${styles.item} ${styles.headerLogoContainer}`}
           href="https://github.com/JdavisBro/SekaiUpdates"
           target="_blank"
         >
