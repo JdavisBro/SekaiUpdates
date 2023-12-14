@@ -46,7 +46,17 @@ const v2_7_0: UpdateType = {
       - Collect a certain number of [featured character's] Another Vocals
       ^  - 16 / 17 / 18 / 19 / 20
       `,
-      tags: ["character missions", "leader live", "leader show", "green room", "waiting room", "costumes", "covers", "vocals", ""],
+      tags: [
+        "character missions",
+        "leader live",
+        "leader show",
+        "green room",
+        "waiting room",
+        "costumes",
+        "covers",
+        "vocals",
+        "",
+      ],
       date: null,
     },
     {
@@ -105,7 +115,12 @@ const v2_7_0: UpdateType = {
       - Cover Card Voucher (No monthly limit)
       ^  - 2000 wish pieces per 1 ticket
       `,
-      tags: ["fragments of feelings", "cover card voucher", "another vocal", "stamp voucher"],
+      tags: [
+        "fragments of feelings",
+        "cover card voucher",
+        "another vocal",
+        "stamp voucher",
+      ],
       date: null,
     },
     {
@@ -122,7 +137,14 @@ const v2_7_0: UpdateType = {
       - Read It All - Read a certain number of chapters of the "Main Story" and/or "Side/Card Stories" without using the Skip and/or Fast-Forward Button
       ^  - 200 chapters / 300 chapters / 400 chapters / 500 chapters / 600 chapters / 700 chapters / 800 chapters / 900 chapters / 1000 chapters / 1100 chapters
       `,
-      tags: ["old school", "covers", "perfectionist", "character rank", "read it all", "story"],
+      tags: [
+        "old school",
+        "covers",
+        "perfectionist",
+        "character rank",
+        "read it all",
+        "story",
+      ],
       date: null,
     },
     {

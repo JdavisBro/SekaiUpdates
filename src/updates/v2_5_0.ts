@@ -162,9 +162,15 @@ const v2_5_0: UpdateType = {
       - The mission "Read 100 chapters of Main Stories and/or Side Stories without using the Skip button" is changed to "Read 100 chapters of Main Stories and/or Side Stories without using the Skip button and/or the Fast-Forward button". This change is due to the intention of the mission, that is to have players read the stories carefully and properly. Using the Fast-Forward button will defeat the purpose of the mission, just like using the Skip button.
       - Fixed the audio discrepancies in some songs: Greenlights Serenade, Roku-chou Nen to Ichiya Monogatari, Lost One no Goukoku, Lower, Goodbye. Other songs that have been confirmed to have similar problems will be addressed in due course.
       `,
-      tags: ["side story", "virutal live screenshot", "story", "fast foward", "audio"],
+      tags: [
+        "side story",
+        "virutal live screenshot",
+        "story",
+        "fast foward",
+        "audio",
+      ],
       date: null,
-    }
+    },
   ],
   date: {
     [Server.jp]: new Date(2022, 1, 21),

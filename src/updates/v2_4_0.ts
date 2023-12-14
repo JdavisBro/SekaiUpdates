@@ -217,7 +217,17 @@ const v2_4_0: UpdateType = {
       - Improvements & adjustments to other detailed features/functions, direction, logic, etc.
       - Other minor bug fixes.
       `,
-      tags: ["waiting", "multi live", "multi show", "coop live", "coop show", "cheerful live", "cheerful show", "gacha rates", "decimal"],
+      tags: [
+        "waiting",
+        "multi live",
+        "multi show",
+        "coop live",
+        "coop show",
+        "cheerful live",
+        "cheerful show",
+        "gacha rates",
+        "decimal",
+      ],
       date: null,
     },
   ],
