@@ -14,9 +14,9 @@ const v3_0_0: UpdateType = {
       - With the game's 3rd Anniversary, all characters will be going up a year.
       - They will also receive new character visuals.
       - This change will also apply to the characters' Live2D sprites & chibi sprites
+      ^  - See bottom of page for images
       - The characters will also receive new unit 3D costumes. They will be available for free.
 
-      (see bottom for images)
       ## New Unit Songs & Stages
       - All 6 units, including VIRTUAL SINGER, will be receiving their own new unit songs
       - One song will be announced each month. The first unit song for VIRTUAL SINGER has also been announced:

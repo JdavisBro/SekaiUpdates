@@ -87,6 +87,15 @@ const v2_6_0: UpdateType = {
       tags: ["unit rank", "main story", "unlocked"],
       date: null,
     },
+    {
+      name: "All Perfects Displayed in Profile",
+      description: `
+      - In custom profiles, the componant which shows Songs Cleared and Full Combo'd will be modified to include All Perfects.
+      - It will change to have three tabs for each, which show the number of songs Cleared/FC'd/AP'd on each difficulty.
+      `,
+      tags: ["custom profile"],
+      date: null,
+    },
   ],
   date: {
     [Server.jp]: new Date(2023, 2, 30),
