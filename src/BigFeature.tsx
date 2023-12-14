@@ -84,44 +84,46 @@ export default function BigFeature(props: Props): React.ReactElement | null {
           }}
           className={styles.box}
         >
-          <div className={styles.header}>
-            <h2 className={styles.updateName}>Version {update.version}</h2>
-            <h3 className={styles.date}>
-              JP:{" "}
-              {JoinElements(
-                update.date[Server.jp].toLocaleDateString().split("/"),
-                <>
-                  <wbr />/
-                </>,
-                true,
-              )}
-              <br />
-              {JoinElements(
-                dateText.split("/"),
-                <>
-                  <wbr />/
-                </>,
-                true,
-              )}
-            </h3>
-            <div
-              tabIndex={0}
-              onClick={() => {
-                props.setDisplayFeature("#");
-              }}
-              onKeyDown={(event) => {
-                if (event.key == "Enter") {
+          <div className={styles.headerBox}>
+            <div className={styles.header}>
+              <h2 className={styles.updateName}>Version {update.version}</h2>
+              <h3 className={styles.date}>
+                JP:{" "}
+                {JoinElements(
+                  update.date[Server.jp].toLocaleDateString().split("/"),
+                  <>
+                    <wbr />/
+                  </>,
+                  true,
+                )}
+                <br />
+                {JoinElements(
+                  dateText.split("/"),
+                  <>
+                    <wbr />/
+                  </>,
+                  true,
+                )}
+              </h3>
+              <div
+                tabIndex={0}
+                onClick={() => {
                   props.setDisplayFeature("#");
-                }
-              }}
-              className={styles.close}
-              title="Close"
-              ref={closeButton}
-            >
-              ✖
+                }}
+                onKeyDown={(event) => {
+                  if (event.key == "Enter") {
+                    props.setDisplayFeature("#");
+                  }
+                }}
+                className={styles.close}
+                title="Close"
+                ref={closeButton}
+              >
+                ✖
+              </div>
             </div>
+            <h2 className={styles.name}>{feature.name}</h2>
           </div>
-          <h2 className={styles.name}>{feature.name}</h2>
           <div className={styles.description}>
             <Markdown>
               {feature.description.replace(/^ +(\^| )/gm, "")}
