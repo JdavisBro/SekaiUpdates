@@ -61,6 +61,11 @@ export default function Update(props: Props): React.ReactElement | null {
           inSearch = true;
         }
       });
+      if (
+        `version ${props.update.version}`.includes(props.search.toLowerCase())
+      ) {
+        inSearch = true;
+      }
       if (!inSearch) {
         return null;
       }
