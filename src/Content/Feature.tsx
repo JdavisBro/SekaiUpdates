@@ -1,5 +1,6 @@
 import { Server } from "../types/ServerType";
 import type { FeatureType } from "../types/UpdateType";
+import JoinElements from "../utils/JoinElements";
 import styles from "./Content.module.css";
 
 type Props = {
@@ -41,10 +42,16 @@ export default function Feature(props: Props): React.ReactElement | boolean {
         }}
         className={styles.feature}
       >
-        <div className={styles.featureheader}>
-          <h2 className={styles.left}>{props.feature.name}</h2>
-          <h4 className={styles.right}>{dateText}</h4>
-        </div>
+        <h2 className={styles.left}>{props.feature.name}</h2>
+        <h4 className={styles.right}>
+          {JoinElements(
+            dateText.split("/"),
+            <>
+              <wbr />/
+            </>,
+            true,
+          )}
+        </h4>
       </div>
     </>
   );

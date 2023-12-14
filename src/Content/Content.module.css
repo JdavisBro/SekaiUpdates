@@ -76,35 +76,38 @@
 .featurelist {
   flex-grow: 1;
   overflow-y: scroll;
+  padding-bottom: 10%;
 }
 
 .feature {
-  min-width: 100%;
-  width: justify-content;
+  overflow: hidden;
+  white-space: normal;
+  /* width: 100%; */
   min-height: 6%;
   border-radius: 8px;
   background-color: var(--header-color);
   margin-bottom: 3px;
   cursor: pointer;
-}
-
-.featureheader {
-  min-width: 100%;
-  width: justify-content;
-  min-height: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
-.featureheader > .left {
-  flex-grow: 1;
-  align-self: center;
-  float: none;
+.feature > .left {
+  flex-shrink: 0;
+  flex-grow: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  min-width: 40%;
+  width: 100%;
+  max-width: 75%;
 }
 
-.featureheader > .right {
-  align-self: center;
+.feature > .right {
+  min-width: 20%;
   float: none;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .full {

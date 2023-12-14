@@ -4,6 +4,7 @@ import { Server } from "./types/ServerType";
 import { FeatureType, UpdateType } from "./types/UpdateType";
 import updates from "./updates/updates";
 import { useEffect, useRef } from "react";
+import JoinElements from "./utils/JoinElements";
 
 type Props = {
   server: Server;
@@ -86,9 +87,22 @@ export default function BigFeature(props: Props): React.ReactElement | null {
           <div className={styles.header}>
             <h2 className={styles.updateName}>Version {update.version}</h2>
             <h3 className={styles.date}>
-              JP: {update.date[Server.jp].toLocaleDateString()}
+              JP:{" "}
+              {JoinElements(
+                update.date[Server.jp].toLocaleDateString().split("/"),
+                <>
+                  <wbr />/
+                </>,
+                true,
+              )}
               <br />
-              {dateText}
+              {JoinElements(
+                dateText.split("/"),
+                <>
+                  <wbr />/
+                </>,
+                true,
+              )}
             </h3>
             <div
               tabIndex={0}
