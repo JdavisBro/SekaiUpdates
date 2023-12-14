@@ -83,7 +83,6 @@ const v2_6_0: UpdateType = {
       description: `
       - In order to allow new players to immediately read and enjoy each unit's Main Stories without stopping midway, all of them will now be unlocked without having to level up each unit's Rank.
       - In addition, as the VIRTUAL SINGER main stories follow the progress of each unit, the requirement to unlock their stories will not be changed.
-      - With this update, the Unit Rank will be removed.
       `,
       tags: ["unit rank", "main story", "unlocked"],
       date: null,
