@@ -12,14 +12,10 @@ const v2_8_0: UpdateType = {
       - There will be a play button in the news page for each login story.
       `,
       tags: [],
-      date: null,
     },
   ],
   date: {
     [Server.jp]: new Date(2023, 8, 13),
-    [Server.tw]: null,
-    [Server.en]: null,
-    [Server.kr]: null,
   },
 };
 

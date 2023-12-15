@@ -68,7 +68,6 @@ const v3_0_0: UpdateType = {
         "unit stages",
         "new profiles",
       ],
-      date: null,
     },
     {
       name: "3D Graphics Update",
@@ -94,7 +93,6 @@ const v3_0_0: UpdateType = {
       - Some of the new staging & effect updates will not be reflected during rhythm gameplay (Lives) and only be reflected when you watch the 3DMVs by themselves.
       `,
       tags: ["3dmv", "shaders"],
-      date: null,
     },
     {
       name: "Updated/Polished 3DMV",
@@ -110,7 +108,6 @@ const v3_0_0: UpdateType = {
         "tondemo wonderz",
         "idsmile",
       ],
-      date: null,
     },
     {
       name: "Device Compatibility",
@@ -119,7 +116,6 @@ const v3_0_0: UpdateType = {
       - As such, the 6th generation iPad devices have been excluded from the list of compatible/supported devices and changed to iPad (7th generation)
       `,
       tags: ["ipad 6th generation"],
-      date: null,
     },
     {
       name: "UI Overhaul",
@@ -144,7 +140,6 @@ const v3_0_0: UpdateType = {
       ![New Song List UI](https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_kaakak.png)
       `,
       tags: [],
-      date: null,
     },
     {
       name: "Updated Gacha Animation",
@@ -154,7 +149,6 @@ const v3_0_0: UpdateType = {
       ![https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_ioqhqn.png]
       `,
       tags: [],
-      date: null,
     },
     {
       name: "Removal of Extra Card Talent Parameters",
@@ -163,7 +157,6 @@ const v3_0_0: UpdateType = {
       - The "Overall Power" parameter will stay and renamed to "Performance."
       `,
       tags: [],
-      date: null,
     },
     {
       name: "Unit Rank Complete Removal",
@@ -177,7 +170,6 @@ const v3_0_0: UpdateType = {
       - AFTER: Read all unit Main Stories WITHOUT using the SKIP and/or FAST-FORWARD button.
       `,
       tags: [],
-      date: null,
     },
     {
       name: "APPEND Difficulty",
@@ -207,7 +199,6 @@ const v3_0_0: UpdateType = {
       ![APPEND Song Image](https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_njqwjba.png)
       `,
       tags: [],
-      date: null,
     },
     {
       name: "Trace Notes",
@@ -218,7 +209,6 @@ const v3_0_0: UpdateType = {
       ![Trace Notes Image](https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_yujasb.png)
       `,
       tags: [],
-      date: null,
     },
     {
       name: "Note Skins and Sound Effects",
@@ -228,7 +218,6 @@ const v3_0_0: UpdateType = {
       ![New Note Skin Settings Image](https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_njnbjaa.png)
       `,
       tags: [],
-      date: null,
     },
     {
       name: "Character Rank EX Missions",
@@ -251,7 +240,6 @@ const v3_0_0: UpdateType = {
       ![EX Missions in the Character Archive](https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_hjinaa.png)
       `,
       tags: ["leader live", "green room"],
-      date: null,
     },
     {
       name: "Character Rank Mission Caps Increase",
@@ -272,7 +260,6 @@ const v3_0_0: UpdateType = {
       ^  - 36 stories / 37 stories / 38 stories / 39 stories / 40 stories / 41 stories / 42 stories / 43 stories / 44 stories / 45 stories / 46 stories / 47 stories / 48 stories / 49 stories/ 50 stories
       `,
       tags: [],
-      date: null,
     },
     {
       name: "Character Rank Cap Increase",
@@ -280,7 +267,6 @@ const v3_0_0: UpdateType = {
       - The Character Rank cap will be increased from 110 to 135.
       `,
       tags: [],
-      date: null,
     },
     {
       name: "Trust Rank Cap Increase",
@@ -291,7 +277,6 @@ const v3_0_0: UpdateType = {
       - Please note that any extra Trust EXP earned before the cap increase will not be accumulated.
       `,
       tags: ["kizuna", "stamp"],
-      date: null,
     },
     {
       name: "Player Rank Cap Increase",
@@ -301,7 +286,6 @@ const v3_0_0: UpdateType = {
       - You will receive a new title for getting to Player Rank 600 (Sapphire).
       `,
       tags: ["sapphire", "rank 600"],
-      date: null,
     },
     {
       name: "Old School Achievement Cap Increase",
@@ -309,7 +293,6 @@ const v3_0_0: UpdateType = {
       - The "Old School" Title achievement mission cap will be increased from 1095 days to 1460 days.
       `,
       tags: [],
-      date: null,
     },
     {
       name: "Login Bonus Renewal",
@@ -327,7 +310,6 @@ const v3_0_0: UpdateType = {
       - The amount of [Virtual Coins x300] you can exchange in the "Wish Piece" exchange shop will be increased from 10 times to 15 times per month.
       `,
       tags: ["wish pieces"],
-      date: null,
     },
     {
       name: "Virtual Item Price Change",
@@ -372,7 +354,6 @@ const v3_0_0: UpdateType = {
       ^  - AFTER: 3,000 Virtual Coins; 1,000 Crystals
       `,
       tags: [],
-      date: null,
     },
     {
       name: "Virtual Items with Colorful Pass",
@@ -394,7 +375,6 @@ const v3_0_0: UpdateType = {
       - Players are allowed to send free Support Messages and/or Virtual Items as much as they want, but any weird/trolling behavior will result in said player to be restricted.
       `,
       tags: [],
-      date: null,
     },
     {
       name: "Last Event Story Rewards Adjustment",
@@ -412,7 +392,6 @@ const v3_0_0: UpdateType = {
       - This update will apply for events after the 3rd Anniversary.
       `,
       tags: [],
-      date: null,
     },
     {
       name: "Event Story Pts Requirement Update",
@@ -430,7 +409,6 @@ const v3_0_0: UpdateType = {
       - This update will apply for events after the 3rd Anniversary.
       `,
       tags: [],
-      date: null,
     },
     {
       name: "Event Tiering/Ranking Rewards",
@@ -454,7 +432,6 @@ const v3_0_0: UpdateType = {
       - This update will apply for events after the 3rd Anniversary.
       `,
       tags: [],
-      date: null,
     },
     {
       name: "Mastery Rank Event Bonus Ajustment",
@@ -477,7 +454,6 @@ const v3_0_0: UpdateType = {
       - This update will apply for events after the 3rd Anniversary.
       `,
       tags: ["mastery bonus"],
-      date: null,
     },
     {
       name: "Game Data Transfer Restriction Update",
@@ -489,7 +465,6 @@ const v3_0_0: UpdateType = {
       - This update will apply for events after the 3rd Anniversary.
       `,
       tags: [],
-      date: null,
     },
     {
       name: "Event Exchange Item Adjustment",
@@ -509,7 +484,6 @@ const v3_0_0: UpdateType = {
       - This update will apply for events after the 3rd Anniversary.
       `,
       tags: [],
-      date: null,
     },
     {
       name: "Multi Live 0 Life Score Penalty Change",
@@ -518,7 +492,6 @@ const v3_0_0: UpdateType = {
       - This update will apply for events after the 3rd Anniversary.
       `,
       tags: [],
-      date: null,
     },
     {
       name: "Tutorial Rewards Increase",
@@ -540,7 +513,6 @@ const v3_0_0: UpdateType = {
       - For players who have already completed the tutorial, the new rewards will be sent to your present box after the update.
       `,
       tags: [],
-      date: null,
     },
     {
       name: "Start Dash & Regular Missions Renewal",
@@ -575,7 +547,6 @@ const v3_0_0: UpdateType = {
       ![New Start Dash Missions](https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_ybklaa.png)
       `,
       tags: [],
-      date: null,
     },
     {
       name: "Pre-release/Trial for FPS & Vsync Settings",
@@ -589,7 +560,6 @@ const v3_0_0: UpdateType = {
       ![Settings Menu Showing the New FPS and Vsync Settings](https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_ghhbaj.png)
       `,
       tags: [],
-      date: null,
     },
     {
       name: "3D Costumes for All Sekai Virtual Singers",
@@ -623,7 +593,6 @@ const v3_0_0: UpdateType = {
       - If you have read all the stories above, you will receive the 3D Costumes directly when you log in after the update.
       `,
       tags: [],
-      date: null,
     },
     {
       name: "Crystal Shop Renewal",
@@ -660,14 +629,10 @@ const v3_0_0: UpdateType = {
       - "Welcome SEKAI" Set B, C, D will be renamed to "Beginner's Support" Set A, B, C.
       `,
       tags: [],
-      date: null,
     },
   ],
   date: {
     [Server.jp]: new Date(2023, 8, 29),
-    [Server.tw]: null,
-    [Server.en]: null,
-    [Server.kr]: null,
   },
 };
 

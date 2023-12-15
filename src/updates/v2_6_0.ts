@@ -19,7 +19,6 @@ const v2_6_0: UpdateType = {
       ![Image showing a story recommendation on the Leo/need main story](https://static.miraheze.org/projectsekaiwiki/thumb/8/80/Update_Notes_2.6.0_3.png/1000px-Update_Notes_2.6.0_3.png)
       `,
       tags: ["favourite story", "favorite story"],
-      date: null,
     },
     {
       name: "Story Bookmark",
@@ -32,7 +31,6 @@ const v2_6_0: UpdateType = {
       ![Image showing the making of a bookmark in a story](https://static.miraheze.org/projectsekaiwiki/thumb/2/22/Update_Notes_2.6.0_4.png/1000px-Update_Notes_2.6.0_4.png)
       `,
       tags: [],
-      date: null,
     },
     {
       name: "Story Recommendation",
@@ -43,7 +41,6 @@ const v2_6_0: UpdateType = {
       ![Image showing story recommendations on the story screen](https://static.miraheze.org/projectsekaiwiki/thumb/c/c7/Update_Notes_2.6.0_5.png/1000px-Update_Notes_2.6.0_5.png)
       `,
       tags: [],
-      date: null,
     },
     {
       name: "Reward for reading past events.",
@@ -59,7 +56,6 @@ const v2_6_0: UpdateType = {
       ![Image of an event screen showing the reward and SKIP icon](https://static.miraheze.org/projectsekaiwiki/thumb/9/98/Update_Notes_2.6.0_6.png/1000px-Update_Notes_2.6.0_6.png)
       `,
       tags: ["crystals", "event story", "50 crystals", "story"],
-      date: null,
     },
     {
       name: "Story Page Changes",
@@ -76,7 +72,6 @@ const v2_6_0: UpdateType = {
       ![Image showing a story summary](https://static.miraheze.org/projectsekaiwiki/thumb/a/a9/Update_Notes_2.6.0_7.png/1000px-Update_Notes_2.6.0_7.png)
       `,
       tags: ["event story", "unit focus", "unit story", "event sorting"],
-      date: null,
     },
     {
       name: "Main Story Requirement (Unit Rank) Removal",
@@ -85,7 +80,6 @@ const v2_6_0: UpdateType = {
       - In addition, as the VIRTUAL SINGER main stories follow the progress of each unit, the requirement to unlock their stories will not be changed.
       `,
       tags: ["unit rank", "main story", "unlocked"],
-      date: null,
     },
     {
       name: "All Perfects Displayed in Profile",
@@ -94,14 +88,10 @@ const v2_6_0: UpdateType = {
       - It will change to have three tabs for each, which show the number of songs Cleared/FC'd/AP'd on each difficulty.
       `,
       tags: ["custom profile"],
-      date: null,
     },
   ],
   date: {
     [Server.jp]: new Date(2023, 2, 30),
-    [Server.tw]: null,
-    [Server.en]: null,
-    [Server.kr]: null,
   },
 };
 

@@ -11,14 +11,10 @@ const v3_X_0: UpdateType = {
       desc
       `,
       tags: [],
-      date: null,
     },
   ],
   date: {
     [Server.jp]: new Date(2023, 0, 1),
-    [Server.tw]: null,
-    [Server.en]: null,
-    [Server.kr]: null,
   },
 };
 

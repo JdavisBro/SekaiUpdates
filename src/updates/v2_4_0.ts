@@ -38,7 +38,9 @@ const v2_4_0: UpdateType = {
       ![Image showing player profile reporting](https://static.miraheze.org/projectsekaiwiki/thumb/5/52/Update_Notes_2.4.0_1.png/1000px-Update_Notes_2.4.0_1.png)
       `,
       tags: ["reporting", "cheating"],
-      date: null,
+      notIncluded: {
+        [Server.en]: true,
+      },
     },
     {
       name: "Block Players",
@@ -55,7 +57,6 @@ const v2_4_0: UpdateType = {
       ![Player profile showing block button](https://static.miraheze.org/projectsekaiwiki/thumb/e/ee/Update_Notes_2.4.0_2.png/1000px-Update_Notes_2.4.0_2.png)
       `,
       tags: ["blocking"],
-      date: null,
     },
     {
       name: "Friend Request Preferences",
@@ -64,14 +65,12 @@ const v2_4_0: UpdateType = {
       - You will be able to set it to either [Accepting All Friend Requests], [Accepting Friend Requests Through Player IDs only], or [Not Accepting Friend Requests].
       `,
       tags: [],
-      date: null,
     },
     {
       name: "Player Profile from Live Result Screen",
       description:
         "Starting from the next update, you will be able to view other players' profiles from the Live Result screen.",
       tags: ["show result"],
-      date: null,
     },
     {
       name: "Game Data Transfer Restriction",
@@ -86,7 +85,6 @@ const v2_4_0: UpdateType = {
       environment.
       `,
       tags: ["account sharing", "account syncing"],
-      date: null,
     },
     {
       name: "Live Mission Adjustments",
@@ -126,7 +124,6 @@ const v2_4_0: UpdateType = {
       ![Image showing adjustments to the live/show result screen](https://static.miraheze.org/projectsekaiwiki/thumb/1/13/Update_Notes_2.4.0_3.png/1000px-Update_Notes_2.4.0_3.png)
       `,
       tags: ["battle pass", "mission pass"],
-      date: null,
     },
     {
       name: "Music Mylist",
@@ -139,7 +136,6 @@ const v2_4_0: UpdateType = {
       ![Image showing Music Mylist in the choose song menu](https://static.miraheze.org/projectsekaiwiki/thumb/1/10/Update_Notes_2.4.0_4.png/1000px-Update_Notes_2.4.0_4.png)
       `,
       tags: ["playlist", "favorite", "favourite"],
-      date: null,
     },
     {
       name: "Focus Camera",
@@ -152,7 +148,6 @@ const v2_4_0: UpdateType = {
       ![Image showing focus camera being used during a virutal live](https://static.miraheze.org/projectsekaiwiki/thumb/7/70/Update_Notes_2.4.0_5.png/1000px-Update_Notes_2.4.0_5.png)
       `,
       tags: ["focus", "zoom", "virtual show", "virtual live", "vlive"],
-      date: null,
     },
     {
       name: "Always Change Challenge Show Teams",
@@ -160,7 +155,6 @@ const v2_4_0: UpdateType = {
       - After the update, you will now be able to check and change the setup of each character for Challenge Live at any times, even after you have finished your daily Challenge Live.
       `,
       tags: ["challenge show", "challenge live"],
-      date: null,
     },
     {
       name: "3DMV Viewer Character Costume Select",
@@ -171,7 +165,6 @@ const v2_4_0: UpdateType = {
       ![Image of the 3DMV viewer costume select](https://static.miraheze.org/projectsekaiwiki/thumb/d/d3/Update_Notes_2.4.0_6.png/1000px-Update_Notes_2.4.0_6.png)
       `,
       tags: ["outfit select"],
-      date: null,
     },
     {
       name: "Original MV and 2DMV in the MV Viewer",
@@ -182,7 +175,6 @@ const v2_4_0: UpdateType = {
       ![Image showing 2DMV in the MV Viewer](https://static.miraheze.org/projectsekaiwiki/thumb/2/2e/Update_Notes_2.4.0_7.png/1000px-Update_Notes_2.4.0_7.png)
       `,
       tags: ["ogmv", "movie", "video"],
-      date: null,
     },
     {
       name: "Batch Download Song and MV Data",
@@ -194,7 +186,6 @@ const v2_4_0: UpdateType = {
       - When you batch download the MVS data, the Songs & MVS settings in "Data Management" option will be automatically set to "Save/Keep All Data", so please do watch your device's remaining space.
       `,
       tags: ["2dmv", "3dmv", "preload", "ogmv", "video"],
-      date: null,
     },
     {
       name: "Adjustments to FES Scorer Skill",
@@ -206,7 +197,6 @@ const v2_4_0: UpdateType = {
       - There will be no change in skill effect value.
       `,
       tags: ["colofes", "colorful festival"],
-      date: null,
     },
     {
       name: "Adjustments and Bug Fixes",
@@ -228,14 +218,11 @@ const v2_4_0: UpdateType = {
         "gacha rates",
         "decimal",
       ],
-      date: null,
     },
   ],
   date: {
     [Server.jp]: new Date(2022, 11, 19),
-    [Server.tw]: null,
-    [Server.en]: null,
-    [Server.kr]: null,
+    [Server.en]: new Date(2023, 11, 20),
   },
 };
 

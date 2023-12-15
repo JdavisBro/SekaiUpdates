@@ -31,7 +31,6 @@ const v2_7_0: UpdateType = {
       ![Image showing a player achieveing the new Live Master - True Master title](https://pjsekai.sega.jp/master-data/image/news/news_thumb_212_jjasaa.png)
       `,
       tags: ["madder skillz", " shin kaiden"],
-      date: null,
     },
     {
       name: "Character Rank Missions Cap Increase",
@@ -57,7 +56,6 @@ const v2_7_0: UpdateType = {
         "vocals",
         "",
       ],
-      date: null,
     },
     {
       name: "Solo Show & Ranked Match Rewards Change",
@@ -69,7 +67,6 @@ const v2_7_0: UpdateType = {
       ^  - Adjusted from 50% --> 100% of the rewards from Multi Live
       `,
       tags: ["solo live"],
-      date: null,
     },
     {
       name: "Event Shop for Unit Arc Enders",
@@ -96,7 +93,6 @@ const v2_7_0: UpdateType = {
       Again, please note that everything above will be applied to the last Unit Events ONLY. The items that can be exchanged in other events will remain the same.
       `,
       tags: [],
-      date: null,
     },
     {
       name: "Stamps in Custom Profiles",
@@ -104,7 +100,6 @@ const v2_7_0: UpdateType = {
       - You will now be able to add Stamps to your Custom Profiles.
       `,
       tags: [],
-      date: null,
     },
     {
       name: "Wish Piece Shop Update",
@@ -121,7 +116,6 @@ const v2_7_0: UpdateType = {
         "another vocal",
         "stamp voucher",
       ],
-      date: null,
     },
     {
       name: "Title Missions Cap Increase",
@@ -145,7 +139,6 @@ const v2_7_0: UpdateType = {
         "read it all",
         "story",
       ],
-      date: null,
     },
     {
       name: "New Text Stamps",
@@ -168,7 +161,6 @@ const v2_7_0: UpdateType = {
       - 25-ji, Nightcord de.!
       `,
       tags: ["stickers"],
-      date: null,
     },
     {
       name: "Other Adjustments",
@@ -180,7 +172,6 @@ const v2_7_0: UpdateType = {
       - Penalty conditions for players who continuously lose communication in Multi Live (Cheerful Live) have been enhanced.
       `,
       tags: ["gacha guarentee", "team setup", "mv viewer", "disconnect"],
-      date: null,
     },
     {
       name: "Bug Fixes",
@@ -192,14 +183,10 @@ const v2_7_0: UpdateType = {
       - Other minor bug fixes
       `,
       tags: [],
-      date: null,
     },
   ],
   date: {
     [Server.jp]: new Date(2023, 5, 20),
-    [Server.tw]: null,
-    [Server.en]: null,
-    [Server.kr]: null,
   },
 };
 

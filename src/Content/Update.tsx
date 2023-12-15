@@ -19,7 +19,7 @@ export default function Update(props: Props): React.ReactElement | null {
 
   if (!props.showPastUpdates) {
     const updateDate = props.update.date[props.server];
-    if (updateDate !== null) {
+    if (updateDate !== undefined) {
       if (updateDate < currentDate) {
         return null;
       }
@@ -45,9 +45,9 @@ export default function Update(props: Props): React.ReactElement | null {
   const visibleFeatures = props.update.features.map((feature, index) => {
     if (props.server != Server.jp && !props.showPastUpdates) {
       const featureDates = feature.date;
-      if (featureDates !== null) {
+      if (featureDates !== undefined) {
         const featureDate = featureDates[props.server];
-        if (featureDate !== null) {
+        if (featureDate !== undefined) {
           if (featureDate < currentDate) {
             return null;
           }
@@ -81,7 +81,7 @@ export default function Update(props: Props): React.ReactElement | null {
         showPastUpdates={props.showPastUpdates}
         search={props.search}
         feature={feature}
-        updateName={props.update.version}
+        update={props.update}
         setDisplayFeature={props.setDisplayFeature}
       />
     );

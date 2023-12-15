@@ -52,9 +52,9 @@ export default function BigFeature(props: Props): React.ReactElement | null {
   let dateText = "";
   if (props.server != Server.jp) {
     const featureDates = feature.date;
-    if (featureDates !== null) {
+    if (featureDates !== undefined) {
       const featureDate = featureDates[props.server];
-      if (featureDate !== null) {
+      if (featureDate !== undefined) {
         dateText = `Early ${Server[
           props.server
         ].toUpperCase()}: ${featureDate.toLocaleDateString()}`;
@@ -62,7 +62,7 @@ export default function BigFeature(props: Props): React.ReactElement | null {
     }
     if (dateText == "") {
       const updateDate = update.date[props.server];
-      if (updateDate !== null) {
+      if (updateDate !== undefined) {
         dateText = `${Server[
           props.server
         ].toUpperCase()}: ${updateDate.toLocaleDateString()}`;

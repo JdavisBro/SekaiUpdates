@@ -47,9 +47,7 @@ const v2_5_0: UpdateType = {
         "disc",
       ],
       date: {
-        [Server.tw]: null,
         [Server.en]: new Date(2023, 8, 10),
-        [Server.kr]: null,
       },
     },
     {
@@ -125,9 +123,7 @@ const v2_5_0: UpdateType = {
       `,
       tags: ["colorful+", "colorful plus", "colourful+"],
       date: {
-        [Server.tw]: null,
         [Server.en]: new Date(2023, 10, 29),
-        [Server.kr]: null,
       },
     },
     {
@@ -141,7 +137,6 @@ const v2_5_0: UpdateType = {
       ![Image of the updated song select screen](https://static.miraheze.org/projectsekaiwiki/thumb/7/7f/Update_Notes_2.5.0_7.png/1000px-Update_Notes_2.5.0_7.png)
       `,
       tags: ["song list", "producers name", "producer name"],
-      date: null,
     },
     {
       name: "Limited Costume Sales Updates",
@@ -152,7 +147,6 @@ const v2_5_0: UpdateType = {
       ![Image showing buying a costume in the updated shop](https://static.miraheze.org/projectsekaiwiki/thumb/3/3d/Update_Notes_2.5.0_8.png/1000px-Update_Notes_2.5.0_8.png)
       `,
       tags: ["costume", "shop"],
-      date: null,
     },
     {
       name: "Other Updates and Changes",
@@ -169,14 +163,10 @@ const v2_5_0: UpdateType = {
         "fast foward",
         "audio",
       ],
-      date: null,
     },
   ],
   date: {
     [Server.jp]: new Date(2023, 1, 21),
-    [Server.tw]: null,
-    [Server.en]: null,
-    [Server.kr]: null,
   },
 };
 
