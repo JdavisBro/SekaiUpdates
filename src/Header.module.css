@@ -25,10 +25,9 @@
 }
 
 .headerLogoContainer {
-  height: 100%;
+  height: 50%;
 }
 
 .headerLogo {
-  margin-top: 50%;
-  height: 50%;
+  height: 100%;
 }
