@@ -15,7 +15,7 @@ export default function Update(props: Props): React.ReactElement | null {
   const currentDate = new Date(Date.now());
 
   if (!props.showPastUpdates) {
-    var updateDate = props.update.date[props.server];
+    const updateDate = props.update.date[props.server];
     if (updateDate !== null) {
       if (updateDate < currentDate) {
         return null;
@@ -23,27 +23,27 @@ export default function Update(props: Props): React.ReactElement | null {
     }
   }
 
-  var description: React.ReactElement | null = null;
+  let description: React.ReactElement | null = null;
   if (props.update.description) {
     description = (
       <div className={styles.description}>{props.update.description}</div>
     );
   }
 
-  var currentServerDate = "";
+  let currentServerDate = "";
   if (props.server != Server.jp && props.update.date[props.server]) {
     currentServerDate = `${Server[
       props.server
     ].toUpperCase()}: ${props.update.date[props.server]?.toLocaleDateString()}`;
   }
 
-  var anyVisible = false;
+  let anyVisible = false;
 
-  var visibleFeatures = props.update.features.map((feature) => {
+  const visibleFeatures = props.update.features.map((feature, index) => {
     if (props.server != Server.jp && !props.showPastUpdates) {
-      var featureDates = feature.date;
+      const featureDates = feature.date;
       if (featureDates !== null) {
-        var featureDate = featureDates[props.server];
+        const featureDate = featureDates[props.server];
         if (featureDate !== null) {
           if (featureDate < currentDate) {
             return null;
@@ -52,7 +52,7 @@ export default function Update(props: Props): React.ReactElement | null {
       }
     }
     if (props.search != "") {
-      var inSearch = false;
+      let inSearch = false;
       if (feature.name.toLowerCase().includes(props.search.toLowerCase())) {
         inSearch = true;
       }
@@ -73,7 +73,7 @@ export default function Update(props: Props): React.ReactElement | null {
     anyVisible = true;
     return (
       <Feature
-        key={feature.name}
+        key={index}
         server={props.server}
         showPastUpdates={props.showPastUpdates}
         search={props.search}

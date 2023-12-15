@@ -26,9 +26,9 @@ export default function Header(props: Props): React.ReactElement {
     serverOptions.push(
       <option
         key={key}
-        onClick={useCallback(() => {
+        onClick={() => {
           props.setServer(key);
-        }, [props])}
+        }}
         value={key}
       >
         {value}

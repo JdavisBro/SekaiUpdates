@@ -13,14 +13,23 @@ type Props = {
 };
 
 export default function BigFeature(props: Props): React.ReactElement | null {
+  const closeButton = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (closeButton.current) {
+      closeButton.current.focus();
+    }
+  }, []);
+
   if (props.displayFeature == "" || props.displayFeature == "#") {
     return null;
   }
 
-  var [versionName, featureName] = props.displayFeature.slice(1).split("/");
+  const featureSplit = props.displayFeature.slice(1).split("/");
+  const versionName = featureSplit[0]
+  let featureName = decodeURI(featureSplit[1])
   featureName = decodeURI(featureName);
   console.log(versionName, featureName);
-  var update: UpdateType | null = null;
+  let update: UpdateType | null = null;
   for (const upd of updates) {
     if (upd.version == versionName) {
       update = upd;
@@ -30,7 +39,7 @@ export default function BigFeature(props: Props): React.ReactElement | null {
     return null;
   }
 
-  var feature: FeatureType | null = null;
+  let feature: FeatureType | null = null;
   for (const feat of update.features) {
     if (feat.name == featureName) {
       feature = feat;
@@ -40,11 +49,11 @@ export default function BigFeature(props: Props): React.ReactElement | null {
     return null;
   }
 
-  var dateText = "";
+  let dateText = "";
   if (props.server != Server.jp) {
-    var featureDates = feature.date;
+    const featureDates = feature.date;
     if (featureDates !== null) {
-      var featureDate = featureDates[props.server];
+      const featureDate = featureDates[props.server];
       if (featureDate !== null) {
         dateText = `Early ${Server[
           props.server
@@ -52,7 +61,7 @@ export default function BigFeature(props: Props): React.ReactElement | null {
       }
     }
     if (dateText == "") {
-      var updateDate = update.date[props.server];
+      const updateDate = update.date[props.server];
       if (updateDate !== null) {
         dateText = `${Server[
           props.server
@@ -60,13 +69,6 @@ export default function BigFeature(props: Props): React.ReactElement | null {
       }
     }
   }
-
-  const closeButton = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    if (closeButton.current) {
-      closeButton.current.focus();
-    }
-  }, []);
 
   return (
     <>
@@ -118,6 +120,7 @@ export default function BigFeature(props: Props): React.ReactElement | null {
                 className={styles.close}
                 title="Close"
                 ref={closeButton}
+                autoFocus
               >
                 ✖
               </div>

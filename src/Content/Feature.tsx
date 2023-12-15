@@ -13,11 +13,11 @@ type Props = {
 };
 
 export default function Feature(props: Props): React.ReactElement | boolean {
-  var dateText = "";
+  let dateText = "";
   if (props.server != Server.jp) {
-    var featureDates = props.feature.date;
+    const featureDates = props.feature.date;
     if (featureDates !== null) {
-      var featureDate = featureDates[props.server];
+      const featureDate = featureDates[props.server];
       if (featureDate !== null) {
         // only ran if this one is supposed to be visible
         dateText = `Early ${Server[
