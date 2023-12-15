@@ -13,6 +13,7 @@ type Props = {
 
 export default function Content(props: Props): React.ReactElement {
   const [search, setSearch] = useState("");
+  const [searchDescription, setSearchDescription] = useState(false);
 
   const searchRef = useRef<HTMLInputElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -34,6 +35,15 @@ export default function Content(props: Props): React.ReactElement {
             }}
             ref={searchRef}
           />
+          <label htmlFor="searchDescription"> Search Descriptions: </label>
+          <input
+            type="checkbox"
+            id="searchDescription"
+            checked={searchDescription}
+            onChange={(e) => {
+              setSearchDescription(e.target.checked);
+            }}
+          />
         </div>
         <div
           className={styles.updatecontainer}
@@ -50,6 +60,7 @@ export default function Content(props: Props): React.ReactElement {
               server={props.server}
               showPastUpdates={props.showPastUpdates}
               search={search}
+              searchDescription={searchDescription}
               update={update}
               setDisplayFeature={props.setDisplayFeature}
             />

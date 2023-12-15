@@ -8,6 +8,7 @@ type Props = {
   server: Server;
   showPastUpdates: boolean;
   search: string;
+  searchDescription: boolean;
   update: UpdateType;
   setDisplayFeature: (newHash: string) => void;
 };
@@ -56,19 +57,20 @@ export default function Update(props: Props): React.ReactElement | null {
     }
     if (props.search != "") {
       let inSearch = false;
-      if (feature.name.toLowerCase().includes(props.search.toLowerCase())) {
-        inSearch = true;
-      }
-      feature.tags.forEach((value) => {
-        if (value.toLowerCase().includes(props.search.toLowerCase())) {
-          inSearch = true;
-        }
-      });
+      const search = props.search.toLowerCase();
       if (
-        `version ${props.update.version}`.includes(props.search.toLowerCase())
+        feature.name.toLowerCase().includes(search) ||
+        (props.searchDescription &&
+          feature.description.toLowerCase().includes(search)) ||
+        `version ${props.update.version}`.includes(search)
       ) {
         inSearch = true;
       }
+      feature.tags.forEach((value) => {
+        if (value.toLowerCase().includes(search)) {
+          inSearch = true;
+        }
+      });
       if (!inSearch) {
         return null;
       }
