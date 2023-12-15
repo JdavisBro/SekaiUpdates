@@ -456,7 +456,7 @@ const v3_0_0: UpdateType = {
       tags: ["mastery bonus"],
     },
     {
-      name: "Game Data Transfer Restriction Update",
+      name: "Account Transfer Restriction Update",
       description: `
       - BEFORE
       ^  - Players who have reached TOP *1000* in ranking AT LEAST ONCE in the first 24 hours after an event has started can transfer their game data to another device TWICE during the event period.
@@ -464,7 +464,7 @@ const v3_0_0: UpdateType = {
       ^  - Players who have reached TOP *300* in ranking AT LEAST ONCE in the first 24 hours after an event has started can transfer their game data to another device TWICE during the event period.
       - This update will apply for events after the 3rd Anniversary.
       `,
-      tags: [],
+      tags: ["account sharing", "account syncing", "game data"],
     },
     {
       name: "Event Exchange Item Adjustment",

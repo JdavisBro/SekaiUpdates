@@ -73,7 +73,7 @@ const v2_4_0: UpdateType = {
       tags: ["show result"],
     },
     {
-      name: "Game Data Transfer Restriction",
+      name: "Account Transfer Restriction",
       description: `
       - In order to prevent players from doing "account sharing" during events (basically where several players are sharing and take turns playing on one account), which is considered as a form of cheating, the number of times an account's game data can be transferred will be limited.
       - This restriction will be applied to players who have reached the top 1000 in ranking AT LEAST ONCE in the first 24 hours after the start of an event.
@@ -84,7 +84,7 @@ const v2_4_0: UpdateType = {
       properly, and asking for everyone's understanding and cooperation in order to build a fair gaming
       environment.
       `,
-      tags: ["account sharing", "account syncing"],
+      tags: ["account sharing", "account syncing", "game data"],
     },
     {
       name: "Live Mission Adjustments",

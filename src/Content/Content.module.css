@@ -90,6 +90,7 @@
 }
 
 .feature > .left {
+  box-sizing: border-box;
   flex-shrink: 0;
   flex-grow: 1;
   padding-left: 2px;
@@ -100,7 +101,8 @@
 }
 
 .feature > .right {
-  min-width: 25%;
+  box-sizing: border-box;
+  min-width: 15%;
   padding-right: 2px;
   float: none;
   word-wrap: break-word;
