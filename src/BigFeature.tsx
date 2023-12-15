@@ -25,8 +25,8 @@ export default function BigFeature(props: Props): React.ReactElement | null {
   }
 
   const featureSplit = props.displayFeature.slice(1).split("/");
-  const versionName = featureSplit[0]
-  let featureName = decodeURI(featureSplit[1])
+  const versionName = featureSplit[0];
+  let featureName = decodeURI(featureSplit[1]);
   featureName = decodeURI(featureName);
   console.log(versionName, featureName);
   let update: UpdateType | null = null;

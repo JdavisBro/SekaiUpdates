@@ -55,7 +55,19 @@ const v3_0_0: UpdateType = {
       ![Nightcord at 25:00 Updated Designs](https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_iyioqheq.png)
       ![Virtual Singer Subunit Updated Designs](https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_nbuagu.png)
       `,
-      tags: ["2*", "2 stars", "key art", "portrait", "live2d", "chibi", "map sprites", "unit costume", "unit songs", "unit stages", "new profiles"],
+      tags: [
+        "2*",
+        "2 stars",
+        "key art",
+        "portrait",
+        "live2d",
+        "chibi",
+        "map sprites",
+        "unit costume",
+        "unit songs",
+        "unit stages",
+        "new profiles",
+      ],
       date: null,
     },
     {
@@ -91,7 +103,13 @@ const v3_0_0: UpdateType = {
       - The 3DMVs are the following: Umiyuri Kaiteitan, IF, Cinema, TONDEMO-WONDERZ, IDSMILE
       - The above 3DMVs are also already available on Project Sekai's official YouTube channel.
       `,
-      tags: ["tale of the deep sea lily", "if", "cinema", "tondemo wonderz", "idsmile"],
+      tags: [
+        "tale of the deep sea lily",
+        "if",
+        "cinema",
+        "tondemo wonderz",
+        "idsmile",
+      ],
       date: null,
     },
     {

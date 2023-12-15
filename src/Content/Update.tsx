@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { Server } from "../types/ServerType";
 import type { UpdateType } from "../types/UpdateType";
 import styles from "./Content.module.css";
@@ -12,6 +13,8 @@ type Props = {
 };
 
 export default function Update(props: Props): React.ReactElement | null {
+  const featureContainerRef = useRef<HTMLDivElement>(null);
+
   const currentDate = new Date(Date.now());
 
   if (!props.showPastUpdates) {
@@ -100,7 +103,22 @@ export default function Update(props: Props): React.ReactElement | null {
           </h4>
         </div>
         {description}
-        <div className={styles.featurelist}>{visibleFeatures}</div>
+        <div
+          className={styles.featurelist}
+          onWheel={(e) => {
+            if (featureContainerRef.current) {
+              if (
+                featureContainerRef.current.scrollHeight >
+                featureContainerRef.current.clientHeight
+              ) {
+                e.stopPropagation();
+              }
+            }
+          }}
+          ref={featureContainerRef}
+        >
+          {visibleFeatures}
+        </div>
       </div>
     </>
   );

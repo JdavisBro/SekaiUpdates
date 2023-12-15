@@ -72,7 +72,7 @@
 }
 
 .featurelist {
-  flex-grow: 1;
+  /* flex-grow: 1; */
   overflow-y: scroll;
   padding-bottom: 10%;
 }

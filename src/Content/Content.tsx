@@ -15,6 +15,7 @@ export default function Content(props: Props): React.ReactElement {
   const [search, setSearch] = useState("");
 
   const searchRef = useRef<HTMLInputElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   return (
     <>
@@ -34,7 +35,15 @@ export default function Content(props: Props): React.ReactElement {
             ref={searchRef}
           />
         </div>
-        <div className={styles.updatecontainer}>
+        <div
+          className={styles.updatecontainer}
+          onWheel={(e) => {
+            if (containerRef.current) {
+              containerRef.current.scrollLeft += e.deltaY;
+            }
+          }}
+          ref={containerRef}
+        >
           {updates.map((update) => (
             <Update
               key={update.version}
