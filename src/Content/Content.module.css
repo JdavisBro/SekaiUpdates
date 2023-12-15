@@ -81,7 +81,7 @@
   white-space: normal;
   min-height: 6%;
   border-radius: 8px;
-  background-color: var(--header-color);
+  background-color: var(--feature-color);
   margin-bottom: 3px;
   cursor: pointer;
   display: flex;
@@ -90,10 +90,11 @@
 }
 
 .feature > .left {
+  margin: 0;
   box-sizing: border-box;
   flex-shrink: 0;
   flex-grow: 1;
-  padding-left: 2px;
+  padding-left: 4px;
   word-wrap: break-word;
   overflow-wrap: break-word;
   min-width: 40%;
@@ -101,9 +102,10 @@
 }
 
 .feature > .right {
+  margin: 0;
   box-sizing: border-box;
-  min-width: 15%;
-  padding-right: 2px;
+  min-width: 25%;
+  padding-right: 4px;
   float: none;
   word-wrap: break-word;
   overflow-wrap: break-word;

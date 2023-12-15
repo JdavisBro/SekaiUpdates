@@ -1,8 +1,12 @@
 :root {
+  background-color: #242424;
   --header-color: #383838;
   --secondary-color: #4d4d4d;
   --tertiary-color: #5e5e5e;
+  
+  --feature-color: #383838;
 
+  color: rgba(255, 255, 255, 0.87);
   --secondary-text: #d3d3d3;
 
   font-family: Calibri, "Trebuchet MS", sans-serif;
@@ -11,8 +15,6 @@
   font-size: 1.05em;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -36,14 +38,15 @@ body {
 
 @media (prefers-color-scheme: light) {
   :root {
+    background-color: #ffffff;
     --header-color: rgb(202, 202, 202);
-    --secondary-color: #d6d6d6;
-    --tertiary-color: #bbbbbb;
+    --secondary-color: #cfcfcf;
+    --tertiary-color: #dfdfdf;
 
-    --secondary-text: #1e2c36;
+    --feature-color: #b6b6b6;
 
     color: #213547;
-    background-color: #ffffff;
+    --secondary-text: #3c4a55;
   }
   a:hover {
     color: #747bff;

@@ -34,7 +34,7 @@ export default function Update(props: Props): React.ReactElement | null {
     );
   }
 
-  let currentServerDate = "";
+  let currentServerDate = "​"; // Zero-Width Space
   if (props.server != Server.jp && props.update.date[props.server]) {
     currentServerDate = `${Server[
       props.server
