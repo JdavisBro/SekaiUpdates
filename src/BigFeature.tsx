@@ -95,7 +95,14 @@ export default function BigFeature(props: Props): React.ReactElement | null {
         ].toUpperCase()}: ${featureDate.toLocaleDateString()}`;
       }
     }
-    if (dateText == "") {
+    const notIncludeds = feature.notIncluded;
+    if (notIncludeds !== undefined && !dateText) {
+      const notIncluded = notIncludeds[props.server];
+      if (notIncluded !== undefined) {
+        dateText = `${Server[props.server].toUpperCase()}: Not Included`;
+      }
+    }
+    if (!dateText) {
       const updateDate = update.date[props.server];
       if (updateDate !== undefined) {
         dateText = `${Server[
