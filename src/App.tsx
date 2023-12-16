@@ -7,6 +7,11 @@ import { Server } from "./types/ServerType";
 import BigFeature from "./BigFeature";
 
 function App() {
+  if (import.meta.env.MODE == "development") {
+    document.getElementsByTagName("title")[0].innerText =
+      "[DEV] Project Sekai Updates";
+  }
+
   const lightMode = useMedia("(prefers-color-scheme: light)");
 
   const [server = Server.en, setServer] = useLocalStorage<Server>(
