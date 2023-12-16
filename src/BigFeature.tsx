@@ -68,6 +68,7 @@ export default function BigFeature(props: Props): React.ReactElement | null {
     }
   }
   if (update == null) {
+    props.setDisplayFeature("#"); // Publicly executed for this
     return null;
   }
 
@@ -78,6 +79,7 @@ export default function BigFeature(props: Props): React.ReactElement | null {
     }
   }
   if (feature == null) {
+    props.setDisplayFeature("#"); // Publicly executed for this
     return null;
   }
 
