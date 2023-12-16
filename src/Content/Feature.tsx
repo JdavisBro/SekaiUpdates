@@ -57,8 +57,9 @@ export default function Feature(props: Props): React.ReactElement | boolean {
         }}
         className={styles.feature}
       >
-        <h2 className={styles.left}>{props.feature.name}</h2>
-        <h4 className={styles.right}>
+        <h2 className={styles.featureleft}>{props.feature.name}</h2>
+        <div className={styles.featuremiddle}></div>
+        <h4 className={styles.featureright}>
           {JoinElements(
             dateText.split("/"),
             <>
