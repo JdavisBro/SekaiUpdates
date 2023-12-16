@@ -77,6 +77,8 @@ const v3_1_0: UpdateType = {
       |    2* |   2.0% |         |  0.0% |  0.2% |  0.4% |  0.6% |  0.8% |  1.0% |             | 0.00% | 0.10% | 0.40% | 1.00% |
       |    1* |   1.0% |         |  0.0% |  0.1% |  0.2% |  0.3% |  0.4% |  0.5% |             | 0.00% | 0.05% | 0.20% | 0.50% |
 
+      ![World Link Support Team Selection Screen](https://pjsekai.sega.jp/master-data/image/news/news_thumb_240_ninfsk.png)
+
       ## Other Things to Note
       - Maintenance may occur in case there are problems during the event period. When a problem occurs, maintenance will immediately be performed due to the format and short duration of each chapter ranking.
       - In the case of the event cannot run properly during a character chapter for more than 24 hours, a make-up chapter event for the affected character chapter will be scheduled to run after the last character chapter is finished.
