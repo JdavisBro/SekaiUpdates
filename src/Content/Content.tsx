@@ -29,7 +29,7 @@ export default function Content(props: Props): React.ReactElement {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             onKeyUp={(e) => {
-              if (e.key == "Enter" && searchRef.current) {
+              if ((e.key == "Enter" || e.key == " ") && searchRef.current) {
                 searchRef.current.blur();
               }
             }}

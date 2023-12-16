@@ -64,6 +64,12 @@
   max-width: 50%;
 }
 
+.description table, .description th, .description td {
+  border: 1px solid;
+  border-collapse: collapse;
+  padding: 6px;
+}
+
 @media all and (orientation: portrait) {
   .box {
     width: 95%;

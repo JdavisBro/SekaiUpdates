@@ -37,7 +37,7 @@ export default function AboutPage(props: Props): React.ReactElement {
                   props.setDisplayFeature("#");
                 }}
                 onKeyDown={(event) => {
-                  if (event.key == "Enter") {
+                  if (event.key == "Enter" || event.key == " ") {
                     props.setDisplayFeature("#");
                   }
                 }}

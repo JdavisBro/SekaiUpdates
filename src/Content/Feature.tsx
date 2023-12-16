@@ -51,7 +51,7 @@ export default function Feature(props: Props): React.ReactElement | boolean {
         tabIndex={0}
         onClick={handleSetDisplayFeature}
         onKeyDown={(event) => {
-          if (event.key == "Enter") {
+          if (event.key == "Enter" || event.key == " ") {
             handleSetDisplayFeature();
           }
         }}

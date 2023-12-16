@@ -6,6 +6,7 @@ import updates from "./updates/updates";
 import { useEffect, useRef } from "react";
 import JoinElements from "./utils/JoinElements";
 import AboutPage from "./AboutPage";
+import remarkGfm from "remark-gfm";
 
 type Props = {
   server: Server;
@@ -148,7 +149,8 @@ export default function BigFeature(props: Props): React.ReactElement | null {
                   props.setDisplayFeature("#");
                 }}
                 onKeyDown={(event) => {
-                  if (event.key == "Enter") {
+                  console.log(event.key);
+                  if (event.key == "Enter" || event.key == " ") {
                     props.setDisplayFeature("#");
                   }
                 }}
@@ -165,7 +167,7 @@ export default function BigFeature(props: Props): React.ReactElement | null {
             </h2>
           </div>
           <div className={styles.description}>
-            <Markdown>
+            <Markdown remarkPlugins={[remarkGfm]}>
               {feature.description.replace(/^ +(\^| )/gm, "")}
             </Markdown>
           </div>
