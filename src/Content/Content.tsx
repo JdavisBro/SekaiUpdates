@@ -35,15 +35,17 @@ export default function Content(props: Props): React.ReactElement {
             }}
             ref={searchRef}
           />
-          <label htmlFor="searchDescription"> Search Descriptions: </label>
-          <input
-            type="checkbox"
-            id="searchDescription"
-            checked={searchDescription}
-            onChange={(e) => {
-              setSearchDescription(e.target.checked);
-            }}
-          />
+          <span className={styles.nobreak}>
+            <label htmlFor="searchDescription"> Search Descriptions:</label>
+            <input
+              type="checkbox"
+              id="searchDescription"
+              checked={searchDescription}
+              onChange={(e) => {
+                setSearchDescription(e.target.checked);
+              }}
+            />
+          </span>
         </div>
         <div
           className={styles.updatecontainer}

@@ -122,6 +122,10 @@
   height: fit-content;
 }
 
+.nobreak {
+  white-space: nowrap;
+}
+
 @media all and (orientation: portrait) {
   .update {
     width: 85%;
