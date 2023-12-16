@@ -39,6 +39,7 @@ function App() {
           server={server}
           setShowPastUpdates={setShowPastUpdates}
           showPastUpdates={showPastUpdates}
+          setDisplayFeature={setDisplayFeature}
         />
         <Content
           server={server}

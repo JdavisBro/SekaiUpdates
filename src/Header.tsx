@@ -3,6 +3,7 @@ import { useCallback } from "react";
 import styles from "./Header.module.css";
 import githubDark from "./assets/github-mark.svg";
 import githubLight from "./assets/github-mark-white.svg";
+import info from "./assets/info.svg";
 import { Server, servers } from "./types/ServerType";
 
 type Props = {
@@ -11,6 +12,7 @@ type Props = {
   server: Server;
   setShowPastUpdates: React.Dispatch<React.SetStateAction<boolean | undefined>>;
   showPastUpdates: boolean;
+  setDisplayFeature: (newhash: string) => void;
 };
 
 export default function Header(props: Props): React.ReactElement {
@@ -70,6 +72,9 @@ export default function Header(props: Props): React.ReactElement {
           target="_blank"
         >
           {githubLogo}
+        </a>
+        <a className={`${styles.item} ${styles.infoButton}`} href="#About">
+          <img alt="About Button" src={info} />
         </a>
       </div>
     </>

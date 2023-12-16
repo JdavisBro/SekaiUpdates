@@ -31,3 +31,19 @@
 .headerLogo {
   height: 100%;
 }
+
+.infoButton {
+  height: 45%;
+}
+
+.infoButton img {
+  margin-top: 0.5px;
+  height: 100%;
+  filter: invert();
+}
+
+@media (prefers-color-scheme: light) {
+  .infoButton img {
+    filter: none;
+  }
+}

@@ -5,6 +5,7 @@ import { FeatureType, UpdateType } from "./types/UpdateType";
 import updates from "./updates/updates";
 import { useEffect, useRef } from "react";
 import JoinElements from "./utils/JoinElements";
+import AboutPage from "./AboutPage";
 
 type Props = {
   server: Server;
@@ -43,6 +44,17 @@ export default function BigFeature(props: Props): React.ReactElement | null {
 
   if (props.displayFeature == "" || props.displayFeature == "#") {
     return null;
+  }
+
+  if (props.displayFeature == "#About") {
+    return (
+      <AboutPage
+        displayFeature={props.displayFeature}
+        setDisplayFeature={props.setDisplayFeature}
+        rootDivRef={rootDivRef}
+        closeButton={closeButton}
+      />
+    );
   }
 
   const featureSplit = props.displayFeature.slice(1).split("/");

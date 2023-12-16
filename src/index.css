@@ -3,7 +3,7 @@
   --header-color: #383838;
   --secondary-color: #4d4d4d;
   --tertiary-color: #5e5e5e;
-  
+
   --feature-color: #383838;
 
   color: rgba(255, 255, 255, 0.87);
@@ -25,7 +25,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #a9aeff;
   text-decoration: inherit;
 }
 a:hover {
@@ -48,8 +48,11 @@ body {
     color: #213547;
     --secondary-text: #3c4a55;
   }
+  a {
+    color: #646cff;
+  }
   a:hover {
-    color: #747bff;
+    color: #434cff;
   }
   button {
     background-color: #f9f9f9;
