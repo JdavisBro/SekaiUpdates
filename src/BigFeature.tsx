@@ -18,7 +18,28 @@ export default function BigFeature(props: Props): React.ReactElement | null {
     if (closeButton.current) {
       closeButton.current.focus();
     }
-  }, []);
+  }, [closeButton]);
+
+  const rootDivRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (rootDivRef.current && closeButton.current) {
+        if (e.key == "Tab") {
+          if (
+            !rootDivRef.current.contains(document.activeElement) ||
+            (document.activeElement == closeButton.current &&
+              e.getModifierState("Shift"))
+          ) {
+            closeButton.current.focus();
+            e.preventDefault();
+          }
+        }
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  });
 
   if (props.displayFeature == "" || props.displayFeature == "#") {
     return null;
@@ -78,6 +99,7 @@ export default function BigFeature(props: Props): React.ReactElement | null {
         className={styles.container}
         role="dialog"
         aria-labelledby="bigTitle"
+        ref={rootDivRef}
       >
         <div
           onClick={(e) => {
@@ -124,7 +146,9 @@ export default function BigFeature(props: Props): React.ReactElement | null {
                 ✖
               </div>
             </div>
-            <h2 className={styles.name}>{feature.name}</h2>
+            <h2 id="bigTitle" className={styles.name}>
+              {feature.name}
+            </h2>
           </div>
           <div className={styles.description}>
             <Markdown>

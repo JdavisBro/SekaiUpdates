@@ -17,6 +17,7 @@ export default function Header(props: Props): React.ReactElement {
   const githubLogo = (
     <img
       className={styles.headerLogo}
+      alt="GitHub Logo"
       src={props.lightMode ? githubDark : githubLight}
     />
   );

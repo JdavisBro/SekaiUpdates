@@ -29,7 +29,10 @@ function App() {
 
   return (
     <>
-      <div className={styles.container}>
+      <div
+        className={styles.container}
+        aria-hidden={displayFeature.replace("#", "") != ""}
+      >
         <Header
           lightMode={lightMode}
           setServer={setServer}
