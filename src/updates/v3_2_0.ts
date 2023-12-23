@@ -101,6 +101,7 @@ const v3_2_0: UpdateType = {
       - Near
       - alive
       - from Y to Y
+      - 「１」
       - Heartbeat #0822
       ## MASTER 27 ↗ 28
       - Charles
@@ -132,7 +133,7 @@ const v3_2_0: UpdateType = {
       - Cendrillon 10th Anniversary
       - As You Like It
       - Cutlery
-      - \\* Hello, Planet.
+      - ＊Hello, Planet.
       - Bocca della Veritå
       - Miku
       - Beat Eater
