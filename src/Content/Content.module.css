@@ -76,8 +76,8 @@
 }
 
 .featurelist {
-  overflow-y: scroll;
-  padding-bottom: 10%;
+  overflow-y: auto;
+  padding-bottom: 2%;
 }
 
 .feature {
@@ -129,5 +129,9 @@
 @media all and (orientation: portrait) {
   .update {
     width: 85%;
+  }
+
+  .featurelist {
+    padding-bottom: 10%;
   }
 }
