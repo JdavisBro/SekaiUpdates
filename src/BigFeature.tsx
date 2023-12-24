@@ -175,7 +175,7 @@ export default function BigFeature(props: Props): React.ReactElement | null {
           </div>
           <div className={styles.description}>
             <Markdown remarkPlugins={[remarkGfm]}>
-              {feature.description.replace(/^ +(\^| )/gm, "")}
+              {feature.description}
             </Markdown>
           </div>
         </div>

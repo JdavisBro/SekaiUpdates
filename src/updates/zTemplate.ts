@@ -8,7 +8,7 @@ const v3_X_0: UpdateType = {
     {
       name: "name",
       description: `
-      desc
+desc
       `,
       tags: [],
     },
