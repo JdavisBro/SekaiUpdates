@@ -61,7 +61,7 @@ const v3_2_0: UpdateType = {
 Due to the changes in the requirements to get the title [Never Give Up], players who already have this Title will be given the amount of Crystals that have been used to get this Title.
 ### [Eligible Players]
 - Players who have already made progress for the mission [Clear 1 live by using the "Continue" option at least 5 times] at least 1-4 times before v3.1.5.
-- Players who already have the Title [Never Give Up] before vl.3.5.
+- Players who already have the Title [Never Give Up] before v3.1.5.
 ### [Compensation Given]
 - 10-50 Crystals (depending on your progress)
 - Compensation will be given and automatically sent to your present box when you log in after updating the game to v3.2.0.
