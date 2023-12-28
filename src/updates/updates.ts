@@ -16,7 +16,7 @@ const updates: UpdateType[] = [
   v2_8_0,
   v3_0_0,
   v3_1_0,
-  v3_2_0
+  v3_2_0,
 ];
 
 export default updates;
