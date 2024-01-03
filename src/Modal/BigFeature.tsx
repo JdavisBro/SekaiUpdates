@@ -7,7 +7,7 @@ import JoinElements from "../utils/JoinElements";
 import styles from "./Modal.module.css";
 import { Server } from "../types/ServerType";
 import { FeatureType, UpdateType } from "../types/UpdateType";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 type Props = {
   server: Server;
@@ -18,11 +18,24 @@ type Props = {
 export default function BigFeature(props: Props): React.ReactElement | null {
   const featureSplit = props.displayFeature.slice(1).split("/");
 
+  const selectedHeader = useRef<Element | null>(null);
+
   const scrollTo = featureSplit[2];
   useEffect(() => {
+    if (
+      selectedHeader.current &&
+      selectedHeader.current.classList.contains(styles.selectedHeader)
+    ) {
+      selectedHeader.current.classList.remove(styles.selectedHeader);
+      selectedHeader.current = null;
+    }
     if (scrollTo) {
       const elem = document.getElementById(scrollTo);
       elem?.scrollIntoView();
+      if (!elem?.classList.contains(styles.selectedHeader)) {
+        elem?.classList.add(styles.selectedHeader);
+      }
+      selectedHeader.current = elem;
     } else {
       const desc = document.getElementById("modaldesc");
       if (desc) {
