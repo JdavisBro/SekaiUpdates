@@ -16,25 +16,26 @@ A new type of event called "World Link" event will be added to the game after ve
 
 ![Nightcord at 25:00 World Link - Searching for a Reflection Beneath the Waters](https://pjsekai.sega.jp/master-data/image/news/news_thumb_240_nfjhuha.jpg)
 
-## Ranking
+## Ranking;Ranking
+
 - There will be 2 types of ranking in World Link events.  One is "Chapter Ranking", and the other is "Overall Ranking."
 - "Chapter Ranking" will be based on each character chapter (pts calculated from a character chapter)
   - "Chapter Ranking" will have specially-designed Title for players who are in TOP 1OO.
 - "Overall Ranking" will be based on all character chapters (pts calculated from all chapters).
-## Event Exchange/Shop
+## Exchange;Event Exchange/Shop
 - There will be 2 types of event exchange/shop. One is "Chapter Exchange", and the other is "Overall/General Exchange."
 - You'll earn "Chapter Badges" during a character chapter's event period. Each character chapter will have its own "Chapter Badge." You can only exchange items from the "Chapter Exchange" using the respective "Chapter Badges."
 - You'll be able to exchange "Chapter Badges" into "General Badges."
-## New Item: Bottle of Feelings
+## BottleItem;New Item: Bottle of Feelings
 - A brand new item called "Bottle of Feelings" will be available for exchange through "Chapter Exchange."
 - This item will give Character Rank EXP after the World Link event is complete for all units.
-## Support Unit
+## SupportUnit;Support Unit
 - Support Units will be available for each character chapter. You can arrange them freely.
 - A Support Unit can be filled with up to 12 cards.
 - You can only put cards that are NOT in your Main Unit into a Support Unit.
 - You can also ONLY put featured unit members cards or VIRTUAL SINGER cards with the featured unit's sub-unit into a Support Unit.
 - Support Units' total Performance will NOT affect your Main Unit's total Performance. Support Units' skills will also NOT activate during Lives. The only thing that Support Units will affect is the event bonus.
-## Event Bonus
+## EventBonus;Event Bonus
 - Total event bonus: Main Unit + Support Unit
 - The types of bonus differ between Main Unit and Support Units (please look at charts for more details)
 
@@ -47,7 +48,7 @@ A new type of event called "World Link" event will be added to the game after ve
 | Rarity Bonus              |               |       ✓      |
 | Skill Level Bonus         |               |       ✓      |
 
-### Main Unit Bonus
+### MainBonus;Main Unit Bonus
 - Featured/Event Card Bonus: 20.0%
 - Featured Character Bonus: 25.0%
 - Type/Attribute Bonus:
@@ -64,7 +65,7 @@ A new type of event called "World Link" event will be added to the game after ve
 |    2* |  0.0% |  0.2% |  0.4% |  0.6% |  0.8% |  1.0% |
 |    1* |  0.0% |  0.1% |  0.2% |  0.3% |  0.4% |  0.5% |
 
-### Support Unit Bonus
+### SupportBonus;Support Unit Bonus
 - Support Unit Bonus is applied 100% on event points, but 50% on event tokens. (e.g. bonus of 100% total would give 100% more points but only 50% more tokens)
 - Featured Chapter Character Bonus: 5.0%
 - Rarity, Mastery Rank, Skill Level Bonus
@@ -79,7 +80,7 @@ A new type of event called "World Link" event will be added to the game after ve
 
 ![World Link Support Team Selection Screen](https://pjsekai.sega.jp/master-data/image/news/news_thumb_240_ninfsk.png)
 
-## Other Things to Note
+## Notes;Other Things to Note
 - Maintenance may occur in case there are problems during the event period. When a problem occurs, maintenance will immediately be performed due to the format and short duration of each chapter ranking.
 - In the case of the event cannot run properly during a character chapter for more than 24 hours, a make-up chapter event for the affected character chapter will be scheduled to run after the last character chapter is finished.
       `,
@@ -88,11 +89,12 @@ A new type of event called "World Link" event will be added to the game after ve
     {
       name: "Unit Event Limited Cards & 3DMV Another Cut",
       description: `
+## Cards;Unit Event Limited Cards
 - Just like in every other events, event gachas will be held during World Link events, featuring brand new members/cards.
 - The cards added in World Link gachas will be called "Unit Event Limited Members."
 - "Unit Event Limited Members" are cards that are LIMITED to Unit-focused gachas ONLY.
 - For example: All World Link N25 cards will be available in other event gachas linked to events focusing on the unit N25 ONLY. The cards will NOT be available in MIXED unit event gachas.
-# 3DMV Another Cut
+## AnotherCut;3DMV Another Cut
 - The "Unit Event Limited Members" will also have their own unique feature called "3DMV Another Cut." You'll be able to unlock this by leveling the card's Master Rank to rank 2.
 - The "3DMV Another Cut" will take effect when you put the card in your unit and watch the featured 3DMV the card linked to.
 - In this case, the "3DMV Another Cut" will be available for each unit's new unit song (Twilight Light for N25, etc.)

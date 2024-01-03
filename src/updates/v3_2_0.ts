@@ -24,7 +24,7 @@ const v3_2_0: UpdateType = {
     {
       name: "'Show Clear' Mission Changes",
       description: `
-## Content Changes
+## ContentChanges;Content Changes
 - [Title: Never Give Up]
   - Original: Clear 1 Live by using the "Continue" option at least 5 times.
   - Change: Play 5 Solo/Challenge Lives with O HP
@@ -34,7 +34,7 @@ const v3_2_0: UpdateType = {
   - Original: CLEAR a Challenge Live 1 time
   - Change: PLAY a Challenge Live 1 time
 
-## Text-Only Changes
+## TextChanges;Text-Only Changes
 - [Title: 1st Year Students]
   - Original: PLAY 100 Lives while having 5 (ex-)lst year students in your team.
   - Change: CLEAR 100 Lives while having 5 (ex-)lst year students in your team.
@@ -57,12 +57,12 @@ const v3_2_0: UpdateType = {
   - Original: PLAY lives while having [featured character] as the leader in your team for a certain number of times.
   - Change: CLEAR lives while having [featured character] as the leader in your team for a certain number of times.
 
-## "Never Give Up" Compensation
+## Compensation;"Never Give Up" Compensation
 Due to the changes in the requirements to get the title [Never Give Up], players who already have this Title will be given the amount of Crystals that have been used to get this Title.
-### [Eligible Players]
+### CompensationEligable;[Eligible Players]
 - Players who have already made progress for the mission [Clear 1 live by using the "Continue" option at least 5 times] at least 1-4 times before v3.1.5.
 - Players who already have the Title [Never Give Up] before v3.1.5.
-### [Compensation Given]
+### CompensationGiven;[Compensation Given]
 - 10-50 Crystals (depending on your progress)
 - Compensation will be given and automatically sent to your present box when you log in after updating the game to v3.2.0.
       `,
@@ -93,7 +93,18 @@ Ever since the 3rd anniversary renewal, the button tap and skip function in the 
       description: `
 With the number of songs in the game reaching 35, and the addition of APPEND difficulty and TRACE notes, the devs have once again re-reviewed the overall difficulty level for MASTER songs. With this, some songs' difficulty levels will be revised.
 > Please note that this will change only the difficulty levels written for the songs, there will be no changes to the actual charts.
-## MASTER 26 ↗ 27
+- [MASTER 26 ↗ 27](h#26to27)
+- [MASTER 27 ↗ 28](h#27to28)
+- [MASTER 28 ↗ 29](h#28to29)
+- [MASTER 29 ↗ 30](h#29to30)
+- [MASTER 30 ↗ 31](h#30to31)
+- [MASTER 32 ↗ 33](h#32to33)
+- [MASTER 33 ↗ 34](h#33to34)
+- [MASTER 34 ↗ 35](h#34to35)
+- [MASTER 27 ↘ 26](h#27to26)
+- [MASTER 28 ↘ 27](h#28to27)
+- [MASTER 36 ↘ 35](h#36to35)
+## 26to27;MASTER 26 ↗ 27
 - Time Machine
 - Hello/How Are You
 - Melty Land Nightmare
@@ -102,7 +113,7 @@ With the number of songs in the game reaching 35, and the addition of APPEND dif
 - from Y to Y
 - 「１」
 - Heartbeat #0822
-## MASTER 27 ↗ 28
+## 27to28;MASTER 27 ↗ 28
 - Charles
 - Just Be Friends
 - Hand in Hand
@@ -115,7 +126,7 @@ With the number of songs in the game reaching 35, and the addition of APPEND dif
 - Once Upon a Dream
 - Romeo & Cinderella
 - Highlight
-## MASTER 28 ↗ 29
+## 28to29;MASTER 28 ↗ 29
 - Roki
 - Viva Happy
 - Nostalogic
@@ -144,7 +155,7 @@ With the number of songs in the game reaching 35, and the addition of APPEND dif
 - Flyway
 - 39
 - Manimani
-## MASTER 29 ↗ 30
+## 29to30;MASTER 29 ↗ 30
 - Hated By Life
 - Miracle Paint
 - Buriki no Dance
@@ -158,7 +169,7 @@ With the number of songs in the game reaching 35, and the addition of APPEND dif
 - Vampire
 - Stardust Utopia
 - Rin-chan NOW!
-## MASTER 30 ↗ 31
+## 30to31;MASTER 30 ↗ 31
 - Close to gray
 - Awaiting Clear Skies
 - Devil's Manner
@@ -173,25 +184,25 @@ With the number of songs in the game reaching 35, and the addition of APPEND dif
 - Music Like Magic!
 - Mr. Showtime
 - Suki na Koto Dake de li Desu
-## MASTER 32 ↗ 33
+## 32to33;MASTER 32 ↗ 33
 - Lost One's Weeping
 - Hatsune Creation Myth
 - Ghost Rule
-## MASTER 33 ↗ 34
+## 33to34;MASTER 33 ↗ 34
 - The Intense Voice of Hatsune Miku
-## MASTER 34 ↗ 35
+## 34to35;MASTER 34 ↗ 35
 - Six Trillion Years and Overnight Story
 - MACHINEGUN POEM DOLL
 
-## MASTER 27 ↘ 26
+## 27to26;MASTER 27 ↘ 26
 - Goodbye
 - Copycat
 - glow
 - Aioi
-## MASTER 28 ↘ 27
+## 28to27;MASTER 28 ↘ 27
 - Sharing The World
 - Melancholic
-## MASTER 36 ↘ 35
+## 36to35;MASTER 36 ↘ 35
 - Don't Fight The Music
       `,
       tags: [],
