@@ -18,14 +18,14 @@ export default function Modal(props: Props) {
     }
   }, [closeButton]);
 
-  const rootDivRef = useRef<HTMLDivElement>(null);
+  const rootDiv = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (rootDivRef.current && closeButton.current) {
+      if (rootDiv.current && closeButton.current) {
         if (e.key == "Tab") {
           if (
-            !rootDivRef.current.contains(document.activeElement) ||
+            !rootDiv.current.contains(document.activeElement) ||
             (document.activeElement == closeButton.current &&
               e.getModifierState("Shift"))
           ) {
@@ -48,7 +48,7 @@ export default function Modal(props: Props) {
         className={styles.container}
         role="dialog"
         aria-labelledby="bigTitle"
-        ref={rootDivRef}
+        ref={rootDiv}
       >
         <div
           onClick={(e) => {
