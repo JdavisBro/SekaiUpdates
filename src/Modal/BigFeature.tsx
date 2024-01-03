@@ -1,4 +1,4 @@
-import Markdown, { ExtraProps } from "react-markdown";
+import Markdown, { ExtraProps, defaultUrlTransform } from "react-markdown";
 import remarkGfm from "remark-gfm";
 
 import Modal from "./Modal";
@@ -153,6 +153,12 @@ export default function BigFeature(props: Props): React.ReactElement | null {
           h4: headingComponent("h4"),
           h5: headingComponent("h5"),
           h6: headingComponent("h6"),
+        }}
+        urlTransform={(url: string) => {
+          if (url.startsWith("h#")) {
+            return `#${versionName}/${featureName}/${url.slice(2)}`;
+          }
+          return defaultUrlTransform(url);
         }}
       >
         {feature.description}
