@@ -91,7 +91,9 @@ export default function Modal(props: Props) {
               )}
             </h2>
           </div>
-          <div className={styles.description}>{props.children}</div>
+          <div id="modaldesc" className={styles.description}>
+            {props.children}
+          </div>
         </div>
       </div>
     </>

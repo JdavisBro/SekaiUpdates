@@ -75,14 +75,17 @@ export default function BigFeature(props: Props): React.ReactElement | null {
   }
 
   const scrollTo = featureSplit[2];
-  console.log(scrollTo);
   useEffect(() => {
     if (scrollTo) {
       let elem = document.getElementById(scrollTo);
-      console.log(elem);
       if (elem && elem?.parentElement) {
         elem.parentElement.scrollTop =
           elem.offsetTop < 105 ? 0 : elem.offsetTop - 105;
+      }
+    } else {
+      const desc = document.getElementById("modaldesc");
+      if (desc) {
+        desc.scrollTop = 0;
       }
     }
   }, [scrollTo]);
