@@ -78,10 +78,8 @@ export default function BigFeature(props: Props): React.ReactElement | null {
   useEffect(() => {
     if (scrollTo) {
       let elem = document.getElementById(scrollTo);
-      if (elem && elem?.parentElement) {
-        elem.parentElement.scrollTop =
-          elem.offsetTop < 105 ? 0 : elem.offsetTop - 105;
-      }
+      elem?.scrollIntoView();
+      window.scrollY = 0;
     } else {
       const desc = document.getElementById("modaldesc");
       if (desc) {
