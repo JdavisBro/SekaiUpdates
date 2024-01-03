@@ -62,7 +62,6 @@
 
 .selectedHeader {
   background-color: rgba(129, 166, 214, 0.432);
-  border-radius: 16px;
 }
 
 .description {
@@ -72,12 +71,8 @@
   margin: 0 8px 8px 8px;
 }
 
-.description > h1,
-.description > h2,
-.description > h3,
-.description > h4,
-.description > h5,
-.description > h6 {
+.description > :is(h1, h2, h3, h4, h5, h6) {
+  border-radius: 16px;
   padding-left: 6px;
 }
 
