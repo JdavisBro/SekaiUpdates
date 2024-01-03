@@ -4,7 +4,7 @@ import styles from "./App.module.css";
 import Header from "./Header";
 import Content from "./Content/Content";
 import { Server } from "./types/ServerType";
-import BigFeature from "./BigFeature";
+import BigFeature from "./Modal/BigFeature";
 
 function App() {
   if (import.meta.env.MODE == "development") {

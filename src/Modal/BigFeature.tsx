@@ -1,12 +1,12 @@
 import Markdown from "react-markdown";
-import styles from "./BigFeature.module.css";
-import { Server } from "./types/ServerType";
-import { FeatureType, UpdateType } from "./types/UpdateType";
-import updates from "./updates/updates";
+import { Server } from "../types/ServerType";
+import { FeatureType, UpdateType } from "../types/UpdateType";
+import updates from "../updates/updates";
 import { useEffect, useRef } from "react";
-import JoinElements from "./utils/JoinElements";
+import JoinElements from "../utils/JoinElements";
 import AboutPage from "./AboutPage";
 import remarkGfm from "remark-gfm";
+import Modal from "./Modal";
 
 type Props = {
   server: Server;
@@ -52,8 +52,6 @@ export default function BigFeature(props: Props): React.ReactElement | null {
       <AboutPage
         displayFeature={props.displayFeature}
         setDisplayFeature={props.setDisplayFeature}
-        rootDivRef={rootDivRef}
-        closeButton={closeButton}
       />
     );
   }
@@ -113,73 +111,33 @@ export default function BigFeature(props: Props): React.ReactElement | null {
   }
 
   return (
-    <>
-      <div
-        onClick={() => {
-          props.setDisplayFeature("#");
-        }}
-        className={styles.container}
-        role="dialog"
-        aria-labelledby="bigTitle"
-        ref={rootDivRef}
-      >
-        <div
-          onClick={(e) => {
-            e.stopPropagation();
-          }}
-          className={styles.box}
-        >
-          <div className={styles.headerBox}>
-            <div className={styles.header}>
-              <h2 className={styles.updateName}>Version {update.version}</h2>
-              <h3 className={styles.date}>
-                JP:{" "}
-                {JoinElements(
-                  update.date[Server.jp].toLocaleDateString().split("/"),
-                  <>
-                    <wbr />/
-                  </>,
-                  true,
-                )}
-                <br />
-                {JoinElements(
-                  dateText.split("/"),
-                  <>
-                    <wbr />/
-                  </>,
-                  true,
-                )}
-              </h3>
-              <div
-                tabIndex={0}
-                onClick={() => {
-                  props.setDisplayFeature("#");
-                }}
-                onKeyDown={(event) => {
-                  console.log(event.key);
-                  if (event.key == "Enter" || event.key == " ") {
-                    props.setDisplayFeature("#");
-                  }
-                }}
-                className={styles.close}
-                title="Close"
-                ref={closeButton}
-                autoFocus
-              >
-                ✖
-              </div>
-            </div>
-            <h2 id="bigTitle" className={styles.name}>
-              {feature.name}
-            </h2>
-          </div>
-          <div className={styles.description}>
-            <Markdown remarkPlugins={[remarkGfm]}>
-              {feature.description}
-            </Markdown>
-          </div>
-        </div>
-      </div>
-    </>
+    <Modal
+      displayFeature={props.displayFeature}
+      setDisplayFeature={props.setDisplayFeature}
+      bigTitle={`Version ${update.version}`}
+      subTitle={feature.name}
+      dateText={
+        <>
+          JP:{" "}
+          {JoinElements(
+            update.date[Server.jp].toLocaleDateString().split("/"),
+            <>
+              <wbr />/
+            </>,
+            true,
+          )}
+          <br />
+          {JoinElements(
+            dateText.split("/"),
+            <>
+              <wbr />/
+            </>,
+            true,
+          )}
+        </>
+      }
+    >
+      <Markdown remarkPlugins={[remarkGfm]}>{feature.description}</Markdown>
+    </Modal>
   );
 }
