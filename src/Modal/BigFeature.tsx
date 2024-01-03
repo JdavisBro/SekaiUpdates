@@ -1,11 +1,13 @@
-import Markdown from "react-markdown";
+import Markdown, { ExtraProps } from "react-markdown";
 import remarkGfm from "remark-gfm";
 
 import Modal from "./Modal";
 import updates from "../updates/updates";
 import JoinElements from "../utils/JoinElements";
+import styles from "./Modal.module.css";
 import { Server } from "../types/ServerType";
 import { FeatureType, UpdateType } from "../types/UpdateType";
+import { useEffect } from "react";
 
 type Props = {
   server: Server;
@@ -72,6 +74,45 @@ export default function BigFeature(props: Props): React.ReactElement | null {
     }
   }
 
+  const scrollTo = featureSplit[2];
+  console.log(scrollTo);
+  useEffect(() => {
+    if (scrollTo) {
+      let elem = document.getElementById(scrollTo);
+      console.log(elem);
+      if (elem && elem?.parentElement) {
+        elem.parentElement.scrollTop =
+          elem.offsetTop < 105 ? 0 : elem.offsetTop - 105;
+      }
+    }
+  }, [scrollTo]);
+
+  const headingComponent = (
+    Header: "h1" | "h2" | "h3" | "h4" | "h5" | "h6",
+  ) => {
+    return (componentProps: JSX.IntrinsicElements["h1"] & ExtraProps) => {
+      if (
+        typeof componentProps.children !== "string" ||
+        !componentProps.children ||
+        !componentProps.children.includes(";")
+      ) {
+        return <Header>{componentProps.children}</Header>;
+      }
+      const [id, text] = componentProps.children.split(";");
+      return (
+        <Header id={id}>
+          {text}
+          <a
+            href={`#${versionName}/${featureName}/${id}`}
+            className={styles.linkA}
+          >
+            🔗
+          </a>
+        </Header>
+      );
+    };
+  };
+
   return (
     <Modal
       displayFeature={props.displayFeature}
@@ -98,8 +139,21 @@ export default function BigFeature(props: Props): React.ReactElement | null {
           )}
         </>
       }
+      linkUrl={`#${versionName}/${featureName}`}
     >
-      <Markdown remarkPlugins={[remarkGfm]}>{feature.description}</Markdown>
+      <Markdown
+        remarkPlugins={[remarkGfm]}
+        components={{
+          h1: headingComponent("h1"),
+          h2: headingComponent("h2"),
+          h3: headingComponent("h3"),
+          h4: headingComponent("h4"),
+          h5: headingComponent("h5"),
+          h6: headingComponent("h6"),
+        }}
+      >
+        {feature.description}
+      </Markdown>
     </Modal>
   );
 }

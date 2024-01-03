@@ -8,6 +8,7 @@ type Props = {
   bigTitle: string;
   subTitle?: string;
   dateText?: string | React.ReactElement;
+  linkUrl?: string;
 };
 
 export default function Modal(props: Props) {
@@ -81,6 +82,13 @@ export default function Modal(props: Props) {
             </div>
             <h2 id="bigTitle" className={styles.name}>
               {props.subTitle}
+              {props.linkUrl ? (
+                <a href={props.linkUrl} className={styles.linkA}>
+                  🔗
+                </a>
+              ) : (
+                ""
+              )}
             </h2>
           </div>
           <div className={styles.description}>{props.children}</div>

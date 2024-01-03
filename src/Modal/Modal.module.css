@@ -53,6 +53,13 @@
   margin: 0 0 0 8px;
 }
 
+.linkA {
+  font-size: 0.6em;
+  padding-left: 4px;
+  text-decoration: underline;
+  color: aqua;
+}
+
 .description {
   width: calc(100% - 16px);
   word-wrap: break-word;

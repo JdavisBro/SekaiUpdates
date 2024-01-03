@@ -2,7 +2,7 @@ import { Server } from "./ServerType";
 
 export type FeatureType = {
   name: string; // Does affect search results
-  description: string; // Supports markdown. Does not affect search results. Spaces at the start of lines will be removed up to the first character OR '^'. e.g '     - hi' would become '- hi' and '   ^  - hi' would become '  - hi'
+  description: string; // Supports markdown. Does not affect search results. Headers with `;` will have a link. Before the ; is the id, after is text that's displayed
   tags: string[]; // Terms for this to show up when searched
   notIncluded?: {
     [Server.tw]?: boolean; // For if the feature is not included in the update and may be coming later or not at all on taiwan server
