@@ -15,34 +15,6 @@ type Props = {
 };
 
 export default function BigFeature(props: Props): React.ReactElement | null {
-  const closeButton = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    if (closeButton.current) {
-      closeButton.current.focus();
-    }
-  }, [closeButton]);
-
-  const rootDivRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (rootDivRef.current && closeButton.current) {
-        if (e.key == "Tab") {
-          if (
-            !rootDivRef.current.contains(document.activeElement) ||
-            (document.activeElement == closeButton.current &&
-              e.getModifierState("Shift"))
-          ) {
-            closeButton.current.focus();
-            e.preventDefault();
-          }
-        }
-      }
-    };
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  });
-
   if (props.displayFeature == "" || props.displayFeature == "#") {
     return null;
   }
