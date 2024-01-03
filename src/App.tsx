@@ -5,6 +5,7 @@ import Header from "./Header";
 import Content from "./Content/Content";
 import { Server } from "./types/ServerType";
 import BigFeature from "./Modal/BigFeature";
+import AboutPage from "./Modal/AboutPage";
 
 function App() {
   if (import.meta.env.MODE == "development") {
@@ -52,11 +53,18 @@ function App() {
           setDisplayFeature={setDisplayFeature}
         />
       </div>
-      <BigFeature
-        server={server}
-        displayFeature={displayFeature}
-        setDisplayFeature={setDisplayFeature}
-      />
+      {displayFeature == "#About" ? (
+        <AboutPage
+          displayFeature={displayFeature}
+          setDisplayFeature={setDisplayFeature}
+        />
+      ) : (
+        <BigFeature
+          server={server}
+          displayFeature={displayFeature}
+          setDisplayFeature={setDisplayFeature}
+        />
+      )}
     </>
   );
 }

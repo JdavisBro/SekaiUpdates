@@ -1,12 +1,11 @@
 import Markdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+
+import Modal from "./Modal";
+import updates from "../updates/updates";
+import JoinElements from "../utils/JoinElements";
 import { Server } from "../types/ServerType";
 import { FeatureType, UpdateType } from "../types/UpdateType";
-import updates from "../updates/updates";
-import { useEffect, useRef } from "react";
-import JoinElements from "../utils/JoinElements";
-import AboutPage from "./AboutPage";
-import remarkGfm from "remark-gfm";
-import Modal from "./Modal";
 
 type Props = {
   server: Server;
@@ -17,15 +16,6 @@ type Props = {
 export default function BigFeature(props: Props): React.ReactElement | null {
   if (props.displayFeature == "" || props.displayFeature == "#") {
     return null;
-  }
-
-  if (props.displayFeature == "#About") {
-    return (
-      <AboutPage
-        displayFeature={props.displayFeature}
-        setDisplayFeature={props.setDisplayFeature}
-      />
-    );
   }
 
   const featureSplit = props.displayFeature.slice(1).split("/");
