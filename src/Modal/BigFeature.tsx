@@ -16,11 +16,25 @@ type Props = {
 };
 
 export default function BigFeature(props: Props): React.ReactElement | null {
+  const featureSplit = props.displayFeature.slice(1).split("/");
+
+  const scrollTo = featureSplit[2];
+  useEffect(() => {
+    if (scrollTo) {
+      const elem = document.getElementById(scrollTo);
+      elem?.scrollIntoView();
+    } else {
+      const desc = document.getElementById("modaldesc");
+      if (desc) {
+        desc.scrollTop = 0;
+      }
+    }
+  }, [scrollTo]);
+
   if (props.displayFeature == "" || props.displayFeature == "#") {
     return null;
   }
 
-  const featureSplit = props.displayFeature.slice(1).split("/");
   const versionName = featureSplit[0];
   let featureName = decodeURI(featureSplit[1]);
   featureName = decodeURI(featureName);
@@ -73,19 +87,6 @@ export default function BigFeature(props: Props): React.ReactElement | null {
       }
     }
   }
-
-  const scrollTo = featureSplit[2];
-  useEffect(() => {
-    if (scrollTo) {
-      let elem = document.getElementById(scrollTo);
-      elem?.scrollIntoView();
-    } else {
-      const desc = document.getElementById("modaldesc");
-      if (desc) {
-        desc.scrollTop = 0;
-      }
-    }
-  }, [scrollTo]);
 
   const headingComponent = (
     Header: "h1" | "h2" | "h3" | "h4" | "h5" | "h6",

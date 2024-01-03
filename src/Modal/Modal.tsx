@@ -67,7 +67,6 @@ export default function Modal(props: Props) {
                   props.setDisplayFeature("#");
                 }}
                 onKeyDown={(event) => {
-                  console.log(event.key);
                   if (event.key == "Enter" || event.key == " ") {
                     props.setDisplayFeature("#");
                   }
