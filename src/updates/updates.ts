@@ -8,4 +8,10 @@ const updates: UpdateType[] = Object.values(modules).map(
   (value) => value.default,
 );
 
+if (import.meta.env.MODE == "development") {
+  import("./testingVersion.ts").then((testingVersion) => {
+    updates.push(testingVersion.default);
+  });
+}
+
 export default updates;
