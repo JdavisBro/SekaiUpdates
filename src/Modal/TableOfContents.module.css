@@ -1,8 +1,17 @@
 .contents {
   border: white solid 1px;
   width: fit-content;
+  padding-top: 2px;
+  padding-bottom: 4px;
   padding-right: 40px;
   margin-top: 8px;
+  margin-left: 4px;
+}
+
+@media (prefers-color-scheme: light) {
+  .contents {
+    border-color: black;
+  }
 }
 
 .contents > p {
