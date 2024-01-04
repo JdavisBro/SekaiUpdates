@@ -8,6 +8,7 @@ import styles from "./Modal.module.css";
 import { Server } from "../types/ServerType";
 import { FeatureType, UpdateType } from "../types/UpdateType";
 import { useEffect, useRef } from "react";
+import TableOfContents from "./TableOfContents";
 
 type Props = {
   server: Server;
@@ -155,25 +156,32 @@ export default function BigFeature(props: Props): React.ReactElement | null {
       }
       linkUrl={`#${versionName}/${featureName}`}
     >
-      <Markdown
-        remarkPlugins={[remarkGfm]}
-        components={{
-          h1: headingComponent("h1"),
-          h2: headingComponent("h2"),
-          h3: headingComponent("h3"),
-          h4: headingComponent("h4"),
-          h5: headingComponent("h5"),
-          h6: headingComponent("h6"),
-        }}
-        urlTransform={(url: string) => {
-          if (url.startsWith("h#")) {
-            return `#${versionName}/${featureName}/${url.slice(2)}`;
-          }
-          return defaultUrlTransform(url);
-        }}
-      >
-        {feature.description}
-      </Markdown>
+      <>
+        <TableOfContents
+          versionName={versionName}
+          featureName={featureName}
+          description={feature.description}
+        />
+        <Markdown
+          remarkPlugins={[remarkGfm]}
+          components={{
+            h1: headingComponent("h1"),
+            h2: headingComponent("h2"),
+            h3: headingComponent("h3"),
+            h4: headingComponent("h4"),
+            h5: headingComponent("h5"),
+            h6: headingComponent("h6"),
+          }}
+          urlTransform={(url: string) => {
+            if (url.startsWith("h#")) {
+              return `#${versionName}/${featureName}/${url.slice(2)}`;
+            }
+            return defaultUrlTransform(url);
+          }}
+        >
+          {feature.description}
+        </Markdown>
+      </>
     </Modal>
   );
 }

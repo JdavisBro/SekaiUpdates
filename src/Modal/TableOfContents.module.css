@@ -1,0 +1,43 @@
+.contents {
+  border: white solid 1px;
+  width: fit-content;
+  padding-right: 40px;
+  margin-top: 8px;
+}
+
+.contents > p {
+  padding-left: 20px;
+  margin: 4px 0 4px 0;
+}
+
+.contents > ul {
+  margin: 0;
+}
+
+.contents > ul > li::marker {
+  content: "";
+}
+.contents > ul > li::before {
+  content: "└• ";
+}
+.level1::marker {
+  content: " • " !important;
+}
+.level1::before {
+  content: "" !important;
+}
+.level2 {
+  margin-left: 0px;
+}
+.level3 {
+  margin-left: 10px;
+}
+.level4 {
+  margin-left: 20px;
+}
+.level5 {
+  margin-left: 30px;
+}
+.level6 {
+  margin-left: 40px;
+}

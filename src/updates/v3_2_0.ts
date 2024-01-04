@@ -93,17 +93,6 @@ Ever since the 3rd anniversary renewal, the button tap and skip function in the 
       description: `
 With the number of songs in the game reaching 35, and the addition of APPEND difficulty and TRACE notes, the devs have once again re-reviewed the overall difficulty level for MASTER songs. With this, some songs' difficulty levels will be revised.
 > Please note that this will change only the difficulty levels written for the songs, there will be no changes to the actual charts.
-- [MASTER 26 ↗ 27](h#26to27)
-- [MASTER 27 ↗ 28](h#27to28)
-- [MASTER 28 ↗ 29](h#28to29)
-- [MASTER 29 ↗ 30](h#29to30)
-- [MASTER 30 ↗ 31](h#30to31)
-- [MASTER 32 ↗ 33](h#32to33)
-- [MASTER 33 ↗ 34](h#33to34)
-- [MASTER 34 ↗ 35](h#34to35)
-- [MASTER 27 ↘ 26](h#27to26)
-- [MASTER 28 ↘ 27](h#28to27)
-- [MASTER 36 ↘ 35](h#36to35)
 ## 26to27;MASTER 26 ↗ 27
 - Time Machine
 - Hello/How Are You
