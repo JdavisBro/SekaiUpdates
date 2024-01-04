@@ -10,28 +10,31 @@ const v3_0_0: UpdateType = {
       description: `
 ![Project SEKAI Colorful Stage feat. Hatsune Miku Brand New World Title Screen](https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_nheouas.png)
 
-## New Character Visuals
+## CharacterVisuals;New Character Visuals
 - With the game's 3rd Anniversary, all characters will be going up a year.
 - They will also receive new character visuals.
 - This change will also apply to the characters' Live2D sprites & chibi sprites
   - See bottom of page for images
 - The characters will also receive new unit 3D costumes. They will be available for free.
 
-## New Unit Songs & Stages
+## UnitsSongsStages;New Unit Songs & Stages
 - All 6 units, including VIRTUAL SINGER, will be receiving their own new unit songs
 - One song will be announced each month. The first unit song for VIRTUAL SINGER has also been announced:
   - I'm Mine by halyosy
 - New unit stages will also be added alongside the new unit songs.
-## New 2* Cards
+
+## TwoStars;New 2* Cards
 -  New 2* cards using the new character visuals will now appear in the gacha after the update. (September 30th)
-## Updated Character Profiles
+## Profiles;Updated Character Profiles
 - Character profiles will be updated with info after the characters' advancement.
 
 ![New Character Profiles](https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_yteatbf.png)
-## New In-Game 1-Koma Manga
+
+## 1koma;New In-Game 1-Koma Manga
 - New 1-koma manga (loading screens) will be added to the game.
 - These new 1-komas will be replacing the old ones. In addition, the old 1-koma manga will be available on Project Sekai's official website.
-## New Area Convos
+
+## AreaConvos;New Area Convos
 - Around new 180 area convos will be added to the game.
 - These new area convos will take place after the characters' advancement
 - New Area Feature: Memory Fragment
@@ -40,19 +43,28 @@ const v3_0_0: UpdateType = {
   - This is so that players will still be able to read/check old area convos.
 
 ![New Memory Fragment Feature](https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_hjalaa.png)
-## Update the "1st Years" & "2nd Years" Title Achievement Missions to "2nd Years" & "3rd Years" Title Achievement Missions
+## Titles;Update the "Use X Years" title achievements.
 - New title achievement missions for "2nd Years" & "3rd Years" will be available after the update.
 - In addition, the conditions for the old "1st Years" & "2nd Years" title achievement mission will not change.
-## Other Updates
+
+## Other;Other Updates
   - Renew some character voice lines.
   - Add new materials for Custom Profile (Please note this update may change the current materials and layout used/saved for our Custom Profiles)
 
+## DesignImages;Updated Design Images
+### VSImage;Virtual Singer
 ![Virtual Singer Updated Designs](https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_njwebi.png)
+### LNImage;Leo/need
 ![Leo/need Updated Designs](https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_cffsfs.png)
+### MMJImage;MORE MORE JUMP!
 ![MORE MORE JUMP! Updated Designs](https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_piqhn.png)
+### VBSImage;Vivid BAD SQUAD
 ![Vivid BAD SQUAD Updated Designs](https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_jebjaa.png)
+### WXSImage;Wonderlands x Showtime
 ![Wonderlands x Showtime Updated Designs](https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_znvnzv.png)
+### N25Image;Nightcord at 25:00
 ![Nightcord at 25:00 Updated Designs](https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_iyioqheq.png)
+### VSSubImage;Virtual Singers with Subunits
 ![Virtual Singer Subunit Updated Designs](https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_nbuagu.png)
       `,
       tags: [
@@ -72,30 +84,35 @@ const v3_0_0: UpdateType = {
     {
       name: "3D Graphics Update",
       description: `
-## Updated 3D Character Models
+## Updated3DModels;Updated 3D Character Models
+
+### AntiAliasing;Anti-Aliasing
 - Added anti-aliasing for the character models to achieve smoother outlines for the models.
 - Anti-aliasing will NOT be reflected for 3DMVs during rhythm gameplay (Lives), but instead only for when you're watching the 3DMVs by themselves.
 
 ![Updated Character Models](https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_qerqsg.png)
-- Eyes will show through hair
+
+### Eyes;Eyes will show through hair
 
 ![Showing Eyes Through Hair](https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_ncsgss.png)
-## Staging & Effect Updates
-- More realistic lighting added.
+## StagingEffect;Staging & Effect Updates
+- These updates may not be reflected properly on some devices.
+- Some of the new staging & effect updates will not be reflected during rhythm gameplay (Lives) and only be reflected when you watch the 3DMVs by themselves.
+
+### Lighting;More Realistic Lighting
 
 ![Lighting Update Image 1](https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_wqgssa.png)
 ![Lighting Update Image 2](https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_ajdanka.png)
 ![Shadow Update](https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_quwhg.png)
-- Better blur/depth of field effects have also been added.
+
+### Blur;Improved blur/depth of field effects
 
 ![Depth of Field Update](https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_bnjalnk.png)
-- These updates may not be reflected properly on some devices.
-- Some of the new staging & effect updates will not be reflected during rhythm gameplay (Lives) and only be reflected when you watch the 3DMVs by themselves.
       `,
       tags: ["3dmv", "shaders"],
     },
     {
-      name: "Updated/Polished 3DMV",
+      name: "Polished 3DMV",
       description: `
 - 5 3DMVs that have been voted the most by players have been updated polished.
 - The 3DMVs are the following: Umiyuri Kaiteitan, IF, Cinema, TONDEMO-WONDERZ, IDSMILE
@@ -139,7 +156,7 @@ const v3_0_0: UpdateType = {
 
 ![New Song List UI](https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_kaakak.png)
       `,
-      tags: [],
+      tags: ["view mv", "change hairstyle", "mastery"],
     },
     {
       name: "Updated Gacha Animation",
@@ -174,13 +191,13 @@ const v3_0_0: UpdateType = {
     {
       name: "APPEND Difficulty",
       description: `
-## New Difficulty: APPEND
+## Overview;New Difficulty: APPEND
 - A brand new difficulty called "APPEND" will be added to the game.
 - APPEND difficulty will feature song charts that require you to play with 3 or more fingers.
 - APPEND difficulty can be compared to the current EXPERT-MASTER difficulties, with its' difficulty ranging from Lv.23-38.
 - APPEND difficulty will not be included in Rank Match's starting rank song selection, but will be available for players in the Diamond Rank and above.
 - 12 APPEND songs will be available starting from September 30th.
-## APPEND Songs Available (as of September 30th)
+## Songs;APPEND Songs Available (as of September 30th)
 - Tell Your World
 - NEO
 - Hibana -Reloaded-
@@ -192,7 +209,7 @@ const v3_0_0: UpdateType = {
 - Telecaster B-BOY
 - I am you (Inandesu)
 - Gehenna
-## Notes
+## Notes;Notes
 - When playing APPEND songs, please turn off any device functions that require 3 or more fingers (iOS: gesture function, etc.) to avoid any malfunctions.
 - The difficulty level range for APPEND is said to be from Lv.23-38, however, this is not the range for the currently available APPEND songs, but the difficulty level range overall as the devs add more APPEND songs in the future.
 
@@ -314,7 +331,7 @@ The rewards you get from logging in to the game every day (7 days) will be renew
     {
       name: "Virtual Item Price Change",
       description: `
-## SUPPORT MESSAGES
+## SupportMessages;Support Messages
 - 8 Letters/Characters
   - BEFORE: 100-999 Virtual Coins/Crystals
   - AFTER: 100-999 Virtual Coins; 100-299 Crystals
@@ -329,7 +346,7 @@ The rewards you get from logging in to the game every day (7 days) will be renew
   - AFTER: 5,000-9,999 Virtual coins; 2,000-2,999 Crystals
 - 64 Letters/Characters [NEW]
   - 10,000-50,000 Virtual Coins; 3,000~50,000 Crystals
-## VIRTUAL ITEMS
+## VirtualItems;Virtual Items
 > All prices are per one item
 - Party Popper
   - BEFORE: 100 Virtual Coins/Crysta1s
@@ -361,16 +378,16 @@ The rewards you get from logging in to the game every day (7 days) will be renew
 ## Free-of-Charge Support Messages & Virtual Items for Players Who Bought Colorful Pass
 - Some Support Messages & Virtual Items you can send during Virtual/Connect Lives will be free for players who bought and have an active Colorful Pass.
 - You'll also be able to send them as many times as you want for free.
-## COLORFUL PASS - BASIC
+## Basic;Colorful Pass - Basic
 - 8 Letters/Characters Support Messages
 - Virtual Item: Party Popper
-## COLORFUL PASS - DELUXE
+## Deluxe;Colorful Pass - Deluxe
 - 8 Letters/Characters Support Messages
 - Virtual Item: Party Popper; Rocket; Balloon
-## COLORFUL PASS - PRECIOUS
+## Precious;Colorful Pass - Precious
 - 8 Letters/Characters Support Messages
 - Virtual Item: Party Popper; Rocket; Balloon; "Precious" Uchiwa; Heart
-## Notes
+## Notes;Notes
 - Any messages and/or virtual items sent with Colorful Pass benefits will NOT give you Support pts or wish pieces.
 - Players are allowed to send free Support Messages and/or Virtual Items as much as they want, but any weird/trolling behavior will result in said player to be restricted.
       `,
@@ -411,14 +428,14 @@ The rewards you get from logging in to the game every day (7 days) will be renew
       tags: [],
     },
     {
-      name: "Event Tiering/Ranking Rewards",
+      name: "Event Ranking Rewards",
       description: `
 - The rewards you receive from ranking in events will be adjusted.
-## TOP 4-10
-- TOP 4-10 will no longer receive the "TOP 10" Title and instead will be getting their own respective Rank Title (ex: 4th place Title)
-## TOP 1,000-3,000
+## Top 4-10
+- Top 4-10 will no longer receive the "Top 10" Title and instead will be getting their own respective Rank Title (ex: 4th place Title)
+## Top 1,000-3,000
 - Split into: 1OO1st-1500th; 1501st-2000th; 2001st-2500th; 2501st-3000th
-- Add "TOP 1500" & "TOP 2500" Titles.
+- Add "Top 1500" & "Top 2500" Titles.
 ## 11-200,OOO
 - 11-10,OOO: Skill-Up Scores (Advance) +1
 - 10,001-50,000: Skill-Up Scores (Advance) x1
@@ -431,26 +448,26 @@ The rewards you get from logging in to the game every day (7 days) will be renew
 ## Notes
 - This update will apply for events after the 3rd Anniversary.
       `,
-      tags: [],
+      tags: ["tiering"],
     },
     {
       name: "Mastery Rank Event Bonus Ajustment",
       description: `
-## 4*
+## FourStar:4*
 - MR 0: 00.0% -> 10.0%
 - MR 1: 10.0% -> 12.5%
 - MR 2: 11.0% -> 15.0%
 - MR 3: 12.0% -> 17.5%
 - MR 4: 13.0% -> 20.0%
 - MR 5: 15.0% -> 25.0%
-## BIRTHDAY/ANNIVERSARY
+## Birthday;Birthday/Anniversary
 - MR 0: 00.0% -> 05.0%
 - MR 1: 05.0% -> 07.0%
 - MR 2: 06.0% -> 09.0%
 - MR 3: 07.0% -> 11.0%
 - MR 4: 08.0% -> 13.0%
 - MR 5: 10.0% -> 15.0%
-## Notes
+## Notes;Notes
 - This update will apply for events after the 3rd Anniversary.
       `,
       tags: ["mastery bonus"],
@@ -459,9 +476,9 @@ The rewards you get from logging in to the game every day (7 days) will be renew
       name: "Account Transfer Restriction Update",
       description: `
 - BEFORE
-  - Players who have reached TOP *1000* in ranking AT LEAST ONCE in the first 24 hours after an event has started can transfer their game data to another device TWICE during the event period.
+  - Players who have reached Top *1000* in ranking AT LEAST ONCE in the first 24 hours after an event has started can transfer their game data to another device TWICE during the event period.
 - AFTER
-  - Players who have reached TOP *300* in ranking AT LEAST ONCE in the first 24 hours after an event has started can transfer their game data to another device TWICE during the event period.
+  - Players who have reached Top *300* in ranking AT LEAST ONCE in the first 24 hours after an event has started can transfer their game data to another device TWICE during the event period.
 - This update will apply for events after the 3rd Anniversary.
       `,
       tags: ["account sharing", "account syncing", "game data"],
@@ -470,20 +487,20 @@ The rewards you get from logging in to the game every day (7 days) will be renew
       name: "Event Exchange Item Adjustment",
       description: `
 Event Exchange Shop Items Adjustment
-## Gems
+## Gems;Attribute Gems
 - Quantity: 1 -> 10
 - Exchange Limit: 200 -> 20
 - Required Badges (One): 100 -> 500
 - Required Badges (Total): 20,000 -> 10,000
-## Pieces
+## Charms;Attribute Charms
 - Quantity: 10 -> 100
 - Exchange Limit 100 -> 10
 - Required Badges (One): 100 -> 500
 - Required Badges (Total): 10,000 -> 5,000
-## Notes
+## Notes;Notes
 - This update will apply for events after the 3rd Anniversary.
       `,
-      tags: [],
+      tags: ["event shop"],
     },
     {
       name: "Multi Live 0 Life Score Penalty Change",
@@ -549,7 +566,7 @@ Event Exchange Shop Items Adjustment
       tags: [],
     },
     {
-      name: "Pre-release/Trial for FPS & Vsync Settings",
+      name: "Pre-release for FPS & Vsync Settings",
       description: `
 - To make the rhythm game experience more comfortable, FPS settings (120FPS) and Vsync settings will be added to the game.
 - After the update, the FPS setting will be set to "Standard (60FPS)" and Vsync setting will be turned on. This can be changed from the Option menu.
@@ -566,30 +583,30 @@ Event Exchange Shop Items Adjustment
       description: `
 - Previously, only the SEKAI-Variant Miku, the initial SEKAI-Variant VS, VBS Rin, and WxS Len have their own 3D costumes, but now all the other SEKAI-Variant VIRTUAL SINGERs will be getting their own 3D costumes as well.
 - You can unlock these 3D Costumes by reading through the event stories these SEKAI-Variant VIRTUAL SINGERs were first featured in.
-## Leo/need / Classroom SEKAI
+## LN;Leo/need / Classroom SEKAI
 - Kagamine Rin: Unnamed Harmony
 - Kagamine Len: Putting Feelings Into Words
 - MEIKO: Don't Let Doubts Hold You Back
 - KAITO: A Bright Future!!
-## MORE MORE JUMP! / Stage SEKAI
+## MMJ;MORE MORE JUMP! / Stage SEKAI
 - Kagamine Len: Happy Lovely Everyday!
 - Megurine Luka: My Color!
 - MEIKO: You Deserve It! Break Time!
 - KAITO: MORE MORE Making Chrstmas
-## Vivid BAD SQUAD / Street SEKAI
+## VBS;Vivid BAD SQUAD / Street SEKAI
 - Megurine Luka: Same Dreams, Same Colors
 - KAITO: STRAY BAD DOGS
-## Wonderlands x Showtime / Wonderland SEKAI
+## WXS;Wonderlands x Showtime / Wonderland SEKAI
 - Kagamine Rin: Musical Twilight Parade
 - Megurine Luka: Doll Festival at the Tenma's
 - MEIKO: On this Holy Night, I Sing
-## Nightcord at 25:00 / Empty SEKAI
+## N25;Nightcord at 25:00 / Empty SEKAI
 - Kagamine Rin: Insatiable Pale Color
 - Kagamine Len: What Lies Beyond Guiding a Lost Child
 - Megurine Luka: Carnation Recollection
 - MEIKO: Secret Distance
 - KAITO: Immiscible Discord
-## Notes
+## Notes;Notes
 - If you have read all the stories above, you will receive the 3D Costumes directly when you log in after the update.
       `,
       tags: [],
@@ -599,14 +616,14 @@ Event Exchange Shop Items Adjustment
       description: `
 - The Crystal Shop will be getting a renewal. As such, some products that are sold in the Crystal Shop will be discontinued.
 - New sets will also be added to the Crystal Shop. 
-## Discontinued Sales
+## Discontinued;Discontinued Sales
 - Variety SEKAI Set (Paid Crystals x1500)
-## Discontinued Sales Due to Change in Contents of the Sets
+## DiscontinuedChange;Discontinued Sales Due to Change in Contents of the Sets
 - Sewing Set (Paid Crystals x1500)
 - Music Card Set (Paid Crystals x300)
 - Sticker Exchange Set (Paid Crystals x300)
 - Coin Set (Paid Crystals x1500)
-## Renewed Sets
+## Renewed;Renewed Sets
 - Renewal Commemoration Beginner's Support Set - 5000 Yen (can be bought 2 times)
   - 4* Guaranteed 10-Pull Ticket x1
   - Practice Scores (Advance) x50
@@ -625,7 +642,7 @@ Event Exchange Shop Items Adjustment
 - Coin Set - 3000 Paid Crystals (can be bought 1 time per month)
   - Gacha Tickets x1O
   - Coins x300,OOO
-## Renamed Sets
+## Renamed;Renamed Sets
 - "Welcome SEKAI" Set B, C, D will be renamed to "Beginner's Support" Set A, B, C.
       `,
       tags: [],
