@@ -12,20 +12,21 @@ const v2_7_0: UpdateType = {
 - Both Titles will be renamed to "Live Master"
 - There will be a total of 6 types of "Live Master" Titles, 5 of them for each difficulty of songs (EASY/NORMAL/HARD/EXPERT/MASTER) and 1 for MASTER AP (similar to the old "Shin Kaiden" Title)
 - Please note that the old "Kaiden" and "Shin Kaiden" will no longer be available after the update.
-## Title Types & how to get them
+## Types;Title Types & how to get them
 - Live Master - Beginner: Full Combo 5 songs in EASY difficulty
 - Live Master - Intermediate: Full Combo 5 songs in NORMAL difficulty
 - Live Master - Advance: Full Combo 5 songs in HARD difficulty
 - Live Master - Expert: Full Combo 5 songs in EXPERT difficulty
 - Live Master - Master (Kaiden): Full Combo 5 songs in MASTER difficulty
 - Live Master - True Master (Shin Kaiden): All Perfect 5 songs in MASTER difficulty
-## Requirement for each Title level
+## Requirements;Requirement for each Title level
 - 5 songs / 10 songs / 20 songs / ... (the rest is every 10 songs)
-## Design Changes
+## DesignChanges;Design Changes
 - The number of songs you have FCed/APed is now shown on the Titles.
 - The diamonds that are displayed on the Title will now be shown/lined up in a special way. One diamond will be added to a Live Master Title for every 10 songs Full Comboed/All Perfected.
 - The designs of the scrolls, ribbons, etc that are displayed will change for every 100 songs Full Comboed/All Perfected.
 
+## Images;Images
 ![Image showing new titles in the profile title select screen](https://pjsekai.sega.jp/master-data/image/news/news_thumb_212_nnaisa.png)
 
 ![Image showing a player achieveing the new Live Master - True Master title](https://pjsekai.sega.jp/master-data/image/news/news_thumb_212_jjasaa.png)
@@ -73,23 +74,24 @@ Due to the rewards players can earn from Solo Lives / Rank Match being so much l
       description: `
 - From now on, each unit will be holding their last unit events before advancing towards their next goal in the 3rd Anniversary.
 - The lineup for the rewards you can exchange will be adjusted for these last unit-related events ONLY.
-## New Items for exchange
+## NewItems;New Items for exchange
 - Bonus Energy (L) x3: 5000 event tokens (can be exchanged 1 time)
 - Practice Scores (Advance): 500 event tokens per 1 sheet (total of 20)
 - Skill-Up Scores (Advance): 20000 event tokens per 1 sheet (total of 2)
-## Adjusted Items
+## AjustedItems;Adjusted Items
 - Magic Cloths x300: 10000 event tokens (can be exchanged once)
 - Magic Threads x30: 10000 event tokens (can be exchanged once)
 - Mysterious Seeds x30: 15000 event tokens (can be exchanged once)
 - Miracle Gems x5: 1000 event tokens (can be exchanged 40 times)
 - Coins x50000: 5000 event tokens (can be exchanged 6 times)
 - Coins: 1 event token (No limit)
-Removed Items
+## RemovedItems;Removed Items
 - Bonus Energy (S)
 - Practice Scores (Intermediate)
 - Skill-Up Scores (Intermediate)
 - Attribute Gems & Charms
 
+## Notes;Notes
 Again, please note that everything above will be applied to the last Unit Events ONLY. The items that can be exchanged in other events will remain the same.
       `,
       tags: [],
