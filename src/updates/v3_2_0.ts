@@ -197,7 +197,7 @@ With the number of songs in the game reaching 35, and the addition of APPEND dif
       tags: [],
     },
     {
-      name: "Other Bug Fixes & Adjustments",
+      name: "Other Bug Fixes",
       description: `
 - [World Link] Fixed a bug that caused mismatch between the overall ranking display and Chapter Ts ranking display.
 - [World Link] Fixed a bug where event pts were not reflected in the new Chapter when starting a live right before a Chapter switch and finish the same live after a Chapter switch.

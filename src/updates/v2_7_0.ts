@@ -165,15 +165,39 @@ Based on the feedback the devs have received in the official Discord server, the
       tags: ["stickers"],
     },
     {
-      name: "Other Adjustments",
+      name: "Gacha Pity Details Page",
       description: `
-- Added a new tab in the Gacha details pop-up screen to display the percentage of the guaranteed 4* related to the Gacha Bonus gauge (pity).
-- A notification mark will now be displayed whenever a free pull is available (for those who bought the Colorful Pass).
-- Modified the team setup in the MV Viewing Mode so that it's no longer set to the main team setup.
-- Added the "Feedback to the dev team" option to the Support/Inquiry category.
-- Penalty conditions for players who continuously lose communication in Multi Live (Cheerful Live) have been enhanced.
+Added a new tab in the Gacha details pop-up screen to display the percentage of the guaranteed 4* related to the Gacha Bonus gauge (pity).
       `,
-      tags: ["gacha guarentee", "team setup", "mv viewer", "disconnect"],
+      tags: [],
+    },
+    {
+      name: "Colorful Plus Free Pull Notification",
+      description: `
+A notification mark will now be displayed whenever a free pull is available (for those who bought the Colorful Pass).
+      `,
+      tags: [],
+    },
+    {
+      name: "MV Viewer Doesn't Use Main Team",
+      description: `
+Modified the team setup in the MV Viewing Mode so that it's no longer set to the main team setup.
+      `,
+      tags: [],
+    },
+    {
+      name: "Feedback to the Dev Team Option",
+      description: `
+Added the "Feedback to the dev team" option to the Support/Inquiry category.
+      `,
+      tags: [],
+    },
+    {
+      name: "Enhanced Penalty for Disconnecting",
+      description: `
+Penalty conditions for players who continuously lose communication in Multi Live (Cheerful Live) have been enhanced.
+      `,
+      tags: [],
     },
     {
       name: "Bug Fixes",

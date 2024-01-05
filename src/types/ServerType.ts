@@ -5,7 +5,7 @@ export enum Server {
   kr,
 }
 
-export const servers = new Map<number, string>([
+export const servers = new Map<Server, string>([
   [Server.jp, "Japanese"],
   [Server.en, "English/Global"],
   [Server.tw, "Taiwan"],

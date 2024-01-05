@@ -150,20 +150,27 @@ The price of the currently available disks in the Disk Shop are as follows:
       tags: ["costume", "shop"],
     },
     {
+      name: "Characters In Side Story Shown After Unlocked",
+      description: `
+List of characters that appear in a card's Side Stories will now be shown even after you've unlocked that card's Side Stories.
+      `,
+      tags: [],
+    },
+    {
+      name: "Read It All Mission Adjusted",
+      description: `
+- The mission "Read 100 chapters of Main Stories and/or Side Stories without using the Skip button" is changed to "Read 100 chapters of Main Stories and/or Side Stories without using the Skip button and/or the Fast-Forward button".
+- This change is due to the intention of the mission, that is to have players read the stories carefully and properly. Using the Fast-Forward button will defeat the purpose of the mission, just like using the Skip button.
+      `,
+      tags: [],
+    },
+    {
       name: "Other Updates and Changes",
       description: `
-- List of characters that appear in a card's Side Stories will now be shown even after you've unlocked that card's Side Stories.
-- You can now take screenshots in Virtual Live while having the Ul hidden.
-- The mission "Read 100 chapters of Main Stories and/or Side Stories without using the Skip button" is changed to "Read 100 chapters of Main Stories and/or Side Stories without using the Skip button and/or the Fast-Forward button". This change is due to the intention of the mission, that is to have players read the stories carefully and properly. Using the Fast-Forward button will defeat the purpose of the mission, just like using the Skip button.
+- You can now take screenshots in Virtual Live while having the UI hidden.
 - Fixed the audio discrepancies in some songs: Greenlights Serenade, Roku-chou Nen to Ichiya Monogatari, Lost One no Goukoku, Lower, Goodbye. Other songs that have been confirmed to have similar problems will be addressed in due course.
       `,
-      tags: [
-        "side story",
-        "virutal live screenshot",
-        "story",
-        "fast foward",
-        "audio",
-      ],
+      tags: ["virutal live screenshot", "audio"],
     },
   ],
   date: {

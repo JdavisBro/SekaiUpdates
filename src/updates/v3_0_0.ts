@@ -163,7 +163,7 @@ const v3_0_0: UpdateType = {
       description: `
 - Along with the new 3D graphics update, the gacha animation will also be updated.
 
-![https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_ioqhqn.png]
+![Updated Gacha Animation Image](https://pjsekai.sega.jp/master-data/image/news/news_thumb_231_ioqhqn.png)
       `,
       tags: [],
     },

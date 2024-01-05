@@ -9,6 +9,7 @@ const testingVersion: UpdateType = {
       name: "Headers and Table of Contents",
       description: `
 # h1.1;h1.1
+[link to h3.3](h#h3.3)
 ## h2.1;h2.1
 ### h3.1;h3.1
 ### h3.2;h3.2

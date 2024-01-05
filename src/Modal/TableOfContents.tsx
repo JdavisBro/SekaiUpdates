@@ -18,8 +18,7 @@ export default function TableOfContents(
       const [id, text] = value.replace(/^#+? /, "").split(";");
       const headinglevel = value.split(" ")[0].length;
       lowestlevel = lowestlevel > headinglevel ? headinglevel : lowestlevel;
-      console.log(`level${headinglevel - lowestlevel}`);
-      return { level: headinglevel, id: id, text: text };
+      return { level: headinglevel, id: id.trim(), text: text.trim() };
     });
 
   if (headings.length == 0) {
