@@ -22,7 +22,7 @@ const testingVersion: UpdateType = {
 ##### h5.1;h5.1
 ###### h6.1;h6.1
 # h1.2;h1.2
-### h3.6;h3.6
+### h3.7;h3.7 (don't do this)
 # h1.3;h1.3
 ###### h6.2;h6.2 (don't do this)
       `,
