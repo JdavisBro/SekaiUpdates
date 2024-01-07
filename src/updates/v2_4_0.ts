@@ -109,7 +109,7 @@ environment.
 - During an event, special missions will be available where you will be able to earn 50 Live pts for every mission you have cleared.
 - You will also earn 150 Live pts for clearing all missions.
 - List of Bonus Missions
-  - Play & clear 1 song per day for a total of OO days
+  - Play & clear 1 song per day for a total of X days
   - Play & clear 50 songs
   - Play & clear songs in Lives while getting FULL COMBO 10 times
   - Play & clear 10 different songs

@@ -434,15 +434,15 @@ The rewards you get from logging in to the game every day (7 days) will be renew
 ## Top 4-10
 - Top 4-10 will no longer receive the "Top 10" Title and instead will be getting their own respective Rank Title (ex: 4th place Title)
 ## Top 1,000-3,000
-- Split into: 1OO1st-1500th; 1501st-2000th; 2001st-2500th; 2501st-3000th
+- Split into: 1001st-1500th; 1501st-2000th; 2001st-2500th; 2501st-3000th
 - Add "Top 1500" & "Top 2500" Titles.
-## 11-200,OOO
-- 11-10,OOO: Skill-Up Scores (Advance) +1
+## 11-200,000
+- 11-10,000: Skill-Up Scores (Advance) +1
 - 10,001-50,000: Skill-Up Scores (Advance) x1
 - 50,001-200,000: Skill-Up Scores (Intermediate) +1
 ## 50,001-300,000
 - Crystals x300
-## Below 300,OOOth
+## Below 300,000th
 - Ranking below 300,000th place will no longer be displayed
 - Any players placed below 300,000th place will also no longer receive rewards
 ## Notes
@@ -516,7 +516,7 @@ Event Exchange Shop Items Adjustment
 - From September 30th, the amount of rewards a player can receive from clearing the game's tutorial will be increased.
 - New List of Tutorial Rewards
   - Music Cards x200 [+100]
-  - Coins X100,OOO [NEW]
+  - Coins X100,000 [NEW]
   - Attribute Gems x100 each [NEW]
   - Miracle Gems x50 [NEW]
   - Practice Scores (Intermediate) x50 [NEW]
@@ -526,7 +526,7 @@ Event Exchange Shop Items Adjustment
   - Magic Thread
   - Wish Pieces x300
   - Sticker Exchange Tickets x3
-  - Virtual Coins x5,OOO
+  - Virtual Coins x5,000
 - For players who have already completed the tutorial, the new rewards will be sent to your present box after the update.
       `,
       tags: [],
@@ -630,7 +630,7 @@ Event Exchange Shop Items Adjustment
   - Miracle Gems x250
 - Attribute Gems Set - x500 each
   - Mysterious Seeds x30
-  - Coins x300,OOO
+  - Coins x300,000
 - Sewing & Sticker Set - 3000 Paid Crystals (can be bought I time per month)
   - Gacha Tickets XIO
   - Sticker Exchange Tickets x3
@@ -640,8 +640,8 @@ Event Exchange Shop Items Adjustment
   - Gacha Tickets x5
   - Music Cards x50
 - Coin Set - 3000 Paid Crystals (can be bought 1 time per month)
-  - Gacha Tickets x1O
-  - Coins x300,OOO
+  - Gacha Tickets x10
+  - Coins x300,000
 ## Renamed;Renamed Sets
 - "Welcome SEKAI" Set B, C, D will be renamed to "Beginner's Support" Set A, B, C.
       `,

@@ -8,6 +8,8 @@ const v3_1_0: UpdateType = {
     {
       name: "World Link Event Type",
       description: `
+## Overview;Overview
+
 A new type of event called "World Link" event will be added to the game after version 3.1.0 update. World Link events will tell the stories of the "change of feelings" within each character and how they'll witness new "possibilities" within the SEKAI.
 - The very first "World Link" event will begin on November 8th 2023 at 20:00 JST. The event will feature the unit "Nightcord at 25:00" and titled "Searching for a Reflection Beneath the Waters."
 - The event format will be in "Chapters." Each chapter will feature 1 focus character from the featured unit with their own "Chapter Story".
@@ -20,7 +22,7 @@ A new type of event called "World Link" event will be added to the game after ve
 
 - There will be 2 types of ranking in World Link events.  One is "Chapter Ranking", and the other is "Overall Ranking."
 - "Chapter Ranking" will be based on each character chapter (pts calculated from a character chapter)
-  - "Chapter Ranking" will have specially-designed Title for players who are in TOP 1OO.
+  - "Chapter Ranking" will have specially-designed Title for players who are in TOP 100.
 - "Overall Ranking" will be based on all character chapters (pts calculated from all chapters).
 ## Exchange;Event Exchange/Shop
 - There will be 2 types of event exchange/shop. One is "Chapter Exchange", and the other is "Overall/General Exchange."
