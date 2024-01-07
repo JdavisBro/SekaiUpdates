@@ -30,18 +30,19 @@ export default function BigFeature(props: Props): React.ReactElement | null {
       selectedHeader.current.classList.remove(styles.selectedHeader);
       selectedHeader.current = null;
     }
+    const desc: HTMLElement | null = document.getElementById("modaldesc");
+    if (desc === null) {
+      return;
+    }
     if (scrollTo) {
-      const elem = document.getElementById(scrollTo);
+      const elem = desc.querySelector(`#${scrollTo}`);
       elem?.scrollIntoView();
       if (!elem?.classList.contains(styles.selectedHeader)) {
         elem?.classList.add(styles.selectedHeader);
       }
       selectedHeader.current = elem;
     } else {
-      const desc = document.getElementById("modaldesc");
-      if (desc) {
-        desc.scrollTop = 0;
-      }
+      desc.scrollTop = 0;
     }
   }, [scrollTo]);
 
