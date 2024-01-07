@@ -30,7 +30,10 @@ export default function TableOfContents(
       <p>Table of Contents</p>
       <ul>
         {headings.map((value) => (
-          <li className={styles[`level${value.level - lowestlevel + 1}`]}>
+          <li
+            key={value.id}
+            className={styles[`level${value.level - lowestlevel + 1}`]}
+          >
             <a href={`#${props.versionName}/${props.featureName}/${value.id}`}>
               {value.text}
             </a>
