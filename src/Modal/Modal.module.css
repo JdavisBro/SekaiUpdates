@@ -88,6 +88,15 @@
   padding: 6px;
 }
 
+.description .tablecontainer {
+  max-width: 100%;
+  width: fit-content;
+  overflow-x: auto;
+  padding: 2px;
+  box-sizing: border-box;
+  background-color: var(--secondary-color);
+}
+
 @media all and (orientation: portrait) {
   .box {
     width: 95%;

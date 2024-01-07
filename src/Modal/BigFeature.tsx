@@ -51,8 +51,7 @@ export default function BigFeature(props: Props): React.ReactElement | null {
   }
 
   const versionName = featureSplit[0];
-  let featureName = decodeURI(featureSplit[1]);
-  featureName = decodeURI(featureName);
+  let featureName = decodeURI(featureSplit[1]).replace("_", " ");
   let update: UpdateType | null = null;
   for (const upd of updates) {
     if (upd.version == versionName) {
@@ -172,6 +171,13 @@ export default function BigFeature(props: Props): React.ReactElement | null {
             h4: headingComponent("h4"),
             h5: headingComponent("h5"),
             h6: headingComponent("h6"),
+            table: (
+              componentProps: JSX.IntrinsicElements["h1"] & ExtraProps,
+            ) => (
+              <div className={styles.tablecontainer}>
+                <table>{componentProps.children}</table>
+              </div>
+            ),
           }}
           urlTransform={(url: string) => {
             if (url.startsWith("h#")) {
