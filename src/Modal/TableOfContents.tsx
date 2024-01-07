@@ -1,3 +1,4 @@
+import { memo } from "react";
 import styles from "./TableOfContents.module.css";
 
 type Props = {
@@ -13,7 +14,7 @@ type HeadingType = {
   children: HeadingType[];
 };
 
-export default function TableOfContents(
+export default memo(function TableOfContents(
   props: Props,
 ): React.ReactElement | null {
   let lowest_level = 6;
@@ -82,7 +83,7 @@ export default function TableOfContents(
 
   function createChildren(heading: HeadingType) {
     return (
-      <li>
+      <li key={heading.id}>
         <a href={`#${props.versionName}/${props.featureName}/${heading.id}`}>
           {heading.text}
         </a>
@@ -101,4 +102,4 @@ export default function TableOfContents(
       </div>
     </div>
   );
-}
+});

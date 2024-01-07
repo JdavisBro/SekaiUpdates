@@ -7,17 +7,20 @@ import JoinElements from "../utils/JoinElements";
 import styles from "./Modal.module.css";
 import { Server } from "../types/ServerType";
 import { FeatureType, UpdateType } from "../types/UpdateType";
-import { useEffect, useRef } from "react";
+import { memo, useCallback, useEffect, useMemo, useRef } from "react";
 import TableOfContents from "./TableOfContents";
+import { useHash } from "react-use";
 
 type Props = {
   server: Server;
-  displayFeature: string;
-  setDisplayFeature: (newHash: string) => void;
 };
 
+const MarkdownMemo = memo(Markdown);
+
 export default function BigFeature(props: Props): React.ReactElement | null {
-  const featureSplit = props.displayFeature.slice(1).split("/");
+  const [displayFeature, setDisplayFeature] = useHash();
+
+  const featureSplit = displayFeature.slice(1).split("/");
 
   const selectedHeader = useRef<Element | null>(null);
 
@@ -35,7 +38,10 @@ export default function BigFeature(props: Props): React.ReactElement | null {
       return;
     }
     if (scrollTo) {
-      const elem = desc.querySelector(`#${scrollTo}`);
+      const elem = document.getElementById(scrollTo);
+      if (!desc.contains(elem)) {
+        return;
+      }
       elem?.scrollIntoView();
       if (!elem?.classList.contains(styles.selectedHeader)) {
         elem?.classList.add(styles.selectedHeader);
@@ -46,7 +52,61 @@ export default function BigFeature(props: Props): React.ReactElement | null {
     }
   }, [scrollTo]);
 
-  if (props.displayFeature == "" || props.displayFeature == "#") {
+  const headingComponent = useCallback(
+    (Header: "h1" | "h2" | "h3" | "h4" | "h5" | "h6") => {
+      return (componentProps: JSX.IntrinsicElements["h1"] & ExtraProps) => {
+        if (
+          typeof componentProps.children !== "string" ||
+          !componentProps.children ||
+          !componentProps.children.includes(";")
+        ) {
+          return <Header>{componentProps.children}</Header>;
+        }
+        const [id, text] = componentProps.children.split(";");
+        return (
+          <Header id={id}>
+            {text}
+            <a
+              href={`#${featureSplit[0]}/${featureSplit[1]}/${id}`}
+              className={styles.linkA}
+            >
+              🔗
+            </a>
+          </Header>
+        );
+      };
+    },
+    [featureSplit[0], featureSplit[1]],
+  );
+
+  const remarkPlugins = useMemo(() => [remarkGfm], []);
+  const components = useMemo(() => {
+    return {
+      h1: headingComponent("h1"),
+      h2: headingComponent("h2"),
+      h3: headingComponent("h3"),
+      h4: headingComponent("h4"),
+      h5: headingComponent("h5"),
+      h6: headingComponent("h6"),
+      table: (componentProps: JSX.IntrinsicElements["h1"] & ExtraProps) => (
+        <div className={styles.tablecontainer}>
+          <table>{componentProps.children}</table>
+        </div>
+      ),
+    };
+  }, [headingComponent]);
+
+  const urlTranform = useCallback(
+    (url: string) => {
+      if (url.startsWith("h#")) {
+        return `#${featureSplit[0]}/${featureSplit[1]}/${url.slice(2)}`;
+      }
+      return defaultUrlTransform(url);
+    },
+    [featureSplit[0], featureSplit[1]],
+  );
+
+  if (displayFeature == "" || displayFeature == "#") {
     return null;
   }
 
@@ -59,7 +119,7 @@ export default function BigFeature(props: Props): React.ReactElement | null {
     }
   }
   if (update == null) {
-    props.setDisplayFeature("#"); // Publicly executed for this
+    setDisplayFeature("#");
     return null;
   }
 
@@ -70,7 +130,7 @@ export default function BigFeature(props: Props): React.ReactElement | null {
     }
   }
   if (feature == null) {
-    props.setDisplayFeature("#"); // Publicly executed for this
+    setDisplayFeature("#");
     return null;
   }
 
@@ -102,36 +162,10 @@ export default function BigFeature(props: Props): React.ReactElement | null {
     }
   }
 
-  const headingComponent = (
-    Header: "h1" | "h2" | "h3" | "h4" | "h5" | "h6",
-  ) => {
-    return (componentProps: JSX.IntrinsicElements["h1"] & ExtraProps) => {
-      if (
-        typeof componentProps.children !== "string" ||
-        !componentProps.children ||
-        !componentProps.children.includes(";")
-      ) {
-        return <Header>{componentProps.children}</Header>;
-      }
-      const [id, text] = componentProps.children.split(";");
-      return (
-        <Header id={id}>
-          {text}
-          <a
-            href={`#${versionName}/${featureName}/${id}`}
-            className={styles.linkA}
-          >
-            🔗
-          </a>
-        </Header>
-      );
-    };
-  };
-
   return (
     <Modal
-      displayFeature={props.displayFeature}
-      setDisplayFeature={props.setDisplayFeature}
+      displayFeature={displayFeature}
+      setDisplayFeature={setDisplayFeature}
       bigTitle={`Version ${update.version}`}
       subTitle={feature.name}
       dateText={
@@ -162,32 +196,13 @@ export default function BigFeature(props: Props): React.ReactElement | null {
           featureName={featureName}
           description={feature.description}
         />
-        <Markdown
-          remarkPlugins={[remarkGfm]}
-          components={{
-            h1: headingComponent("h1"),
-            h2: headingComponent("h2"),
-            h3: headingComponent("h3"),
-            h4: headingComponent("h4"),
-            h5: headingComponent("h5"),
-            h6: headingComponent("h6"),
-            table: (
-              componentProps: JSX.IntrinsicElements["h1"] & ExtraProps,
-            ) => (
-              <div className={styles.tablecontainer}>
-                <table>{componentProps.children}</table>
-              </div>
-            ),
-          }}
-          urlTransform={(url: string) => {
-            if (url.startsWith("h#")) {
-              return `#${versionName}/${featureName}/${url.slice(2)}`;
-            }
-            return defaultUrlTransform(url);
-          }}
+        <MarkdownMemo
+          remarkPlugins={remarkPlugins}
+          components={components}
+          urlTransform={urlTranform}
         >
           {feature.description}
-        </Markdown>
+        </MarkdownMemo>
       </>
     </Modal>
   );

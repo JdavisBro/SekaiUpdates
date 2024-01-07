@@ -1,4 +1,4 @@
-import { useHash, useLocalStorage, useMedia } from "react-use";
+import { useHash, useLocalStorage } from "react-use";
 
 import styles from "./App.module.css";
 import Header from "./Header";
@@ -6,14 +6,13 @@ import Content from "./Content/Content";
 import { Server } from "./types/ServerType";
 import BigFeature from "./Modal/BigFeature";
 import AboutPage from "./Modal/AboutPage";
+import { useCallback } from "react";
 
 function App() {
   if (import.meta.env.MODE == "development") {
     document.getElementsByTagName("title")[0].innerText =
       "[DEV] Project Sekai Updates";
   }
-
-  const lightMode = useMedia("(prefers-color-scheme: light)");
 
   const [server = Server.en, setServer] = useLocalStorage<Server>(
     "server",
@@ -31,40 +30,31 @@ function App() {
     },
   );
 
-  const [displayFeature, setDisplayFeature] = useHash();
-
   return (
     <>
-      <div
-        className={styles.container}
-        aria-hidden={displayFeature.replace("#", "") != ""}
-      >
+      <div className={styles.container}>
         <Header
-          lightMode={lightMode}
           setServer={setServer}
           server={server}
           setShowPastUpdates={setShowPastUpdates}
           showPastUpdates={showPastUpdates}
-          setDisplayFeature={setDisplayFeature}
         />
         <Content
           server={server}
           showPastUpdates={showPastUpdates}
-          setDisplayFeature={setDisplayFeature}
+          setDisplayFeature={useCallback((value) => {
+            window.location.hash = value;
+          }, [])}
         />
       </div>
-      {displayFeature == "#About" ? (
+      {/* {displayFeature == "#About" ? (
         <AboutPage
           displayFeature={displayFeature}
           setDisplayFeature={setDisplayFeature}
         />
-      ) : (
-        <BigFeature
-          server={server}
-          displayFeature={displayFeature}
-          setDisplayFeature={setDisplayFeature}
-        />
-      )}
+      ) : ( */}
+      <BigFeature server={server} />
+      {/* )} */}
     </>
   );
 }

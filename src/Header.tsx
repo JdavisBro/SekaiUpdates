@@ -5,22 +5,23 @@ import githubDark from "./assets/github-mark.svg";
 import githubLight from "./assets/github-mark-white.svg";
 import info from "./assets/info.svg";
 import { Server, servers } from "./types/ServerType";
+import { useMedia } from "react-use";
 
 type Props = {
-  lightMode: boolean;
   setServer: React.Dispatch<React.SetStateAction<Server | undefined>>;
   server: Server;
   setShowPastUpdates: React.Dispatch<React.SetStateAction<boolean | undefined>>;
   showPastUpdates: boolean;
-  setDisplayFeature: (newhash: string) => void;
 };
 
 export default function Header(props: Props): React.ReactElement {
+  const lightMode = useMedia("(prefers-color-scheme: light)");
+
   const githubLogo = (
     <img
       className={styles.headerLogo}
       alt="GitHub Logo"
-      src={props.lightMode ? githubDark : githubLight}
+      src={lightMode ? githubDark : githubLight}
     />
   );
 
