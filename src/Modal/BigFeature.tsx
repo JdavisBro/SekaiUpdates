@@ -10,6 +10,7 @@ import { FeatureType, UpdateType } from "../types/UpdateType";
 import { memo, useCallback, useEffect, useMemo, useRef } from "react";
 import TableOfContents from "./TableOfContents";
 import { useHash } from "react-use";
+import AboutPage from "./AboutPage";
 
 type Props = {
   server: Server;
@@ -24,7 +25,10 @@ export default function BigFeature(props: Props): React.ReactElement | null {
 
   const selectedHeader = useRef<Element | null>(null);
 
+  const versionName = featureSplit[0];
+  const featureName = decodeURI(featureSplit[1]).replace("_", " ");
   const scrollTo = featureSplit[2];
+
   useEffect(() => {
     if (
       selectedHeader.current &&
@@ -67,7 +71,7 @@ export default function BigFeature(props: Props): React.ReactElement | null {
           <Header id={id}>
             {text}
             <a
-              href={`#${featureSplit[0]}/${featureSplit[1]}/${id}`}
+              href={`#${versionName}/${featureName}/${id}`}
               className={styles.linkA}
             >
               🔗
@@ -76,7 +80,7 @@ export default function BigFeature(props: Props): React.ReactElement | null {
         );
       };
     },
-    [featureSplit[0], featureSplit[1]],
+    [versionName, featureName],
   );
 
   const remarkPlugins = useMemo(() => [remarkGfm], []);
@@ -99,19 +103,26 @@ export default function BigFeature(props: Props): React.ReactElement | null {
   const urlTranform = useCallback(
     (url: string) => {
       if (url.startsWith("h#")) {
-        return `#${featureSplit[0]}/${featureSplit[1]}/${url.slice(2)}`;
+        return `#${versionName}/${featureName}/${url.slice(2)}`;
       }
       return defaultUrlTransform(url);
     },
-    [featureSplit[0], featureSplit[1]],
+    [versionName, featureName],
   );
 
   if (displayFeature == "" || displayFeature == "#") {
     return null;
   }
 
-  const versionName = featureSplit[0];
-  let featureName = decodeURI(featureSplit[1]).replace("_", " ");
+  if (displayFeature == "#About") {
+    return (
+      <AboutPage
+        displayFeature={displayFeature}
+        setDisplayFeature={setDisplayFeature}
+      />
+    );
+  }
+
   let update: UpdateType | null = null;
   for (const upd of updates) {
     if (upd.version == versionName) {

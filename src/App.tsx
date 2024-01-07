@@ -1,11 +1,10 @@
-import { useHash, useLocalStorage } from "react-use";
+import { useLocalStorage } from "react-use";
 
 import styles from "./App.module.css";
 import Header from "./Header";
 import Content from "./Content/Content";
 import { Server } from "./types/ServerType";
 import BigFeature from "./Modal/BigFeature";
-import AboutPage from "./Modal/AboutPage";
 import { useCallback } from "react";
 
 function App() {

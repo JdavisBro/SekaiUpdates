@@ -39,9 +39,9 @@ export default memo(function TableOfContents(
   }
 
   // Make tree
-  let root: HeadingType[] = [];
+  const root: HeadingType[] = [];
   let previous: HeadingType = headings[0];
-  let parents: {
+  const parents: {
     [key: number]: HeadingType;
   } = {};
   headings.forEach((value) => {
@@ -70,7 +70,7 @@ export default memo(function TableOfContents(
         delete parents[i];
       }
     }
-    var i = 1;
+    let i = 1;
     while (!(value.level - i in parents) || i > lowest_level) {
       i -= 1;
     }
