@@ -129,6 +129,7 @@
 @media all and (orientation: portrait) {
   .update {
     width: 85%;
+    height: 93%;
   }
 
   .featurelist {

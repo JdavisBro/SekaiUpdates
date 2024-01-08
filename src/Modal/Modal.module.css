@@ -99,7 +99,7 @@
 
 @media all and (orientation: portrait) {
   .box {
-    top: 1vh;
+    top: 2vh;
     width: 95%;
     left: 2.5%;
   }
