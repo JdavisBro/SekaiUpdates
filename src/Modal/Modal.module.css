@@ -3,7 +3,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -12,7 +12,7 @@
   left: 10vw;
   width: 80vw;
   height: 90vh;
-  position: absolute;
+  position: fixed;
   background-color: var(--tertiary-color);
   border-radius: 16px;
   display: flex;
