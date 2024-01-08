@@ -4,6 +4,7 @@
 
 .container {
   height: 100vh;
+  height: 100svh;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -12,5 +13,6 @@
 @media all and (orientation: portrait) {
   .container {
     height: 94vh;
+    height: 100svh;
   }
 }

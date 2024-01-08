@@ -3,6 +3,8 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+  width: 100svw;
+  height: 100svh;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -12,6 +14,11 @@
   left: 10vw;
   width: 80vw;
   height: 90vh;
+
+  top: 5svh;
+  left: 10svw;
+  width: 80svw;
+  height: 90svh;
   position: fixed;
   background-color: var(--tertiary-color);
   border-radius: 16px;
@@ -100,8 +107,13 @@
 @media all and (orientation: portrait) {
   .box {
     top: 2vh;
-    width: 95%;
+    height: 90vh;
+
+    top: 2.5svh;
+    height: 95svh;
+
     left: 2.5%;
+    width: 95%;
   }
 
   .description {
