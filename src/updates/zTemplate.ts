@@ -14,7 +14,7 @@ desc
     },
   ],
   date: {
-    [Server.jp]: new Date(2023, 0, 1),
+    [Server.jp]: new Date(2024, 0, 1),
   },
 };
 
