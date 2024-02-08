@@ -46,14 +46,7 @@ function App() {
           }, [])}
         />
       </div>
-      {/* {displayFeature == "#About" ? (
-        <AboutPage
-          displayFeature={displayFeature}
-          setDisplayFeature={setDisplayFeature}
-        />
-      ) : ( */}
       <BigFeature server={server} />
-      {/* )} */}
     </>
   );
 }

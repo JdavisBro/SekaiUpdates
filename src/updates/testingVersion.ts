@@ -6,7 +6,7 @@ const testingVersion: UpdateType = {
   description: "Features for Testing",
   features: [
     {
-      name: "Headers and Table of Contents",
+      name: "Headers and Table of Contents/slashtest",
       description: `
 # h1.1;h1.1
 [link to h3.3](h#h3.3)

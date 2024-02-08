@@ -84,7 +84,7 @@ export default memo(function TableOfContents(
   function createChildren(heading: HeadingType) {
     return (
       <li key={heading.id}>
-        <a href={`#${props.versionName}/${props.featureName}/${heading.id}`}>
+        <a href={`#${props.versionName}/${props.featureName}#${heading.id}`}>
           {heading.text}
         </a>
         {heading.children.length == 0 ? null : (

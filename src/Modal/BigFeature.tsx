@@ -26,8 +26,7 @@ export default function BigFeature(props: Props): React.ReactElement | null {
   const selectedHeader = useRef<Element | null>(null);
 
   const versionName = featureSplit[0];
-  const featureName = decodeURI(featureSplit[1]).replace("_", " ");
-  const scrollTo = featureSplit[2];
+  const [featureName, scrollTo] = decodeURI(featureSplit.slice(1).join("/")).replace("_", " ").split("#");
 
   useEffect(() => {
     if (
@@ -71,7 +70,7 @@ export default function BigFeature(props: Props): React.ReactElement | null {
           <Header id={id}>
             {text}
             <a
-              href={`#${versionName}/${featureName}/${id}`}
+              href={`#${versionName}/${featureName}#${id}`}
               className={styles.linkA}
             >
               🔗
@@ -103,7 +102,7 @@ export default function BigFeature(props: Props): React.ReactElement | null {
   const urlTranform = useCallback(
     (url: string) => {
       if (url.startsWith("h#")) {
-        return `#${versionName}/${featureName}/${url.slice(2)}`;
+        return `#${versionName}/${featureName}#${url.slice(2)}`;
       }
       return defaultUrlTransform(url);
     },
