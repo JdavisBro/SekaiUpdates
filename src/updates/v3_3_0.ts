@@ -84,7 +84,7 @@ Please note that this will NOT change the actual notes themselves, only their ap
       tags: [],
     },
     {
-      name: "Read/Skip Status shown for Side Stories",
+      name: "Skip Status shown for Side Stories",
       description: `
 - Just like main/event stories, read/skip status will now be shown for card/side stories.
 - When you have skipped and/or fast-forwarded a side story, a small "SKIP" mark will now be shown next to it.
