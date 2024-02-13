@@ -289,7 +289,7 @@ const v3_0_0: UpdateType = {
       name: "Trust Rank Cap Increase",
       description: `
 - The Kizuna Rank cap will be increased from 55 to 75.
-- In addition, you will receive a Stamp at Rank 75.
+- In addition, you will receive a Stamp at Rank 66.
 - Getting a Stamp from Trust Rank will count to *each* featured character's Character Mission.
 - Please note that any extra Trust EXP earned before the cap increase will not be accumulated.
       `,
