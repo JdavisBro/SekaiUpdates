@@ -102,7 +102,7 @@ const v3_4_0: UpdateType = {
 Show cut-in voices / Live results voices
 How to Unlock: Play the voicelines during lives/after lives
 - You can still unlock cut-in voicelines even when you set cut-in setting to [OFF].
-- Live results voicelines BEFORE the v.3.O.O update will already be unlocked, however the live results voicelines AFTER the v.3.O.O update will still be locked. Please replay them again during lives to unlock them.
+- Live results voicelines BEFORE the v.3.0.0 update will already be unlocked, however the live results voicelines AFTER the v.3.0.0 update will still be locked. Please replay them again during lives to unlock them.
 
 ## SmallTalk;Small Talk
 Login bonus voices / Home screen voices (via Show/Character button)
@@ -110,12 +110,12 @@ Login bonus voices / Home screen voices (via Show/Character button)
 - "Small Talk" voicelines are NOT included in the list of Character Missions.
 - Certain limited "Small Talk" voicelines such as April Fool's, collab, etc. will not be included in the voiceline list.
 
-## Training
+## Training;Training
 Card level up voices / Card upgrading voice / Card skill up voices / Card mastery rank voices
 - All "Training" voicelines will automatically be unlocked after the update.
 - "Training" voicelines are NOT included in the list of Character Missions.
 
-## Card Gacha Lines
+## Gacha;Card Gacha Lines
 Voicelines: 3* / 4* / BD/AN cards
 How to Unlock: Played when you first pull the cards through gachas
 - All "Gacha" voicelines of cards that you already have will automatically be unlocked after the update.
@@ -158,7 +158,7 @@ How to Unlock: Played when you first pull the cards through gachas
 
 - Another update is that players can now freely adjust/move around the position of the costume preview models. This way, players can now look closely at the costume details that can't be seen before.
 
-![Kagamine Rin in the dressup screen showing the ability to move the position of the preview.](https://pjsekai.sega.jp/master-data/image/news/news_thumb_460_LrIXkYGacI.PNG)
+![Kagamine Len in the dressup screen showing the ability to move the position of the preview.](https://pjsekai.sega.jp/master-data/image/news/news_thumb_460_LrIXkYGacI.PNG)
       `,
       tags: [],
     },
@@ -167,12 +167,12 @@ How to Unlock: Played when you first pull the cards through gachas
       description: `
 # NewMission;New Character Mission
 - Unlock a certain amount of [featured character's] Live & Gacha voicelines
-- 10 voicelines / 20 voicelines / 30 voicelines / 40 voicelines / 50 voicelines / ...and so on until 250 voicelines
+  - 10 voicelines / 20 voicelines / 30 voicelines / 40 voicelines / 50 voicelines / ...and so on until 250 voicelines
 # Cap;Cap Increase
 - Unlock a certain number of Live Costumes for [featured characterl
-- 530 costumes / 540 costumes / 550 costumes / 560 costumes / 570 costumes / 580 costumes / 590 costumes / 600 costumes / 610 costumes / 620 costumes / 630 costumes / 640 costumes
-# Collect a total number of [featured character's] stamps
-- 26 stamps / 27 stamps / 28 stamps / 29 stamps / 30 stamps / 31 stamps / 32 stamps / 33 stamps / 34 stamps / 35 stamps
+  - 530 costumes / 540 costumes / 550 costumes / 560 costumes / 570 costumes / 580 costumes / 590 costumes / 600 costumes / 610 costumes / 620 costumes / 630 costumes / 640 costumes
+- Collect a total number of [featured character's] stamps
+  - 26 stamps / 27 stamps / 28 stamps / 29 stamps / 30 stamps / 31 stamps / 32 stamps / 33 stamps / 34 stamps / 35 stamps
       `,
       tags: [],
     },
