@@ -91,7 +91,7 @@ Ever since the 3rd anniversary renewal, the button tap and skip function in the 
     {
       name: "Song Difficulty Level Revisions",
       description: `
-With the number of songs in the game reaching 35, and the addition of APPEND difficulty and TRACE notes, the devs have once again re-reviewed the overall difficulty level for MASTER songs. With this, some songs' difficulty levels will be revised.
+With the number of songs in the game reaching 350, and the addition of APPEND difficulty and TRACE notes, the devs have once again re-reviewed the overall difficulty level for MASTER songs. With this, some songs' difficulty levels will be revised.
 > Please note that this will change only the difficulty levels written for the songs, there will be no changes to the actual charts.
 ## 26to27;MASTER 26 ↗ 27
 - Time Machine
