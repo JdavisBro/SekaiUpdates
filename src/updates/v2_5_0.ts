@@ -175,7 +175,7 @@ List of characters that appear in a card's Side Stories will now be shown even a
   ],
   date: {
     [Server.jp]: new Date(2023, 1, 21),
-    [Server.en]: new Date(2024, 1, 21, 11)
+    [Server.en]: new Date(2024, 1, 21, 11),
   },
 };
 

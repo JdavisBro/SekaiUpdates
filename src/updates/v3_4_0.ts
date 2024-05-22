@@ -88,7 +88,6 @@ const v3_4_0: UpdateType = {
       date: {
         [Server.en]: new Date(2023, 10, 30),
       },
-
     },
     {
       name: "Voicelines in Character Archive",
@@ -197,7 +196,6 @@ How to Unlock: Played when you first pull the cards through gachas
       `,
       tags: [],
     },
-
   ],
   date: {
     [Server.jp]: new Date(2024, 2, 29),

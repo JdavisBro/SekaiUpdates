@@ -26,7 +26,9 @@ export default function BigFeature(props: Props): React.ReactElement | null {
   const selectedHeader = useRef<Element | null>(null);
 
   const versionName = featureSplit[0];
-  const [featureName, scrollTo] = decodeURI(featureSplit.slice(1).join("/")).replace("_", " ").split("#");
+  const [featureName, scrollTo] = decodeURI(featureSplit.slice(1).join("/"))
+    .replace("_", " ")
+    .split("#");
 
   useEffect(() => {
     if (

@@ -92,7 +92,7 @@ const v2_6_0: UpdateType = {
   ],
   date: {
     [Server.jp]: new Date(2023, 2, 30),
-    [Server.en]: new Date(2024, 2, 28, 11, 30)
+    [Server.en]: new Date(2024, 2, 28, 11, 30),
   },
 };
 
