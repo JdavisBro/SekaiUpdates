@@ -19,6 +19,7 @@ This engine update to "Unity 2022" is necessary for the game's future developmen
 - Android
   - BEFORE: Android 5.0 and above
   - AFTER: Android 5.1 and above
+
 Please note that the game will NOT be available for devices with OS below the ones listed above (AFTER update), so please do consider updating your device's OS or changing your device before the update.
       `,
       tags: [],
