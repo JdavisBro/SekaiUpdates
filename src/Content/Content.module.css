@@ -5,13 +5,31 @@
   flex-direction: column;
 }
 
-.searchcontainer {
+.optionscontainer {
   padding: 10px;
   box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
 }
 
-.searchcontainer label {
+.optionscontainer label {
   user-select: none;
+}
+
+.searchcontainer {
+  background-color: var(--secondary-color);
+  padding: 2px 6px 2px 6px;
+  border: solid 2px var(--secondary-color);
+  border-radius: 16px
+}
+
+.checkboxcontainer {
+  white-space: nowrap;
+  background-color: var(--secondary-color);
+  padding: 2px 4px 2px 0;
+  border: solid 2px var(--secondary-color);
+  border-radius: 16px
 }
 
 .updatecontainer {
@@ -26,7 +44,6 @@
   composes: updatecontainer;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-top: 0.5%;
   row-gap: 12px;
 }
 
@@ -131,10 +148,6 @@
 
 .full {
   height: fit-content;
-}
-
-.nobreak {
-  white-space: nowrap;
 }
 
 @media all and (orientation: portrait) {

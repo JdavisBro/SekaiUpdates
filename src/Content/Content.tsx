@@ -23,22 +23,23 @@ export default function Content(props: Props): React.ReactElement {
   return (
     <>
       <div className={styles.content}>
-        <div className={styles.searchcontainer}>
-          <label htmlFor="searchInput">Filter: </label>
-          <input
-            type="text"
-            id="searchInput"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            onKeyUp={(e) => {
-              if ((e.key == "Enter" || e.key == " ") && searchRef.current) {
-                searchRef.current.blur();
-              }
-            }}
-            ref={searchRef}
-          />
-          <span className={styles.nobreak}>
-            <label htmlFor="searchDescription"> Search Descriptions:</label>
+        <div className={styles.optionscontainer}>
+          <span className={styles.searchcontainer}>
+            <label htmlFor="searchInput">Filter: </label>
+            <input
+              type="text"
+              id="searchInput"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              onKeyUp={(e) => {
+                if ((e.key == "Enter" || e.key == " ") && searchRef.current) {
+                  searchRef.current.blur();
+                }
+              }}
+              ref={searchRef}
+            />
+          </span>
+          <span className={styles.checkboxcontainer}>
             <input
               type="checkbox"
               id="searchDescription"
@@ -47,9 +48,9 @@ export default function Content(props: Props): React.ReactElement {
                 setSearchDescription(e.target.checked);
               }}
             />
+            <label htmlFor="searchDescription">Search Descriptions</label>
           </span>
-          <span className={styles.nobreak}>
-            <label htmlFor="gridDisplay"> Display in Grid:</label>
+          <span className={styles.checkboxcontainer}>
             <input
               type="checkbox"
               id="gridDisplay"
@@ -58,6 +59,7 @@ export default function Content(props: Props): React.ReactElement {
                 setDisplayGrid(e.target.checked);
               }}
             />
+            <label htmlFor="gridDisplay">Display in Grid</label>
           </span>
         </div>
         <div
