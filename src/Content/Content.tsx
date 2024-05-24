@@ -4,6 +4,7 @@ import styles from "./Content.module.css";
 import updates from "../updates/updates";
 import Update from "./Update";
 import { Server } from "../types/ServerType";
+import { useLocalStorage } from "react-use";
 
 type Props = {
   server: Server;
@@ -14,6 +15,7 @@ type Props = {
 export default function Content(props: Props): React.ReactElement {
   const [search, setSearch] = useState("");
   const [searchDescription, setSearchDescription] = useState(false);
+  const [displayGrid, setDisplayGrid] = useLocalStorage("displayGrid", true);
 
   const searchRef = useRef<HTMLInputElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -46,9 +48,20 @@ export default function Content(props: Props): React.ReactElement {
               }}
             />
           </span>
+          <span className={styles.nobreak}>
+            <label htmlFor="gridDisplay"> Display in Grid:</label>
+            <input
+              type="checkbox"
+              id="gridDisplay"
+              checked={displayGrid}
+              onChange={(e) => {
+                setDisplayGrid(e.target.checked);
+              }}
+            />
+          </span>
         </div>
         <div
-          className={styles.updatecontainer}
+          className={displayGrid ? styles.updatecontainergrid : styles.updatecontainer}
           onWheel={(e) => {
             if (containerRef.current) {
               containerRef.current.scrollLeft += e.deltaY;
