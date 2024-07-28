@@ -453,7 +453,7 @@ The rewards you get from logging in to the game every day (7 days) will be renew
     {
       name: "Mastery Rank Event Bonus Ajustment",
       description: `
-## FourStar:4*
+## FourStar;4*
 - MR 0: 00.0% -> 10.0%
 - MR 1: 10.0% -> 12.5%
 - MR 2: 11.0% -> 15.0%
@@ -469,6 +469,16 @@ The rewards you get from logging in to the game every day (7 days) will be renew
 - MR 5: 10.0% -> 15.0%
 ## Notes;Notes
 - This update will apply for events after the 3rd Anniversary.
+## Chart;Chart
+
+|       |    M0 |    M1 |    M2 |    M3 |    M4 |    M5 |
+|:-----:|------:|------:|------:|------:|------:|------:|
+|    4* | 10.0% | 12.5% | 15.0% | 17.5% | 20.0% | 25.0% |
+| BD/AN |  5.0% |  7.0% |  9.0% | 11.0% | 13.0% | 15.0% |
+|    3* |  0.0% |  1.0% |  2.0% |  3.0% |  4.0% |  5.0% |
+|    2* |  0.0% |  0.2% |  0.4% |  0.6% |  0.8% |  1.0% |
+|    1* |  0.0% |  0.1% |  0.2% |  0.3% |  0.4% |  0.5% |
+
       `,
       tags: ["mastery bonus"],
     },
@@ -523,9 +533,9 @@ Event Exchange Shop Items Adjustment
   - Bonus Energy Drink (Large) x5
   - Attribute Charms x100 each
   - Magic Cloth x300
-  - Magic Thread
+  - Magic Thread x30
   - Wish Pieces x300
-  - Sticker Exchange Tickets x3
+  - Stamp Exchange Tickets x3
   - Virtual Coins x5,000
 - For players who have already completed the tutorial, the new rewards will be sent to your present box after the update.
       `,
@@ -583,7 +593,7 @@ Event Exchange Shop Items Adjustment
       description: `
 - Previously, only the SEKAI-Variant Miku, the initial SEKAI-Variant VS, VBS Rin, and WxS Len have their own 3D costumes, but now all the other SEKAI-Variant VIRTUAL SINGERs will be getting their own 3D costumes as well.
 - You can unlock these 3D Costumes by reading through the event stories these SEKAI-Variant VIRTUAL SINGERs were first featured in.
-## LN;Leo/need / Classroom SEKAI
+## LN;Leo/need / School SEKAI
 - Kagamine Rin: Unnamed Harmony
 - Kagamine Len: Putting Feelings Into Words
 - MEIKO: Don't Let Doubts Hold You Back
