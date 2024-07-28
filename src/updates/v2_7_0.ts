@@ -213,6 +213,7 @@ Penalty conditions for players who continuously lose communication in Multi Live
   ],
   date: {
     [Server.jp]: new Date(2023, 5, 20),
+    [Server.en]: new Date(2024, 5, 19),
   },
 };
 

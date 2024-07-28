@@ -16,6 +16,7 @@ const v2_8_0: UpdateType = {
   ],
   date: {
     [Server.jp]: new Date(2023, 8, 13),
+    [Server.en]: new Date(2024, 6, 30),
   },
 };
 
