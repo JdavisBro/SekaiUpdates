@@ -1,8 +1,8 @@
 import { Server } from "../types/ServerType.ts";
 import { UpdateType } from "../types/UpdateType.ts";
 
-const v3_X_0: UpdateType = {
-  version: "3.X.0",
+const v4_X_0: UpdateType = {
+  version: "4.X.0",
   description: "",
   features: [
     {
@@ -18,4 +18,4 @@ desc
   },
 };
 
-export default v3_X_0;
+export default v4_X_0;

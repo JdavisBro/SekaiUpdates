@@ -150,7 +150,7 @@ const v3_0_0: UpdateType = {
 - The amount of Live Bonus you use can now be adjusted right before a Live.
 - Skill activation and other displays during Lives will now be displayed outside of gameplay lane's range.
 - Added the change Hairstyle option in the "View MV" screen.
-- Hide items that you no longer have (O in number/amount).
+- Hide items that you no longer have (0 in number/amount).
 - Several areas have been updated.
 - Other improvements.
 
@@ -515,7 +515,7 @@ Event Exchange Shop Items Adjustment
     {
       name: "Multi Live 0 Life Score Penalty Change",
       description: `
-- The score that's reflected in the result screen when players HP/Life reach O will be reduced from 10% (90% reduction) to 70% (30% reduction).
+- The score that's reflected in the result screen when players HP/Life reach 0 will be reduced from 10% (90% reduction) to 70% (30% reduction).
 - This update will apply for events after the 3rd Anniversary.
       `,
       tags: [],
@@ -660,6 +660,7 @@ Event Exchange Shop Items Adjustment
   ],
   date: {
     [Server.jp]: new Date(2023, 8, 29),
+    [Server.en]: new Date(2024, 8, 30),
   },
 };
 

@@ -27,7 +27,7 @@ const v3_2_0: UpdateType = {
 ## ContentChanges;Content Changes
 - [Title: Never Give Up]
   - Original: Clear 1 Live by using the "Continue" option at least 5 times.
-  - Change: Play 5 Solo/Challenge Lives with O HP
+  - Change: Play 5 Solo/Challenge Lives with 0 HP
 
 ![Never Give Up title with the new requirements](https://pjsekai.sega.jp/master-data/image/news/news_thumb_422_wMFDIvlHpJ_2.png)
 - [Start Dash Mission] 
