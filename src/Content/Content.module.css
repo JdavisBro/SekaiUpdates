@@ -33,9 +33,9 @@
 }
 
 .updatecontainer {
+  display: flex;
   overflow: scroll hidden;
   flex-grow: 1;
-  display: inline-flex;
   white-space: nowrap;
   margin-bottom: 0.3%;
 }
@@ -54,7 +54,6 @@
   max-height: 100%;
   float: left;
   flex-shrink: 0;
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   margin-left: 0.5%;
@@ -63,6 +62,10 @@
   border-style: solid;
   border-color: transparent;
   background-color: var(--secondary-color);
+}
+
+.updatecontainergrid .update {
+  flex-grow: 1;
 }
 
 .update:last-child {
