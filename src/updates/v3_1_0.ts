@@ -108,6 +108,7 @@ A new type of event called "World Link" event will be added to the game after ve
   ],
   date: {
     [Server.jp]: new Date(2023, 10, 8),
+    [Server.en]: new Date(2024, 9, 29),
   },
 };
 
