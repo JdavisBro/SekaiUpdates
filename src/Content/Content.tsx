@@ -52,7 +52,7 @@ export default function Content(props: Props): React.ReactElement {
             </span>
             <span className={styles.searchcontainer}>
               <label>
-                Filter:
+                Filter:{" "}
                 <input
                   type="text"
                   value={search}
