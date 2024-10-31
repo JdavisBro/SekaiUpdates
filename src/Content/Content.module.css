@@ -5,11 +5,17 @@
   flex-direction: column;
 }
 
-.optionscontainer {
+.header {
+  display: flex;
+  justify-content: space-between;
   padding: 10px;
+}
+
+.optionscontainer {
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 4px;
 }
 
@@ -32,12 +38,40 @@
   border-radius: 16px
 }
 
+.endItems {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+}
+
+.headerLogoContainer img, .infoButton img {
+  height: 100%;
+}
+
+.headerLogoContainer {
+  height: 1.4em;
+  margin-right: 4px;
+  position: relative;
+  top: -0.5px;
+}
+
+.infoButton {
+  height: 1.5em;
+  filter: invert();
+}
+
+@media (prefers-color-scheme: light) {
+  .infoButton img {
+    filter: none;
+  }
+}
+
 .updatecontainer {
   display: flex;
   overflow: scroll hidden;
   flex-grow: 1;
   white-space: nowrap;
-  margin-bottom: 0.3%;
+  padding-bottom: 0.3%;
 }
 
 .updatecontainergrid {
