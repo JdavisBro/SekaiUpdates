@@ -6,6 +6,7 @@ import updates from "../updates/updates";
 import Update from "./Update";
 import { Server } from "../types/ServerType";
 
+import saki from "../assets/sakisakisakisakisakisaki.webp";
 import githubDark from "../assets/github-mark.svg";
 import githubLight from "../assets/github-mark-white.svg";
 import info from "../assets/info.svg";
@@ -48,7 +49,7 @@ export default function Content(props: Props): React.ReactElement {
         <div className={styles.header}>
           <div className={styles.optionscontainer}>
             <span className={styles.searchcontainer}>
-              Project Sekai Updates
+              <img src={saki} alt={"Saki Tenma Motivated Stamp"} />&nbsp;Project Sekai Updates
             </span>
             <span className={styles.searchcontainer}>
               <label>
@@ -90,7 +91,7 @@ export default function Content(props: Props): React.ReactElement {
                     setDisplayGrid(e.target.checked);
                   }}
                 />
-                Display in Grid
+                Grid Display
               </label>
             </span>
             <span className={styles.checkboxcontainer}>
@@ -102,7 +103,7 @@ export default function Content(props: Props): React.ReactElement {
                   type="checkbox"
                   defaultChecked={showPastUpdates}
                 />
-                Show Past Updates
+                Past Updates
               </label>
             </span>
           </div>
