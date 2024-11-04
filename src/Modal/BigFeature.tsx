@@ -200,7 +200,7 @@ export default function BigFeature(props: Props): React.ReactElement | null {
           )}
         </>
       }
-      linkUrl={`#${versionName}/${featureName}`}
+      linkUrl={`#${encodeURIComponent(versionName)}/${encodeURIComponent(featureName)}`}
     >
       <>
         <TableOfContents
