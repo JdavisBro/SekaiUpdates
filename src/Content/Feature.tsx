@@ -42,7 +42,7 @@ export default function Feature(props: Props): React.ReactElement | boolean {
     }
   }
   function handleSetDisplayFeature() {
-    props.setDisplayFeature(`#${encodeURIComponent(props.update.version)}/${encodeURIComponent(props.feature.name)}`);
+    props.setDisplayFeature(encodeURI(`#${props.update.version}/${props.feature.name}`));
   }
 
   return (

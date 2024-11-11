@@ -21,14 +21,16 @@ const MarkdownMemo = memo(Markdown);
 export default function BigFeature(props: Props): React.ReactElement | null {
   const [displayFeature, setDisplayFeature] = useHash();
 
-  const featureSplit = displayFeature.slice(1).split("/");
+  const featureSplit = decodeURI(displayFeature).slice(1).split("/");
 
   const selectedHeader = useRef<Element | null>(null);
 
   const versionName = featureSplit[0];
-  const [featureName, scrollTo] = decodeURI(featureSplit.slice(1).join("/"))
+  const [featureName, scrollTo] = featureSplit.slice(1).join("/")
     .replace("_", " ")
     .split("#");
+
+  console.log(versionName, featureName, scrollTo);
 
   useEffect(() => {
     if (
@@ -200,7 +202,7 @@ export default function BigFeature(props: Props): React.ReactElement | null {
           )}
         </>
       }
-      linkUrl={`#${encodeURIComponent(versionName)}/${encodeURIComponent(featureName)}`}
+      linkUrl={encodeURI(`#${versionName}/${featureName}`)}
     >
       <>
         <TableOfContents

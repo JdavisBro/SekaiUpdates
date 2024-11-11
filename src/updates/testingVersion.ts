@@ -28,6 +28,11 @@ const testingVersion: UpdateType = {
       `,
       tags: [],
     },
+    {
+      name: "%^*\"$)(*)&@~/?\\|`¦",
+      description: "name character test",
+      tags: []
+    }
   ],
   date: {
     [Server.jp]: new Date(1992, 0, 1),
