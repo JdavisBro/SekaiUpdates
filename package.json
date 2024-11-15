@@ -12,13 +12,13 @@
   },
   "dependencies": {
     "@preact/compat": "^18.3.1",
+    "marked-react": "^2.0.0",
     "preact": "^10.24.3",
-    "react-markdown": "^9.0.1",
-    "react-use": "^17.5.0",
-    "remark-gfm": "^4.0.0"
+    "react-use": "^17.5.0"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.9.1",
+    "@types/node": "^22.9.0",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "eslint": "^8.57.0",

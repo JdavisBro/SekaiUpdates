@@ -1,5 +1,6 @@
-import Markdown, { ExtraProps, defaultUrlTransform } from "react-markdown";
-import remarkGfm from "remark-gfm";
+import Markdown, { ReactRenderer } from "marked-react";
+import { useHash } from "react-use";
+import type { JSXInternal } from "node_modules/preact/src/jsx";
 
 import Modal from "./Modal";
 import updates from "../updates/updates";
@@ -7,9 +8,8 @@ import JoinElements from "../utils/JoinElements";
 import styles from "./Modal.module.css";
 import { Server } from "../types/ServerType";
 import { FeatureType, UpdateType } from "../types/UpdateType";
-import { memo, useCallback, useEffect, useMemo, useRef } from "react";
+import { memo, useEffect, useMemo, useRef } from "react";
 import TableOfContents from "./TableOfContents";
-import { useHash } from "react-use";
 import AboutPage from "./AboutPage";
 
 type Props = {
@@ -59,17 +59,19 @@ export default function BigFeature(props: Props): React.ReactElement | null {
     }
   }, [scrollTo]);
 
-  const headingComponent = useCallback(
-    (Header: "h1" | "h2" | "h3" | "h4" | "h5" | "h6") => {
-      return (componentProps: JSX.IntrinsicElements["h1"] & ExtraProps) => {
+  const renderer = useMemo<Partial<ReactRenderer>>(() => {
+    return {
+      heading: (children: string[], level: number) => {
+        const child = children[0]
+        const Header = ("h" + level) as "h1" | "h2" | "h3" | "h4" | "h5" | "h6"; 
         if (
-          typeof componentProps.children !== "string" ||
-          !componentProps.children ||
-          !componentProps.children.includes(";")
+          typeof child !== "string" ||
+          !child ||
+          !child.includes(";")
         ) {
-          return <Header>{componentProps.children}</Header>;
+          return <Header>{child}</Header>;
         }
-        const [id, text] = componentProps.children.split(";");
+        const [id, text] = child.split(";");
         return (
           <Header id={id}>
             {text}
@@ -81,37 +83,24 @@ export default function BigFeature(props: Props): React.ReactElement | null {
             </a>
           </Header>
         );
-      };
-    },
-    [versionName, featureName],
-  );
-
-  const remarkPlugins = useMemo(() => [remarkGfm], []);
-  const components = useMemo(() => {
-    return {
-      h1: headingComponent("h1"),
-      h2: headingComponent("h2"),
-      h3: headingComponent("h3"),
-      h4: headingComponent("h4"),
-      h5: headingComponent("h5"),
-      h6: headingComponent("h6"),
-      table: (componentProps: JSX.IntrinsicElements["h1"] & ExtraProps) => (
+      },
+      table: (children: JSXInternal.Element[]) => (
         <div className={styles.tablecontainer}>
-          <table>{componentProps.children}</table>
+          <table>{children}</table>
         </div>
       ),
     };
-  }, [headingComponent]);
+  }, [featureName, versionName]);
 
-  const urlTranform = useCallback(
-    (url: string) => {
-      if (url.startsWith("h#")) {
-        return `#${versionName}/${featureName}#${url.slice(2)}`;
-      }
-      return defaultUrlTransform(url);
-    },
-    [versionName, featureName],
-  );
+  // const urlTranform = useCallback(
+  //   (url: string) => {
+  //     if (url.startsWith("h#")) {
+  //       return `#${versionName}/${featureName}#${url.slice(2)}`;
+  //     }
+  //     return defaultUrlTransform(url);
+  //   },
+  //   [versionName, featureName],
+  // );
 
   if (displayFeature == "" || displayFeature == "#") {
     return null;
@@ -210,10 +199,7 @@ export default function BigFeature(props: Props): React.ReactElement | null {
           featureName={featureName}
           description={feature.description}
         />
-        <MarkdownMemo
-          remarkPlugins={remarkPlugins}
-          components={components}
-          urlTransform={urlTranform}
+        <MarkdownMemo renderer={renderer}
         >
           {feature.description}
         </MarkdownMemo>
