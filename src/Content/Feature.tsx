@@ -12,7 +12,7 @@ type Props = {
   setDisplayFeature: (newHash: string) => void;
 };
 
-export default function Feature(props: Props): React.ReactElement | boolean {
+export default function Feature(props: Props): React.ReactElement {
   let dateText = "";
   if (props.server != Server.jp) {
     const featureDates = props.feature.date;

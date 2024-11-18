@@ -57,10 +57,10 @@ export default function Content(props: Props): React.ReactElement {
                 <input
                   type="text"
                   value={search}
-                  onChange={(e) => setSearch(e.target.value)}
-                  onKeyUp={(e) => {
+                  onChange={(event) => setSearch(event.currentTarget.value)}
+                  onKeyUp={(event) => {
                     if (
-                      (e.key == "Enter" || e.key == " ") &&
+                      (event.key == "Enter" || event.key == " ") &&
                       searchRef.current
                     ) {
                       searchRef.current.blur();
@@ -75,8 +75,8 @@ export default function Content(props: Props): React.ReactElement {
                 <input
                   type="checkbox"
                   checked={searchDescription}
-                  onChange={(e) => {
-                    setSearchDescription(e.target.checked);
+                  onChange={(event) => {
+                    setSearchDescription(event.currentTarget.checked);
                   }}
                 />
                 Search Descriptions
@@ -87,8 +87,8 @@ export default function Content(props: Props): React.ReactElement {
                 <input
                   type="checkbox"
                   checked={displayGrid}
-                  onChange={(e) => {
-                    setDisplayGrid(e.target.checked);
+                  onChange={(event) => {
+                    setDisplayGrid(event.currentTarget.checked);
                   }}
                 />
                 Grid Display
