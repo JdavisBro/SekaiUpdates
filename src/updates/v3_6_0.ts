@@ -23,10 +23,14 @@ This engine update to "Unity 2022" is necessary for the game's future developmen
 Please note that the game will NOT be available for devices with OS below the ones listed above (AFTER update), so please do consider updating your device's OS or changing your device before the update.
       `,
       tags: [],
+      date: {
+        [Server.en]: new Date(2024, 10, 28),
+      }
     },
   ],
   date: {
     [Server.jp]: new Date(2024, 4, 21),
+    [Server.en]: new Date(2024, 10, 28),
   },
 };
 
