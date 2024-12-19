@@ -209,6 +209,7 @@ With the number of songs in the game reaching 350, and the addition of APPEND di
   ],
   date: {
     [Server.jp]: new Date(2023, 11, 25),
+    [Server.en]: new Date(2024, 11, 23),
   },
 };
 
