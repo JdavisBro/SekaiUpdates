@@ -20,6 +20,7 @@ export default function Modal(props: Props) {
   }, [closeButton]);
 
   const rootDiv = useRef<HTMLDivElement>(null);
+  const descDiv = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -90,9 +91,20 @@ export default function Modal(props: Props) {
               )}
             </h2>
           </div>
-          <div id="modaldesc" className={styles.description}>
+          <div id="modaldesc" className={styles.description} ref={descDiv}>
             {props.children}
           </div>
+          <button
+            className={styles.toTop}
+            onClick={() => {
+              console.log(rootDiv.current);
+              if (descDiv.current) {
+                descDiv.current.scrollTop = 0;
+              }
+            }}
+          >
+            ↑
+          </button>
         </div>
       </div>
     </>

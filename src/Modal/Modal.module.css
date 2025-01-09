@@ -104,6 +104,19 @@
   background-color: var(--secondary-color);
 }
 
+.toTop {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  padding: 8px 18px 12px 18px;
+  font-size: 1.2em;
+  background-color: var(--secondary-color);
+  appearance: none;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
 @media all and (orientation: portrait) {
   .box {
     top: 2vh;
