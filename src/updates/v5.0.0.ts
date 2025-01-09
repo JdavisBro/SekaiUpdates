@@ -36,7 +36,7 @@ In addition to MySekai materials, you can also earn Player Rank EXP, Show Points
 
 Furniture can be crafted on a "Working Table" by using collected materials and the furniture's blueprint. A furniture's blueprint can be used any numbers of times.
 
-Furniture blueprints can be obtained from "treasure chests" and "transforming machines" that appear once a day in the gathering area.
+Furniture blueprints can be obtained from "treasure chests" that appear once a day in the gathering area and from the transformation machine.
 
 A working table will be given during the tutorial.
 
@@ -129,7 +129,7 @@ Level 1 Transformations:
 - 3 Batteries, 1000 Coins -> 3 Bonus Energy Drinks S
 - 2000 Charms, 1000 Coins -> 100 Gems
 - 100 Magic Cloth, 10000 Coins -> 10 Magic Thread
-- 10 Magic Thread, 10000 Coins -> 10 Magic Cloth
+- 10 Magic Thread, 10000 Coins -> 100 Magic Cloth
 - 500 Practice Score (Beginner), 10000 Coins -> 10 Practice Score (Intermediate)
 
 Level 2 Transformations:
