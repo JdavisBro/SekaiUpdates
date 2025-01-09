@@ -384,7 +384,7 @@ Due to the holding of the World Link events, adjustments will be able to the oth
     },
   ],
   date: {
-    [Server.jp]: new Date(2025, 0, 9),
+    [Server.jp]: new Date(2025, 0, 10),
   },
 };
 
