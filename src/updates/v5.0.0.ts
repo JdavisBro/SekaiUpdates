@@ -80,7 +80,7 @@ You cannot recieve memoria from a character immediately after changing gates.
 
 Gates have levels and can be leveled up using materials. Leveling a gate does the following:
 - Increases the chance of more people coming to play at once.
-- Increases the gate's talent bonus, whihc increases the talent of unit member cards.
+- Increases the gate's talent bonus, which increases the talent of unit member cards.
   - For virtual singers cards with sub-units the talent bonus value of the target unit is applied.
   - For virtual singer cards without sub-units the talent bonus value of the gate with the highest level out of all units is applied.
 
