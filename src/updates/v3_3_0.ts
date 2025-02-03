@@ -130,6 +130,7 @@ Please note that this will NOT change the actual notes themselves, only their ap
   ],
   date: {
     [Server.jp]: new Date(2024, 0, 31),
+    [Server.en]: new Date(2025, 0, 31),
   },
 };
 
