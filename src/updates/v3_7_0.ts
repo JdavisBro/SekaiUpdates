@@ -58,11 +58,11 @@ const v3_7_0: UpdateType = {
       description: `
 - After the update and starting from the event that will begin on June 30th, the amount of rewards you can get from clearing Bonus Missions will be increased.
 - Clearing Each Bonus Mission
-  - [BEFORE CHANGE] Live Pts
-  - [AFTER CHANGE] Live pts x50 + Crystals XIO
+  - [BEFORE CHANGE] Live Pts x50
+  - [AFTER CHANGE] Live pts x50 + Crystals x10
 - Clearing All Bonus Missions
   - [BEFORE CHANGE] Live pts x150
-  - [AFTER CHANGE] * You can now CHOOSE 1 item between 8 available items
+  - [AFTER CHANGE] You can now CHOOSE 1 item between 8 available items
     - Crystals x100
     - Wish Pieces x100
     - Virtual Coins x300
@@ -72,6 +72,7 @@ const v3_7_0: UpdateType = {
     - Skill-Up Scores (Intermediate) x3
     - Show pts x150
       - Show pts is only available as a choice for players who bought "Colorful Pass"
+
 ![All Bonus Mission reward choices](https://pjsekai.sega.jp/master-data/image/news/news_thumb_495_HmMRJquZoK.PNG)
       `,
       tags: [],
