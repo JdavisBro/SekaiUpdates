@@ -199,6 +199,7 @@ How to Unlock: Played when you first pull the cards through gachas
   ],
   date: {
     [Server.jp]: new Date(2024, 2, 29),
+    [Server.en]: new Date(2025, 2, 28),
   },
 };
 
