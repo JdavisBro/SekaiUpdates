@@ -1,5 +1,5 @@
 .contents {
-  border: white solid 1px;
+  border: var(--tree-color) solid 1px;
   width: fit-content;
   padding-top: 2px;
   padding-bottom: 4px;
@@ -40,7 +40,7 @@
 }
 
 .tree li {
-  border-left: 2px solid #ddd;
+  border-left: 2px solid var(--tree-color);
 }
 
 .tree li:last-child {
@@ -55,6 +55,6 @@
   left: -2px;
   width: var(--spacing);
   height: calc(var(--spacing) + 6px);
-  border: solid #ddd;
+  border: solid var(--tree-color);
   border-width: 0 0 2px 2px;
 }

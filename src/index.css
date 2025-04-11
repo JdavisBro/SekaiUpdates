@@ -5,9 +5,11 @@
   --tertiary-color: #5e5e5e;
 
   --feature-color: #383838;
+  --feature-color-hover: #444444;
 
-  color: rgba(255, 255, 255, 0.87);
   --secondary-text: #d3d3d3;
+
+  --tree-color: #ffffff;
 
   font-family: Calibri, "Trebuchet MS", sans-serif;
   line-height: 1.5;
@@ -44,6 +46,9 @@ body {
     --tertiary-color: #dfdfdf;
 
     --feature-color: #b6b6b6;
+    --feature-color-hover: #bebebe;
+
+    --tree-color: #242424;
 
     color: #213547;
     --secondary-text: #3c4a55;

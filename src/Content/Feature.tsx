@@ -41,21 +41,12 @@ export default function Feature(props: Props): React.ReactElement {
       }
     }
   }
-  function handleSetDisplayFeature() {
-    props.setDisplayFeature(encodeURI(`#${props.update.version}/${props.feature.name}`));
-  }
 
   return (
     <>
-      <div
-        tabIndex={0}
-        onClick={handleSetDisplayFeature}
-        onKeyDown={(event) => {
-          if (event.key == "Enter" || event.key == " ") {
-            handleSetDisplayFeature();
-          }
-        }}
+      <a
         className={styles.feature}
+        href={`#${props.update.version}/${props.feature.name}`}
       >
         <h2 className={styles.featureleft}>{props.feature.name}</h2>
         <div className={styles.featuremiddle}></div>
@@ -68,7 +59,7 @@ export default function Feature(props: Props): React.ReactElement {
             true,
           )}
         </h4>
-      </div>
+      </a>
     </>
   );
 }
