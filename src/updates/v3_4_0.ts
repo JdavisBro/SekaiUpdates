@@ -3,7 +3,7 @@ import { UpdateType } from "../types/UpdateType.ts";
 
 const v3_4_0: UpdateType = {
   version: "3.4.0",
-  description: "",
+  description: "3.5th Anniversary",
   features: [
     {
       name: "Ads",

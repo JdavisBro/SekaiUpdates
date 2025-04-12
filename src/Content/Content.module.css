@@ -121,36 +121,34 @@
 
 .splitline {
   width: 100%;
+  display: flex;
+  align-items: center;
+  height: 44px;
+  margin-bottom: 6px;
 }
 
 .left {
-  float: left;
+  flex: 1 0 0;
+  margin: 0 3px 0 3px;
+  line-height: 1.3em;
 }
 
 .right {
-  float: right;
+  flex: 0 1 0;
   text-align: right;
-}
-
-.update h2,
-.update h4 {
-  margin: 0 3px 0 3px;
-}
-
-.update h4 {
   color: var(--secondary-text);
+  font-weight: bold;
+  align-self: flex-start;
+  line-height: 22px;
+}
+
+.update h2 {
+  margin: 0;
 }
 
 .description {
-  margin: 5px 0 5px 0;
-  padding: 0 5px 0 5px;
-  box-sizing: border-box;
-  border-radius: 8px;
-  width: 100%;
-  flex-basis: 20%;
-  flex-shrink: 1;
-  background-color: var(--tertiary-color);
-  overflow-y: scroll;
+  font-size: 0.8em;
+  margin-left: 1px;
 }
 
 .featurelist {
@@ -184,7 +182,7 @@
   box-sizing: border-box;
   flex-shrink: 1;
   flex-grow: 0;
-  padding-left: 4px;
+  padding-left: 6px;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }

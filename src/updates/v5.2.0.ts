@@ -3,7 +3,7 @@ import { UpdateType } from "../types/UpdateType.ts";
 
 const v5_2_0: UpdateType = {
   version: "5.2.0",
-  description: "",
+  description: "4.5th Anniversary",
   features: [
     {
       name: "MySekai - Block Furniture",

@@ -3,7 +3,7 @@ import { UpdateType } from "../types/UpdateType.ts";
 
 const v4_0_0: UpdateType = {
   version: "4.0.0",
-  description: "",
+  description: "4th Anniversary",
   features: [
     {
       name: "Gacha Tickets & Crystals for Reading Stories",

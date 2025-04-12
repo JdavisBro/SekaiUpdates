@@ -3,7 +3,7 @@ import { UpdateType } from "../types/UpdateType.ts";
 
 const v3_0_0: UpdateType = {
   version: "3.0.0",
-  description: "",
+  description: "3rd Anniversary",
   features: [
     {
       name: "Character Advancement",

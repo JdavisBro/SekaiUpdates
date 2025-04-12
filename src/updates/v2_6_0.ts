@@ -3,7 +3,7 @@ import { UpdateType } from "../types/UpdateType.ts";
 
 const v2_6_0: UpdateType = {
   version: "2.6.0",
-  description: "",
+  description: "2.5th Anniversary",
   features: [
     {
       name: "Favorite Stories",

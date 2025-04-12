@@ -27,21 +27,22 @@ export default function Update(props: Props): React.ReactElement | null {
     }
   }
 
-  let description: React.ReactElement | null = null;
-  if (props.update.description) {
-    description = (
-      <div className={styles.description}>{props.update.description}</div>
+  const currentServerDate =
+    props.server != Server.jp && props.update.date[props.server] ? (
+      <div>
+        {Server[props.server].toUpperCase()}:{" "}
+        {props.update.date[props.server]?.toLocaleDateString()}
+      </div>
+    ) : (
+      ""
     );
-  }
-
-  let currentServerDate = "​"; // Zero-Width Space
-  if (props.server != Server.jp && props.update.date[props.server]) {
-    currentServerDate = `${Server[
-      props.server
-    ].toUpperCase()}: ${props.update.date[props.server]?.toLocaleDateString()}`;
-  }
 
   let anyVisible = false;
+
+  const search = props.search.toLowerCase();
+  const versionSearched =
+    `version ${props.update.version.toLowerCase()}`.includes(search) ||
+    props.update.description.toLowerCase().includes(search);
 
   const visibleFeatures = props.update.features.map((feature, index) => {
     if (props.server != Server.jp && !props.showPastUpdates) {
@@ -57,12 +58,11 @@ export default function Update(props: Props): React.ReactElement | null {
     }
     if (props.search != "") {
       let inSearch = false;
-      const search = props.search.toLowerCase();
       if (
+        versionSearched ||
         feature.name.toLowerCase().includes(search) ||
         (props.searchDescription &&
-          feature.description.toLowerCase().includes(search)) ||
-        `version ${props.update.version}`.includes(search)
+          feature.description.toLowerCase().includes(search))
       ) {
         inSearch = true;
       }
@@ -97,14 +97,20 @@ export default function Update(props: Props): React.ReactElement | null {
     <>
       <div className={styles.update}>
         <div className={styles.splitline}>
-          <h2 className={styles.left}>Version {props.update.version}</h2>
-          <h4 className={styles.right}>
-            JP: {props.update.date[Server.jp].toLocaleDateString()}
-            <br />
+          <div className={styles.left}>
+            <h2>Version {props.update.version}</h2>
+            {props.update.description ? (
+              <div className={styles.description}>
+                {props.update.description}
+              </div>
+            ) : null}
+          </div>
+          <div className={styles.right}>
+            <div>JP: {props.update.date[Server.jp].toLocaleDateString()}</div>
             {currentServerDate}
-          </h4>
+          </div>
         </div>
-        {description}
+
         <div
           className={styles.featurelist}
           onWheel={(e) => {

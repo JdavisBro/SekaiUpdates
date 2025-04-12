@@ -46,7 +46,7 @@ export default function Feature(props: Props): React.ReactElement {
     <>
       <a
         className={styles.feature}
-        href={`#${props.update.version}/${props.feature.name}`}
+        href={encodeURI(`#${props.update.version}/${props.feature.name}`)}
       >
         <h2 className={styles.featureleft}>{props.feature.name}</h2>
         <div className={styles.featuremiddle}></div>

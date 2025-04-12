@@ -21,12 +21,15 @@ const MarkdownMemo = memo(Markdown);
 export default function BigFeature(props: Props): React.ReactElement | null {
   const [displayFeature, setDisplayFeature] = useHash();
 
+  console.log(displayFeature);
   const featureSplit = decodeURI(displayFeature).slice(1).split("/");
 
   const selectedHeader = useRef<Element | null>(null);
 
   const versionName = featureSplit[0];
-  const [featureName, scrollTo] = featureSplit.slice(1).join("/")
+  const [featureName, scrollTo] = featureSplit
+    .slice(1)
+    .join("/")
     .replace("_", " ")
     .split("#");
 
@@ -62,13 +65,9 @@ export default function BigFeature(props: Props): React.ReactElement | null {
   const renderer = useMemo<Partial<ReactRenderer>>(() => {
     return {
       heading: (children: string[], level: number) => {
-        const child = children[0]
-        const Header = ("h" + level) as "h1" | "h2" | "h3" | "h4" | "h5" | "h6"; 
-        if (
-          typeof child !== "string" ||
-          !child ||
-          !child.includes(";")
-        ) {
+        const child = children[0];
+        const Header = ("h" + level) as "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+        if (typeof child !== "string" || !child || !child.includes(";")) {
           return <Header>{child}</Header>;
         }
         const [id, text] = child.split(";");
@@ -199,10 +198,7 @@ export default function BigFeature(props: Props): React.ReactElement | null {
           featureName={featureName}
           description={feature.description}
         />
-        <MarkdownMemo renderer={renderer}
-        >
-          {feature.description}
-        </MarkdownMemo>
+        <MarkdownMemo renderer={renderer}>{feature.description}</MarkdownMemo>
       </>
     </Modal>
   );
