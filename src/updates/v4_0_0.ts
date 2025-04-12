@@ -32,8 +32,17 @@ With the addition of the reading missions, the option to filter by skipped/fast 
 # Title;"Read It All" Title Update
 
 Limit raised from 1100 -> 2600.
-      `,
-      tags: ["story", "episode", "skip", "fast forward", "gacha", "crystals", "filtering", "title"],
+`,
+      tags: [
+        "story",
+        "episode",
+        "skip",
+        "fast forward",
+        "gacha",
+        "crystals",
+        "filtering",
+        "title",
+      ],
     },
     {
       name: "Trust Ranks for All Combinations",
@@ -48,7 +57,7 @@ Limit raised from 1100 -> 2600.
 - For every pair a new title will be added, "XX & XX Fan", as a reward for trust rank 5.
 - "Wish Pieces x10" will also be added as a reward for reaching Trust Rank 16, 26, 36, 46, 56, 66.
 - After the update compensation will be given for trust ranks that are already at these levels.
-      `,
+`,
       tags: ["fan title", "kizuna rank"],
     },
     {
@@ -65,7 +74,7 @@ New Missions have been added. Clearing these missions gives you Mission Gacha Ti
   - Levels 20 - 24: 2 Mission Gacha Tickets
   - Levels 25 - 29: 3 Mission Gacha Tickets
   - Levels 30 - 37: 5 Mission Gacha Tickets
-      `,
+`,
       tags: [],
     },
     {
@@ -73,12 +82,12 @@ New Missions have been added. Clearing these missions gives you Mission Gacha Ti
       description: `
 - Auto Show will be added to challenge live.
   - Challenge Auto Show does not count towrads solo show daily limit.
-  - If EX level was already reached, challenge exp to the next EX level will be saved for if you reach EX level again.
 - Challenge Rank Limit: 100 -> 150
+  - If EX level was already reached, challenge exp to the next EX level will be saved for if you reach EX level again.
 - High Score Limit: 2,000,000 -> 2,500,000
   - Rewards from 2,020,000 -> 2,480,000: 10 Wish Pieces every 20,000
   - Reward for 2,500,000: 250 Crystals
-      `,
+`,
       tags: ["high score", "challenge rank"],
     },
     {
@@ -89,7 +98,7 @@ The "Project SEKAI" official store will open soon on 9/28!
 This store will allow you to buy Crystals straight from the website! In addition, you will also receive extra Crystals as bonus for buying from the official store!
 
 ![Project Sekai Store Announcement](https://pjsekai.sega.jp/master-data/image/news/news_thumb_569_nCw1GIKPgo.jpg)
-      `,
+`,
       tags: [],
     },
     {
@@ -115,14 +124,14 @@ For reward/energy 5x is most efficient now.
 # Image
 
 ![Graphic Showing New Show Energy Changes](https://pjsekai.sega.jp/master-data/image/news/news_thumb_570_PPCFJ4uDJT.jpg)
-      `,
+`,
       tags: [],
     },
     {
       name: "Uprate Bloomfes Give 70% Bonus",
       description: `
 Bloom Festival exclusive cards will give the same 70% (+ bonus from mastery) event bonus as featured event cards during the event they were introduced in.  
-      `,
+`,
       tags: [],
     },
     {
@@ -157,7 +166,7 @@ The cost of a duet cover will stay as 1 of each character's cover cards.
 # Image;Image
 
 ![Graphic Showing Cover Card Changes](https://pjsekai.sega.jp/master-data/image/news/news_thumb_572_EDjjcmNC3q.jpg)
-      `,
+`,
       tags: [],
     },
     {
@@ -191,7 +200,7 @@ The cost of a duet cover will stay as 1 of each character's cover cards.
   - Every 20 from 720 - 900
 - Read Part 1 of XX different Character Side Stories and Read Part 2 of XX different Character Side Stories
   - Every 1 from 51 - 55
-      `,
+`,
       tags: ["character rank", "player rank", "cr"],
     },
     {
@@ -206,7 +215,7 @@ After the update, rewards for completing the tutorial are changed.
 - Attribute Charms: 100 -> 5000 (+4900)
 
 Compensation of the difference will be given to players who've already completed the tutorial.
-      `,
+`,
       tags: [],
     },
     {
@@ -281,21 +290,21 @@ The difficulty level of the following songs will be revised in consideration of 
 
 ## Expert31to30;31 ↘ 30
 - Marble Blue
-      `,
+`,
       tags: [],
     },
     {
       name: "Limited Gacha Voucher Exchange",
       description: `
 You will be able to exchange 1x Limited Gacha Voucher for 50x Wish Pieces 
-      `,
+`,
       tags: [],
     },
     {
       name: "Character Rank Unit Claim All",
       description: `
 A "Claim All" button will be added for each unit on the character rank screen. Clicking it will claim all character's unclaimed EXP. An animation will still be shown for each character.
-      `,
+`,
       tags: [],
     },
     {
@@ -304,7 +313,7 @@ A "Claim All" button will be added for each unit on the character rank screen. C
 Virtual Shows held after September 30th will have a performance held every hour from the start to the end.
 
 The start of Welcome Show performances will be changed from XX:30 to XX:00
-      `,
+`,
       tags: [],
     },
     {
@@ -318,14 +327,14 @@ After 12:00 on October 11th the Beginner Support Login Campaign
 - After
   - Day 1 - 5: 4* Guarenteed Gacha Ticket, 300 Crystals
   - Day 6 - 13: 300 Crystals
-      `,
+`,
       tags: [],
     },
     {
       name: "Limited Rerun Gachas Reduced",
       description: `
 From October, the numver of revivals of limited-time gachas will be reduced from three to two per month.
-      `,
+`,
       tags: [],
     },
     {
@@ -342,8 +351,8 @@ From October, the numver of revivals of limited-time gachas will be reduced from
   - 1000 Show Pts:  ¥1800 → 1800 Paid Crystals
   - 100 Show Pts: ¥320 → 320 Paid Crystals
 - Numerical inputs changed to use keypad.
-      `,
-      tags: [],
+`,
+      tags: ["full voice", "va", "voice", "ranked", "demotion"],
     },
     {
       name: "Bug Fixes",
@@ -355,7 +364,7 @@ From October, the numver of revivals of limited-time gachas will be reduced from
 - A bug where, under certain conditions, the heads of tall characters would be unnaturally cut off during story playback.
 - A bug where, under certain procedures, it was not possible to switch tabs on the Character Mission screen.
 - Other minor bug fixes
-      `,
+`,
       tags: [],
     },
   ],
