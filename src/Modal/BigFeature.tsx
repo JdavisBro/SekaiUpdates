@@ -83,6 +83,17 @@ export default function BigFeature(props: Props): React.ReactElement | null {
           </Header>
         );
       },
+      link: (href, text) => (
+        <a
+          href={
+            href.startsWith("h#")
+              ? `#${versionName}/${featureName}#${href.slice(2)}`
+              : href
+          }
+        >
+          {text}
+        </a>
+      ),
       table: (children: JSXInternal.Element[]) => (
         <div className={styles.tablecontainer}>
           <table>{children}</table>
@@ -90,16 +101,6 @@ export default function BigFeature(props: Props): React.ReactElement | null {
       ),
     };
   }, [featureName, versionName]);
-
-  // const urlTranform = useCallback(
-  //   (url: string) => {
-  //     if (url.startsWith("h#")) {
-  //       return `#${versionName}/${featureName}#${url.slice(2)}`;
-  //     }
-  //     return defaultUrlTransform(url);
-  //   },
-  //   [versionName, featureName],
-  // );
 
   if (displayFeature == "" || displayFeature == "#") {
     return null;
