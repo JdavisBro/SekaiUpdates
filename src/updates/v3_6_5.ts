@@ -38,6 +38,7 @@ Adds options for filtering card lists.
   ],
   date: {
     [Server.jp]: new Date(2024, 5, 6),
+    [Server.en]: new Date(2025, 4, 23),
   },
 };
 
