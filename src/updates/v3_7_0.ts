@@ -109,6 +109,7 @@ const v3_7_0: UpdateType = {
   ],
   date: {
     [Server.jp]: new Date(2024, 5, 30),
+    [Server.en]: new Date(2025, 5, 30),
   },
 };
 
