@@ -91,6 +91,7 @@
   composes: updatecontainer;
   flex-direction: column;
   flex-wrap: wrap;
+  align-content: flex-start;
   row-gap: 6px;
 }
 
