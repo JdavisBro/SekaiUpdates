@@ -370,6 +370,7 @@ From October, the numver of revivals of limited-time gachas will be reduced from
   ],
   date: {
     [Server.jp]: new Date(2024, 8, 28),
+    [Server.en]: new Date("2025-09-25T10:00:00.000Z"),
   },
 };
 

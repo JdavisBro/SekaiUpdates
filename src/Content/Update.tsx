@@ -4,6 +4,10 @@ import type { UpdateType } from "../types/UpdateType";
 import styles from "./Content.module.css";
 import Feature from "./Feature";
 
+const PAST_UPDATE_SHOW_DAYS = 5;
+
+const DAY_MS = 1000 * 60 * 60 * 24;
+
 type Props = {
   server: Server;
   showPastUpdates: boolean;
@@ -18,20 +22,29 @@ export default function Update(props: Props): React.ReactElement | null {
 
   const currentDate = new Date(Date.now());
 
-  if (!props.showPastUpdates) {
-    const updateDate = props.update.date[props.server];
-    if (updateDate !== undefined) {
-      if (updateDate < currentDate) {
-        return null;
-      }
+  const updateDate = props.update.date[props.server];
+  const noShowDate = new Date(updateDate ?? 0);
+  noShowDate.setDate(currentDate.getDate() + PAST_UPDATE_SHOW_DAYS);
+
+  const updatePassed = updateDate && updateDate < currentDate;
+
+  if (!props.showPastUpdates && updateDate) {
+    if (noShowDate < currentDate) {
+      return null;
     }
   }
+  const updateIn =
+    updateDate && !updatePassed
+      ? Math.round(((Number(updateDate) - Number(currentDate)) / DAY_MS) * 10) /
+        10
+      : undefined;
 
   const currentServerDate =
     props.server != Server.jp && props.update.date[props.server] ? (
       <div>
         {Server[props.server].toUpperCase()}:{" "}
-        {props.update.date[props.server]?.toLocaleDateString()}
+        {props.update.date[props.server]?.toLocaleDateString()} - In {updateIn}{" "}
+        days
       </div>
     ) : (
       ""
