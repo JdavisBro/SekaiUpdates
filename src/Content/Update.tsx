@@ -44,7 +44,8 @@ export default function Update(props: Props): React.ReactElement | null {
       <div>
         {Server[props.server].toUpperCase()}:{" "}
         {props.update.date[props.server]?.toLocaleDateString()}
-        {updateIn ? ` - In ${updateIn} days` : ""}
+        {" - "}
+        {updateIn ? `In ${updateIn} days` : "Released"}
       </div>
     ) : (
       ""
