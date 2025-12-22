@@ -1,8 +1,8 @@
 import { Server } from "../types/ServerType.ts";
 import { UpdateType } from "../types/UpdateType.ts";
 
-const v5_X_0: UpdateType = {
-  version: "5.X.0",
+const v6_X_0: UpdateType = {
+  version: "6.X.0",
   description: "",
   features: [
     {
@@ -14,8 +14,8 @@ desc
     },
   ],
   date: {
-    [Server.jp]: new Date(2025, 0, 1),
+    [Server.jp]: new Date(2026, 0, 1),
   },
 };
 
-export default v5_X_0;
+export default v6_X_0;
