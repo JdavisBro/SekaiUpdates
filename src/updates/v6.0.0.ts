@@ -269,19 +269,45 @@ The character rank cap will be increased from 160 to 175.
       tags: [],
     },
     {
-      name: "Other Cap Increases",
+      name: "Player Cap Increases",
       description: `
-- Player Rank
-  - After the update, the max rank cap for Player Rank will be raised from 700 to 800.
-  - The title [Emerald] will also be added.
-  - Rank-up rewards after rank 700 will be the same as the rank-up rewards for rank 400 onwards.
-- Titles
-- After the update, the max cap for the [Total Login Days] title achievement will be raised from 1825 days to 2190 days.
+- After the update, the max rank cap for Player Rank will be raised from 700 to 800.
+- The title [Emerald] will also be added.
+- Rank-up rewards after rank 700 will be the same as the rank-up rewards for rank 400 onwards.
+`,
+      tags: [],
+    },
+    {
+      name: "Login Title Cap Increases",
+      description: `
+  - After the update, the max cap for the [Total Login Days] title achievement will be raised from 1825 days to 2190 days.
   - The title [Always by Your Side] will also be added.
 - Challenge Show High Score Cap
   - After the update, the high score max cap for each character's Challenge Live will be raised from 2,500,000 to 3,000,000
 - Bonus Energy Usage
   - After the update, players can now use up to x10 bonus energy even outside of event periods.
+`,
+      tags: [],
+    },
+    {
+      name: "Challenge Show High Score and Weekly Rewards Changes",
+      description: `
+# HighScore;High Score Cap increase
+
+- After the update, the high score max cap for each character's Challenge Live will be raised from 2,500,000 to 3,000,000
+  - Rewards from 2,520,000 -> 2,980,000: 10 Wish Pieces every 20,000
+  - Reward for 3,000,000: 250 Crystals
+
+# ChallengeShow;Weekly Challenge Show rewards
+
+After the update, [Music Cards x10] from the list of Weekly Challenge Stamp rewards will be removed and changed to [Wish Drop x1].
+`,
+      tags: [],
+    },
+    {
+      name: "10x Bonus Energy usage outside of Events",
+      description: `
+- After the update, players can now use up to x10 bonus energy even outside of event periods.
 `,
       tags: [],
     },
@@ -338,15 +364,9 @@ Players who have cleared the tutorials before the update will also receive the i
       tags: [],
     },
     {
-      name: "Event Shop & Challenge Show Rewards Changes",
+      name: "Event Shop Wish Drop Price Reduction",
       description: `
-# EventShop;Event Shop
-
 After the update, the cost of [Wish Drops] in event exchange shop will be reduced from 50,000 to 30,000 event tokens per 1 Wish Drop.
-
-# ChallengeShow;Weekly Challenge Show rewards
-
-After the update, [Music Cards x10] from the list of Weekly Challenge Stamp rewards will be removed and changed to [Wish Drop xl].
 `,
       tags: [],
     },
